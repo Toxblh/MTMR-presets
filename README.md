@@ -6,7 +6,7 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 [@Toxblh preset](Toxblh/toxblh.json)
-![](toxblh/toxblh.png)
+![](Toxblh/toxblh.png)
 
 Widgets:
 - NightShift, DnD, Reminders, Pomodoro, Currencies, Weather, Play, Input, Battery, Time (tap for sleep)
@@ -16,7 +16,7 @@ Customs:
 - iTunes like the track
 - iTunes favorite the track
 - iTunes what is play, tap for next and long for prev track
-- Spotify shaffle
+- Spotify shuffle
 - Spotify what is play, tap for next
 
 [@luongvo209 preset](luongvo209/luongvo209.json)
