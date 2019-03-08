@@ -26,3 +26,8 @@ Customs:
 [@aadi_vs_anand preset](aadi_vs_anand/aadi_vs_anand.json)
 ![](aadi_vs_anand/aadi_vs_anand1.png)
 ![](aadi_vs_anand/aadi_vs_anand2.png)
+
+[@Frityet](Frityet/items.json)
+![](Frityet/TouchBarShot.png)
+
+[ML-Present](ML-Present/ML-Present.json)

@@ -41,7 +41,9 @@
   {
     "type": "appleScriptTitledButton",
     "refreshInterval": 1800,
-    "source": { "filePath": "/Users/redetection/Library/Application Support/MTMR/Weather.scpt" },
+    "source": {
+      "filePath": "/Users/redetection/Library/Application Support/MTMR/Weather.scpt"
+    },
     "align": "right"
   },
 
