@@ -33,7 +33,7 @@ Customs:
 [ML-Present](ML-Present/ML-Present.json)
 
 [spaniakos](spaniakos/spaniakosPresent.json)
-Thank to the above presets spaniakos preset is an all in one preset solution with different bars embeded into one master.
+- Thanks to the above presets spaniakos preset is an all in one preset solution with different bars embeded into one master.
 - Main: Escape and running apps, Spotify and two finger volume control, buttons for three bars, language change, battery%, time (only time 24H format), sleep
 - Media bar: Brightness, mute, volume control, spotify control.
 - Crypt bar Various Crypto values preset, the two initial crypto values are for BTC Dollar and BTC Euro.
