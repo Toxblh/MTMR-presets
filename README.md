@@ -38,3 +38,7 @@ Customs:
 - Media bar: Brightness, mute, volume control, spotify control.
 - Crypt bar Various Crypto values preset, the two initial crypto values are for BTC Dollar and BTC Euro.
 - Info: weather info, CPU, disk, Network meter, Countdown timer (tomato) , language selection , battery % date with day, month , time (12H format), AM/PM
+![](spaniakos/Main.png)
+![](spaniakos/Media.png)
+![](spaniakos/Crypto.png)
+![](spaniakos/Info.png)
