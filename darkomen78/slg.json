@@ -1,0 +1,63 @@
+[
+  { "type": "escape", "align": "left", "width": 44 },
+  // --- CPU begin ---
+  { "type": "appleScriptTitledButton",
+    "width": 70,
+    "refreshInterval": 2,
+    "source": {
+      "filePath": "/Users/Shared/MTMR/cpu.scpt",
+    },
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "activate application \"Activity Monitor\"\rtell application \"System Events\"\r\ttell process \"Activity Monitor\"\r\t\ttell radio button \"CPU\" of radio group 1 of group 2 of toolbar 1 of window 1 to perform action \"AXPress\"\r\tend tell\rend tell"
+    },
+    "align": "left",
+    "image": {
+                    "base64":
+                    "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA/1BMVEUAAADaACbYACfYACfjABzXACjYACfXACjYACfYACfYACfYACfdACLYACfXACjYACfVACv/AADXACjYACfYACfXACjYACfXACjaACXYACfYACfVACvYACfYACfZACbZACbYACfYACfZACb/AADYACfYACfVACrXACjVACu/AEDYACfYACfYACfXACjXACjYACfXACjYACfYACfYACfXACjYACfXACjYACfYACfZACbYACfYACfMADPYACfYACfYACfYACfYACfZACbXACjYACfYACfRAC7XACjYACfZACbWACnXACjXACjYACfTACzZACb/AADYACfYACfYACcAAAA+zneGAAAAU3RSTlMAItK+CVPjh3xUxPwPiGDQGAMtSKmN3Vk+wPQG/e26oIJBnwJCdiuAHgTmw+6BX+IgfaqLUvKOW8VKnagK+vBwYrhlc/urCznvhSyUbOEXPAFjGh/ektAAAAABYktHRACIBR1IAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4ggWETQWgEDcSgAAAqVJREFUWMPtl4ly2jAQhsUNNlcw5r4SICEHLSQhCQRyX73T/u//LpUlLIyxbMAznWmn/0ywo5U+27tr7ZoQuwLBUJidRKIxPhKLRtgxHAoGiLfiQIKdKFCTxjGpQmEDCSC+BiAFpNlJBsgaxyyQYQNpIPUf8AcAOzktD+iaoQJQNI5FoMAGdCCv5XZclpfKFXiqUi5Jllf1mvdyQzW96gigd4h6o+mhRp1O0x3vvwa1VSWeqrZU1Jyeogy01ggSVQsoO/i/gjq9/u6u+2LDXq2jshqLHNCgdsCVwO0NILdi0oDmuoAmoImhQDzFRPNnb36L7U43NVfc2EH2D9h5t9OePyIF5IU9uIhvkyN7iiXmQUIOj8x/lB6f0bTaQ3ZA+9iaNCH2Lpg6btsBIRJOpJl0E9ABTvof5kqEGeCjMaN/AnRMgM5XJcI2J1J1gf6S48Tb2Ae6JkAjdgmAeJ1XAOJ1Xg8wGJ6elXwAzkeGjy62BgxG3MuXnoCIkmEq8EQyAUPgajyhPxJAga9SIiRqzwMOuAbGZDrDjQRgKkpiqiPgFphM74B7d4BKy2cyy1RcBvSodUb/HiSAIl+VlEfh8cm4wvPL9nnw+gbc+kkkUVioO95etwe8PBuP8vQoBzg7UQAe5t7syZwoCaMA3AN30wlzh3MYJYkkADeYTckYuJYlkiSVBeCKZtSY/gxlqezlxEt+pdFg6zBesPXn1ih8Aj5vkAels9PhYCkPsl++kg0AQu4dyuqmugIQm+qS5Nv6N+D7wm7d1skPc4xu666Fhd6BxU6r+jub8tNaWNxK29EhsdpR/sVn7FlLm0txPdgni+JrFNd3p+K67MQtyrsp3w2G7xbHd5Plv83z3Wj6b3V9N9ssFv7afaa//ZPn3wD4/vje8PP/N7TebS0hgZhEAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA4LTIyVDE3OjUyOjIyKzAyOjAwc2qUYAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wOC0yMlQxNzo1MjoyMiswMjowMAI3LNwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC"
+                },
+    "bordered": false},
+  // --- CPU end ---
+  { "type": "network", "flip": true, "align": "left", "bordered": false },
+  { "type": "previous", "align": "right", "width": 44 },
+  { "type": "play", "align": "right",  "width": 44 },
+  { "type": "next", "align": "right",  "width": 44 },
+  // --- iTunes begin ---
+  {
+      "type": "appleScriptTitledButton",
+      "width": 250,
+      "align": "right",
+      "source": {
+        "inline":
+          "if application \"iTunes\" is running then\rtell application \"iTunes\"\rif player state is playing then\rreturn (get artist of current track) & \" – \" & (get name of current track)\relse\rreturn \"\"\rend if\rend tell\rend if\rreturn \"\"\r"
+      },
+      "action": "appleScript",
+      "actionAppleScript": {
+        "inline":
+          "if application \"iTunes\" is running then\rtell application \"iTunes\"\rif player state is playing then\rnext track\rend if\rend tell\rend if\r"
+      },
+      "refreshInterval": 3,
+  },
+  // --- iTunes end ---
+  { "type": "volumeDown", "width": 34, "align": "right" },
+  { "type": "volume", "width": 100, "align": "right" },
+  { "type": "volumeUp", "width": 34, "align": "right" },
+  { "type": "inputsource", "width": 30, "align": "right" },
+  // --- Screesaver begin ---
+  { "type": "staticButton",
+    "title": "",
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "tell application \"ScreenSaverEngine\"\ractivate\rend tell",
+    },
+    "align": "right",
+    "width": 55,
+    "image": {
+                    "base64":
+                    "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"
+                    },
+  },
+  // --- Screesaver ---
+  //{ "type": "displaySleep", "width": 44, "align": "right" },
+  { "type": "timeButton", "align": "right", "bordered": false  }
+]
