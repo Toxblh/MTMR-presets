@@ -42,3 +42,13 @@ Customs:
 ![](spaniakos/Media.png)
 ![](spaniakos/Crypto.png)
 ![](spaniakos/Info.png)
+
+[@darkomen78](darkomen78/slg.json)
+![](darkomen78/main.png)
+- Battery, CPU, Network, (reserved for disk activity), Music Prev, Music Play/Pause, Music Next, Music Track, Sound volume down, Sound slide, Sound volume up, Input language, Screensaver
+
+
+Only two custom things here (and an icon for the battery) :
+- CPU button is more based on what you can see in Activity Monitor. You must copy the AppleScript file [cpu.scpt](darkomen78/cpu.scpt) to the folder : /Users/Shared/MTMR/
+- The last button "power lock", simply start the screensaver (and lock the current session). I prefer that than a full sleep or a sleep display.
+Now, i'm seeking for a disk real-time activity button.
