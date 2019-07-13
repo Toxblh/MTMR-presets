@@ -1,0 +1,489 @@
+[
+    {
+        "type": "escape",
+        "title": "Esc",
+        "width": 50,
+        "align": "left"
+    },
+    
+    {
+        "type": "exitTouchbar",
+        //"title": " ",
+        "title": "⌘",
+        "bordered": false,
+        "width": 30,
+        "align": "left"
+    },
+    
+    {
+        "type": "group",
+        "align": "left",
+        "title": "VNC",
+        "items": [
+            {
+                "type": "escape",
+                "title": "Esc",
+                "width": 50,
+                "align": "left"
+            },
+            {
+                "type": "close",
+                "bordered": false,
+                "width": 35,
+                "align": "left"
+            },
+
+            {
+                "type": "staticButton",
+                "title": "F1",
+                "action": "keyPress",
+                "keycode": 122,
+                "width": 60,
+                "align": "left"
+            },
+            {
+                "type": "staticButton",
+                "title": "F2",
+                "action": "keyPress",
+                "keycode": 120,
+                "width": 60,
+                "align": "left"
+            },
+            {
+                "type": "staticButton",
+                "title": "F3",
+                "action": "keyPress",
+                "keycode": 99,
+                "width": 60,
+                "align": "left"
+            },
+            {
+                "type": "staticButton",
+                "title": "F4",
+                "action": "keyPress",
+                "keycode": 118,
+                "width": 60,
+                "align": "left"
+            },
+            {
+                "type": "staticButton",
+                "title": "F5",
+                "action": "keyPress",
+                "keycode": 96,
+                "width": 60,
+                "align": "left"
+            },
+            {
+                "type": "staticButton",
+                "title": "F6",
+                "action": "keyPress",
+                "keycode": 97,
+                "width": 60,
+                "align": "left"
+            },
+            {
+                "type": "staticButton",
+                "title": "F7",
+                "action": "keyPress",
+                "keycode": 98,
+                "width": 60,
+                "align": "left"
+            },
+            {
+                "type": "staticButton",
+                "title": "F8",
+                "action": "keyPress",
+                "keycode": 100,
+                "width": 60,
+                "align": "left"
+            },
+
+            // split
+            // {
+            //     "type": "staticButton",
+            //     "title": " ",
+            //     "width": 0,
+            //     "bordered": false,
+            //     "align": "left"
+            // },
+
+            {
+                "type": "timeButton",
+                "formatTemplate": "h:mm a",
+                "width": 73,
+                "bordered": false,
+                "align": "right",
+                "longAction": "shellScript",
+                "longExecutablePath": "/usr/bin/pmset",
+                "longShellArguments": ["sleepnow"]
+            },
+
+            // {
+            //     "type": "staticButton",
+            //     "title": "F9",
+            //     "action": "keyPress",
+            //     "keycode": 101,
+            //     "width": 60,
+            //     "align": "left"
+            // },
+            // {
+            //     "type": "staticButton",
+            //     "title": "F10",
+            //     "action": "keyPress",
+            //     "keycode": 109,
+            //     "width": 60,
+            //     "align": "left"
+            // },
+            // {
+            //     "type": "staticButton",
+            //     "title": "F11",
+            //     "action": "keyPress",
+            //     "keycode": 103,
+            //     "width": 60,
+            //     "align": "left"
+            // },
+            // {
+            //     "type": "staticButton",
+            //     "title": "F12",
+            //     "action": "keyPress",
+            //     "keycode": 111,
+            //     "width": 60,
+            //     "align": "left"
+            // },
+            {
+                "type": "staticButton",
+                "title": "PgUp",
+                "action": "keyPress",
+                "keycode": 116,
+                "width": 60,
+                "align": "right"
+            },
+            {
+                "type": "staticButton",
+                "title": "PgDn",
+                "action": "keyPress",
+                "keycode": 121,
+                "width": 60,
+                "align": "right"
+            },
+            {
+                "type": "staticButton",
+                "title": "Home",
+                "action": "keyPress",
+                "keycode": 115,
+                "longAction": "appleScript",
+                "longActionAppleScript": {
+                    "inline": "tell application \"System Events\" to key code 123 using command down"
+                },
+                "align": "right"
+            },
+            {
+                "type": "staticButton",
+                "title": "End",
+                "action": "keyPress",
+                "keycode": 119,
+                "longAction": "appleScript",
+                "longActionAppleScript": {
+                    "inline": "tell application \"System Events\" to key code 124 using command down"
+                },
+                "align": "right"
+            },
+            {
+                "type": "delete",
+                "title": "Del",
+                "width": 60,
+                "align": "right"
+            },
+        ]
+    },
+
+    {
+        "type": "group",
+        "align": "left",
+        "title": "Media",
+        "items": [
+            {
+                "type": "escape",
+                "title": "Esc",
+                "width": 50,
+                "align": "left"
+            },
+            {
+                "type": "close",
+                "bordered": false,
+                "width": 35,
+                "align": "left"
+            },
+            
+            {
+                "type": "illuminationDown",
+                //"bordered": false,
+                "align": "left",
+                "width": 40
+            },
+            {
+                "type": "illuminationUp",
+                //"bordered": false,
+                "align": "left",
+                "width": 40
+            },
+            
+            {
+                "type": "brightnessDown",
+                "bordered": false,
+                "align": "left",
+                "width": 40
+            },
+            {
+                "type": "brightness",
+                "width": 130,
+                "align": "left",
+                "image": {
+                    "base64": "iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAQAAAD41aSMAAAErklEQVR4Ae3cz2qd9ReF8ffQNgm0k1+TjqVJOrElGFAqVOxNFNuhiE6lmKHQ+9CWDsRDZorVlKJTpYT2FpSazvwVbDJrPeZxuGcvNLjPcjVrfy9gw/OB/DkH9nCEyWQymUwmk2GdNQbnN+D81nnKU28C9/yAN4F9fncC8/z+BOb5/QnM8/sTmOf3J7DMPzJ7bgTm+f0JzPP7E/jnNyfwz29OYJ9/hGA1ALr8NgT++c0J/PObE/jnNyfwz29O4J/fnMA/vznB8cgP8Pt/k8A/vzmBf35zAv/85gT++c0JzPPrCfQAx30CEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQP8scJY3uMi7XONzvmKX/QBoA0zY4Cbf8TwA2gAneI8v+DMA2gCLXON7DgOgDfAmXzMLgDbAGl/yVwC0ATb4OQDaABM+5I8AaAP8j28CoA7wKS8CoA3wNr8GQBtgmd0AaAOc5kEApAE4xTQASoCBCdMAKAEGTvEgAEqAgdPsBkAJMLDCbwFQAgy8w4sAKAEGbgZACzDwrRvA+msGcJb/82qzpgRY5+lrBjDw0ciuhmu9DfnNASb8Mk+ChvzmAAMbzOZH0JDfHmDgNsyLQJDfAGCN2bwIBPkNAAamMB8CQX4LgIsczodAkN8CYGCHmsab1YL8JgAfwDwIBPlNAJZ4Pg8CQX4TgIHb0E8gyG8D8D70Ewjy2wCcYL//VKwgvw3AwA/QTSDIbwTwGXQTCPIbAbwF3QSC/EYAEw66CQT5jQAGHkMvgSC/FcAUegnG8wfgFvQSjOcPwPXug8nj+QNwBXoJxvMHYAN6CcbzB+A89BKM5w/ACvQSjOcPwCK0EugBAiAmyI8gPUF+CesJ8meoniD/iOkJ8lFEvbUiyIdxHfkLYIwgANOu/AUwSpAvZLryF8AoQb6S7MpfADICA4DNvvwFICMwANjqy18AMgIDgJ2G/CMAYwR7xxDgJAd9+QtARGAAcLUzfwGICAwA7nTmLwAJgQHAEvud+QtAQmAAcKM3fwFICAwA7nfmPzrAwCp7xwDgEoe9+QtAQGAAsN2fvwD6CdwALvB3f/4C6CdwA7jbn78A+gncADaZ9ecvgH4CL4AJDzvzjwPoCfQAHzfkbwAogtcLYJlnvNqs5mzlv/nuKc9WBmALdAABuMxLHUAAzvEEVAABOMMjUAEEYIGfQAUQgAnbuv0BWGBbtz8AZ/hRtz8A53ik2x+AyzxR7Q/AhC1eqvYHYJl7qv0BmPAJz1T7A7DJQ9X+AFzgLjPN/gBcYpuZYn8AlrjBfQ7nvz8AJ7nKHZ7Pe38AJmyyxQ4HzGECsMgK59ngCte5xZTHFT4AFhOAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAA+t/4weTe+/36N2BD0J8/AEUgyh+AIhDlD0ARiPIHoAhE+QNQ13pF+QNQBKL8ASgCUf4AFIEofwCKQJQ/AEUgyR+AIhDkD0AR7CnzB6AIRPkDUASi/AEoAlH+ABSBKH8AikCUPwB1rVeUPwBFIMofgCIQ5Q9AEYjyB6AIKn8ARASVPwACgsofAAXBkfIHIC8AAcgLQADy/gF68AO0VMa28wAAAABJRU5ErkJggg=="
+                },
+            },
+            {
+                "type": "brightnessUp",
+                "bordered": false,
+                "align": "left",
+                "width": 40
+            },
+            
+            {
+                "type": "mute",
+                "bordered": true,
+                "align": "left",
+                "width": 50
+            },
+            {
+                "type": "volumeDown",
+                "bordered": false,
+                "align": "left",
+                "width": 40,
+            },
+            {
+                "type": "volume",
+                "width": 130,
+                "align": "left",
+                "image": {
+                    "base64": "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"
+                },
+            },
+            {
+                "type": "volumeUp",
+                "bordered": false,
+                "align": "left",
+                "width": 40
+            },
+            
+            {
+                "type": "timeButton",
+                "formatTemplate": "h:mm a",
+                "width": 70,
+                "bordered": false,
+                "align": "right",
+                "longAction": "shellScript",
+                "longExecutablePath": "/usr/bin/pmset",
+                "longShellArguments": ["sleepnow"]
+            },
+            {
+                "type": "battery",
+                "width": 80,
+                "align": "right",
+                "bordered": false
+            },
+            
+            {
+                "type": "previous",
+                "bordered": true,
+                "align": "right",
+                "width": 50
+            },
+            {
+                "type": "play",
+                "bordered": true,
+                "align": "right"
+            },
+            {
+                "type": "next",
+                "bordered": true,
+                "align": "right",
+                "width": 50
+            },
+        ]
+    },
+    
+    {
+        "type": "group",
+        "align": "right",
+        "title": "World",
+        "items": [
+            {
+                "type": "escape",
+                "title": "Esc",
+                "width": 50,
+                "align": "left"
+            },
+            {
+                "type": "close",
+                "bordered": false,
+                "width": 35,
+                "align": "left"
+            },
+            
+            {
+                "type": "staticButton",
+                "title": "Shanghai",
+                "bordered": false,
+                "align": "left"
+            },
+            {
+                "type": "timeButton",
+                "formatTemplate": "E, MMM d, h:mm a",
+                "timeZone": "CT",
+                "width": 160,
+                "bordered": true,
+                "align": "left"
+            },
+            
+            {
+                "type": "staticButton",
+                "title": "San Jose",
+                "bordered": false,
+                "align": "right"
+            },
+            {
+                "type": "timeButton",
+                "formatTemplate": "E, MMM d, h:mm a",
+                "timeZone": "PST",
+                "width": 160,
+                "bordered": true,
+                "align": "right"
+            },
+            
+            {
+                "type": "staticButton",
+                "title": "Boston",
+                "bordered": false,
+                "align": "right"
+            },
+            {
+                "type": "timeButton",
+                "formatTemplate": "E, MMM d, h:mm a",
+                "timeZone": "EST",
+                "width": 160,
+                "bordered": true,
+                "align": "right"
+            },
+            
+            {
+                "type": "staticButton",
+                "title": "India",
+                "bordered": false,
+                "align": "right"
+            },
+            {
+                "type": "timeButton",
+                "formatTemplate": "E, MMM d, h:mm a",
+                "timeZone": "IST",
+                "width": 160,
+                "bordered": true,
+                "align": "right"
+            },
+        ]
+    },
+    
+    {
+        "type": "timeButton",
+        "formatTemplate": "EEE, MMM d, h:mm a",
+        "width": 160,
+        "bordered": false,
+        "align": "right"
+    },
+    // {
+    //     "type": "weather",
+    //     "refreshInterval": 600,
+    //     "units": "metric",
+    //     "width": 60,
+    //     "align": "right",
+    //     "bordered": false,
+    //     "icon_type": "images",
+    //     "api_key": "ca93a0bb8cdb428552660d83249e4bc9"
+    // },
+    {
+        "type": "battery",
+        "width": 80,
+        "align": "right",
+        "bordered": false
+    },
+    
+    {
+        "type": "mute",
+        "width": 35,
+        "bordered": false,
+        "align": "right"
+    },
+    {
+        "type": "dnd",
+        "width": 35,
+        "bordered": false,
+        "align": "right",
+        "longAction": "shellScript",
+        "longExecutablePath": "/usr/bin/pmset",
+        "longShellArguments": ["sleepnow"]
+    },
+
+    // {
+    //     "type": "nightShift",
+    //     "width": 35,
+    //     "bordered": false,
+    //     "align": "right"
+    // },
+    
+    {
+        "type": "staticButton",
+        "title": "PgUp",
+        "action": "keyPress",
+        "keycode": 116,
+        "width": 60,
+        "align": "right"
+    },
+    {
+        "type": "staticButton",
+        "title": "PgDn",
+        "action": "keyPress",
+        "keycode": 121,
+        "width": 60,
+        "align": "right"
+    },
+
+    {
+        "type": "staticButton",
+        "title": "Home",
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 123 using command down"
+        },
+        "longAction": "keyPress",
+        "longKeycode": 115,
+        "align": "right"
+    },
+    {
+        "type": "staticButton",
+        "title": "End",
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 124 using command down"
+        },
+        "longAction": "keyPress",
+        "longKeycode": 119,
+        "align": "right"
+    },
+
+    {
+        "type": "delete",
+        "title": "Del",
+        "width": 60,
+        "align": "right"
+    },
+]
