@@ -118,7 +118,7 @@ Now, i'm seeking for a disk real-time activity button.
 
 - It's minimalistic and low CPU preset
 - Thanks to the above presets for inspiration and @darkomen78 for cpu.scpt which I reused here
-- Create /Users/Shared/MTMR/ folder and drop there cpu.scpt and spotify.scpt from [here](bobrosoft/)
+- Create /Users/Shared/MTMR/ folder and drop there spotify.scpt from [here](bobrosoft/)
 - If your main music player is not Spotify, you can get some scripts inspiration from [here](aadi_vs_anand/aadi_vs_anand.json) for example
 
 **Features**
@@ -126,7 +126,7 @@ Now, i'm seeking for a disk real-time activity button.
 - Click on music player string stops/resumes current track, long click brings up Spotify window
 - You can see some random Emojis there, just for fun :)
 - Click on Weather opens up weather site, currently Yandex.Weather (you can change to yours)
-- Click on CPU usage opens up Activity Monitor
+- CPU meter changes color based on load. Click on CPU usage opens up Activity Monitor
 - Click on currency (EUR/RUB pair) opens up business website, currently rbc.ru (you can change to yours)
 - NightShift button
 - No brightness or volume buttons there because you can use built-in two/three-finger slide gestures on bar for that
