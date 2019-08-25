@@ -3,6 +3,29 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 ---
 
+[@docceri preset] (docceri/docceriPreset.json)
+
+Main:
+- esc key
+- crypto menu (see below)
+- keyboard light intensity - and +
+- weekday, date and time (12H)
+- volume controls
+- current weather (create your own API, instructions are on the main page)
+- charge level (FYI: if you are not charging the battery, it shows how many hours you can use the computer on battery)
+- "x" - for exiting the preset
+- del key
+
+Crypto menu:
+- BTC to USD
+- ETH to USD
+- BCH to USD
+- XLM to USD
+- LTC to USD
+- EOS to USD
+
+If you click any of the crypto prices, this will redirect you to the corresponding currency's cryptowat.ch chart.
+
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 [@Toxblh preset](Toxblh/toxblh.json)
