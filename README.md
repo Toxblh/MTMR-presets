@@ -3,29 +3,6 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 ---
 
-[@docceri preset] (docceri/docceriPreset.json)
-
-Main:
-- esc key
-- crypto menu (see below)
-- keyboard light intensity - and +
-- weekday, date and time (12H)
-- volume controls
-- current weather (create your own API, instructions are on the main page)
-- charge level (FYI: if you are not charging the battery, it shows how many hours you can use the computer on battery)
-- "x" - for exiting the preset
-- del key
-
-Crypto menu:
-- BTC to USD
-- ETH to USD
-- BCH to USD
-- XLM to USD
-- LTC to USD
-- EOS to USD
-
-If you click any of the crypto prices, this will redirect you to the corresponding currency's cryptowat.ch chart.
-
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 [@Toxblh preset](Toxblh/toxblh.json)
@@ -153,3 +130,29 @@ Now, i'm seeking for a disk real-time activity button.
 - Click on currency (EUR/RUB pair) opens up business website, currently rbc.ru (you can change to yours)
 - NightShift button
 - No brightness or volume buttons there because you can use built-in two/three-finger slide gestures on bar for that
+
+[@docceri preset](docceri/docceriPreset.json)
+
+![](./docceri/Touch%20Bar%20Shot%202019-08-24%20at%2013.28.17.png)
+![](./docceri/Touch%20Bar%20Shot%202019-08-24%20at%2013.28.22.png)
+
+Main:
+- esc key
+- crypto menu (see below)
+- keyboard light intensity - and +
+- weekday, date and time (12H)
+- volume controls
+- current weather (create your own API, instructions are on the main page)
+- charge level (FYI: if you are not charging the battery, it shows how many hours you can use the computer on battery)
+- "x" - for exiting the preset
+- del key
+
+Crypto menu:
+- BTC to USD
+- ETH to USD
+- BCH to USD
+- XLM to USD
+- LTC to USD
+- EOS to USD
+
+If you click any of the crypto prices, this will redirect you to the corresponding currency's cryptowat.ch chart.
