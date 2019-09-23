@@ -59,16 +59,6 @@ Now, i'm seeking for a disk real-time activity button.
 
 > The brightness and volume slider icons are from @Frityet preset.
 
-
-[@mrcsmxms preset](mrcsmxms/items.json)
-
-![](./mrcsmxms/pic.png)
-
-Widgets:
-- Escape, ExitMTMR, Brightness, PlayButton (iTunes), Volume, network, CPU-Load, sleep, battery
-
-
-
 **Default**
 
 * <kbd>Esc</kbd> key
@@ -166,3 +156,12 @@ Crypto menu:
 - EOS to USD
 
 If you click any of the crypto prices, this will redirect you to the corresponding currency's cryptowat.ch chart.
+
+
+
+[@mrcsmxms preset](mrcsmxms/items.json)
+
+![](./mrcsmxms/pic.png)
+
+Widgets:
+- Escape, ExitMTMR, Brightness, PlayButton (iTunes), Volume, network, CPU-Load, sleep, battery
