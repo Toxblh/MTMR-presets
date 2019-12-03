@@ -165,3 +165,12 @@ If you click any of the crypto prices, this will redirect you to the correspondi
 
 Widgets:
 - Escape, ExitMTMR, Brightness, PlayButton (iTunes), Volume, network, CPU-Load, sleep, battery
+
+[@KoenvGinkel preset](pinkelPreset/items.json)
+
+![](./pinkelPreset/state_1.jpeg)
+![](./pinkelPreset/state_2.jpeg)
+
+Features:
+- When paused there is a resume button integrated in the line.
+- When playing there is a pause button integrated in the line.
