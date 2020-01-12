@@ -165,3 +165,20 @@ If you click any of the crypto prices, this will redirect you to the correspondi
 
 Widgets:
 - Escape, ExitMTMR, Brightness, PlayButton (iTunes), Volume, network, CPU-Load, sleep, battery
+
+
+[@metasean preset](metasean/items.json) &
+[randomQuotes script](metasean/randomQuotes.sh)
+
+![](./metasean/screenshots/random-1.png)
+![](./metasean/screenshots/random-2.png)
+![](./metasean/screenshots/random-3.png)
+![](./metasean/screenshots/random-4.png)
+![](./metasean/screenshots/random-5.png)
+![](./metasean/screenshots/random-8.png)
+![](./metasean/screenshots/random-9.png)
+
+Widgets:
+- Weather, brightnessDown, brightnessUp, random quote display, (single quote display), volumeDown, volumeUp, sleep
+
+Includes a shellScriptTitledButton filePath script to generate a random quote in a random foreground color, as well as an example of an inline script to display a single specific quote.

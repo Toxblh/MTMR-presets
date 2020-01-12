@@ -1,0 +1,63 @@
+[
+	{
+		"type": "weather",
+		"icon_type": "images",
+		"api_key": "ca93a0bb8cdb428552660d83249e4bc9",
+		"width": 60,
+		"bordered": true,
+		"align": "left"
+	},
+	{
+		"type": "brightnessDown",
+		"width": 72,
+		"bordered": true,
+		"align": "left"
+	},
+	{
+		"type": "brightnessUp",
+		"width": 72,
+		"bordered": true,
+		"align": "left"
+	},
+	{ /* DISPLAY RANDOM QUOTES */
+		"type": "shellScriptTitledButton",
+		"width": 540,
+		"refreshInterval": 90, // in seconds
+		"source": {
+			// "inline": "echo \"YO\""
+			"filePath": "~/Library/Application Support/MTMR/randomQuotes.sh"
+		},
+		"align": "left",
+		"bordered": false
+	},
+	// {  /* DISPLAY SINGLE QUOTE */
+	//   "type": "shellScriptTitledButton",
+	//   "width": 540,
+	//   "source": {
+	//     /* \\e[33m - sets the subsequent text color to yellow */
+	//     /* \\e[1m  - sets the subsequent text to bold */
+	//     /* \\e[0m  - resets formatting to defaults for all subsequent text */
+	//     "inline": "printf \"\\e[33m\\e[1mAction is the foundational key to all success.\n\\e[0m~ Picasso\""
+	//   },
+	//   "bordered": false,
+	//   "align": "center"
+	// },
+	{
+		"type": "volumeDown",
+		"bordered": true,
+		"align": "right",
+		"width": 75
+	},
+	{
+		"type": "volumeUp",
+		"bordered": true,
+		"align": "right",
+		"width": 75
+	},
+	{
+		"type": "sleep",
+		"width": 60,
+		"align": "right",
+		"bordered": true
+	}
+]
