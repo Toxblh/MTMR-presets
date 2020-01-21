@@ -178,13 +178,19 @@ Features:
 [@metasean preset](metasean/items.json) &
 [randomQuotes script](metasean/randomQuotes.sh)
 
-![](./metasean/screenshots/random-1.png)
-![](./metasean/screenshots/random-2.png)
-![](./metasean/screenshots/random-3.png)
-![](./metasean/screenshots/random-4.png)
-![](./metasean/screenshots/random-5.png)
-![](./metasean/screenshots/random-8.png)
-![](./metasean/screenshots/random-9.png)
+![](./metasean/screenshots/light_red__simple_as_possible.png)
+![](./metasean/screenshots/light_yellow__secret.png)
+![](./metasean/screenshots/yellow__small_deeds.png)
+![](./metasean/screenshots/cyan__seeking_and_blundering.png)
+![](./metasean/screenshots/light_blue__simple_as_possible.png)
+![](./metasean/screenshots/light_green__dont_explain.png)
+![](./metasean/screenshots/green__Dont_wait.png)
+![](./metasean/screenshots/light_cyan__Small_deeds.png)
+![](./metasean/screenshots/light_magenta__the_perfect.png)
+![](./metasean/screenshots/magenta__Stay_focused.png)
+![](./metasean/screenshots/magenta__dangerous_phrase.png)
+![](./metasean/screenshots/yellow__dangerous_phrase.png)
+![](./metasean/screenshots/green__dangerous_phrase.png)
 
 Widgets:
 - Weather, brightnessDown, brightnessUp, random quote display, (single quote display), volumeDown, volumeUp, sleep

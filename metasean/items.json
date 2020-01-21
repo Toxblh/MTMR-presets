@@ -1,28 +1,36 @@
 [
+	/* Do Not Disturb */
+	// {
+	//   "type": "dnd",
+	//   "align": "left",
+	//   "width": 38
+	// },
 	{
 		"type": "weather",
-		"icon_type": "images",
-		"api_key": "ca93a0bb8cdb428552660d83249e4bc9",
+		"refreshInterval": 600, // in seconds; is only updated every 10 min anyway
+		"units": "imperial", // metric or imperial
+		"icon_type": "images", // text or images
+		"api_key": "YOUR KEY HERE", // https://home.openweathermap.org/api_keys
+		"width": 60,
+		"bordered": false,
+		"align": "left"
+	},
+	{
+		"type": "brightnessDown",
 		"width": 60,
 		"bordered": true,
 		"align": "left"
 	},
 	{
-		"type": "brightnessDown",
-		"width": 72,
-		"bordered": true,
-		"align": "left"
-	},
-	{
 		"type": "brightnessUp",
-		"width": 72,
+		"width": 60,
 		"bordered": true,
 		"align": "left"
 	},
 	{ /* DISPLAY RANDOM QUOTES */
 		"type": "shellScriptTitledButton",
-		"width": 540,
-		"refreshInterval": 90, // in seconds
+		"width": 588,
+		"refreshInterval": 9, // in seconds
 		"source": {
 			// "inline": "echo \"YO\""
 			"filePath": "~/Library/Application Support/MTMR/randomQuotes.sh"
@@ -32,11 +40,11 @@
 	},
 	// {  /* DISPLAY SINGLE QUOTE */
 	//   "type": "shellScriptTitledButton",
-	//   "width": 540,
+	//   "width": 510,
 	//   "source": {
-	//     /* \\e[33m - sets the subsequent text color to yellow */
-	//     /* \\e[1m  - sets the subsequent text to bold */
-	//     /* \\e[0m  - resets formatting to defaults for all subsequent text */
+	//     // \\e[33m - sets the following text color to yellow
+	//     // \\e[1m  - sets the following text to bold
+	//     // \\e[0m  - resets the formatting to defaults for all following text
 	//     "inline": "printf \"\\e[33m\\e[1mAction is the foundational key to all success.\n\\e[0m~ Picasso\""
 	//   },
 	//   "bordered": false,
@@ -46,13 +54,13 @@
 		"type": "volumeDown",
 		"bordered": true,
 		"align": "right",
-		"width": 75
+		"width": 60
 	},
 	{
 		"type": "volumeUp",
 		"bordered": true,
 		"align": "right",
-		"width": 75
+		"width": 60
 	},
 	{
 		"type": "sleep",
