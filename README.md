@@ -196,3 +196,23 @@ Widgets:
 - Weather, brightnessDown, brightnessUp, random quote display, (single quote display), volumeDown, volumeUp, sleep
 
 Includes a shellScriptTitledButton filePath script to generate a random quote in a random foreground color, as well as an example of an inline script to display a single specific quote.
+
+[@luchesigui preset](luchesigui/luchesigui.json)
+
+![](./luchesigui/luchesigui.png)
+
+Left:
+- esc key
+- doc
+- show desktop (apple script)
+- spotify
+
+Right:
+- Mute
+- Vol Down
+- Vol Up
+- Bright Down
+- Bright Up
+- Play/Pause
+- Wheather (30 min update)
+- Time in my native country
