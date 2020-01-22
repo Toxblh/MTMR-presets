@@ -1,0 +1,73 @@
+[
+  {
+    "type": "escape",
+    "width": 64,
+    "align": "left"
+  },
+  { "type": "dock", "width": 160, "align": "left"},
+  {
+  	"type": "staticButton",
+ 		"title": "",
+ 		"action": "appleScript",
+    "bordered": false,
+		"actionAppleScript": {
+			"inline": "tell application \"System Events\"\rkey code 103\rend tell"
+		},
+		"image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyVpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ4IDc5LjE2NDAzNiwgMjAxOS8wOC8xMy0wMTowNjo1NyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjM5QkE2N0QzNTNBMTFFQUI3RTZDQkZGQUUwOTUwRUYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjM5QkE2N0UzNTNBMTFFQUI3RTZDQkZGQUUwOTUwRUYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMzlCQTY3QjM1M0ExMUVBQjdFNkNCRkZBRTA5NTBFRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyMzlCQTY3QzM1M0ExMUVBQjdFNkNCRkZBRTA5NTBFRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtLc+0YAAALSSURBVHja7JpNiBJhGMffGUcn01KDMgzBIhAq1+geRB8HaYmCDgtR0LkWIoItiII6RBAFQRRBxzosfbB4qMt26RqRRhehFYpN8qD5mZ9j/2ecEVNpV9dwJt4//HQ+mOH5v/M+8w7P+wqtVos1m01Wr9fZAFk0jKAGUPoCtFiY1WplEu0kEgkWjUaZzWaj3a1gBhwGfiAZxAi1dBK8AfMgW6vVWCgUYpFIpB1ktVplmUyGybJ8Bru3NTNGVBgcB5fBBcS9UCwW1ROqEVEU6RHNgvvMHAqAV4h3BrHPqx7oR1GUffi7x8wlATwRBGF754kgR67gwKCkzoGCdtGk5QLOP5wIgrPRaFzC5jkpl8ttSyaThySpL6dvgEcgbxAjHjBHQXe/sVKp1DRyZU5Kp9N7KpWKh/KkS2/BdYN1Jcrq82A/mNJzO5/P+7LZ7A6xUChsoHGkRzED58bnrq5FY6BUKpXWizQgml3kQWT/ibgRboQb4Ua4EW6EG+FGuBFuhBvhRrgRboQb4Ub+rRGqDZld5EF0Op1FKj32KGzguHfrG1TPQuxNh8NRlrxe7ye73Z4tl8vdZdOD4CZ4yNq1XyNoE2vXfqf0A4qiMLfbvezxeJYkl8u1HAgEFuPx+EltxkrXVTALSgYxspH1VOOp1Ovz+aKyLBfVEnwwGLwVi8VOsP75QpeGIYWuVUDXutt5ayFZPmitbybRxOhZmFnqGNEK2ZQPp8B3E5j4Ao6BF/qB3tmdZ2ARnAZHgI8Za1b3K3gNnoKf3ScHBfkD3NEQDDRoNv92cqXWbq10A/6Jwo2M1rVWIxpnaJ7eNuL1v8B7UJ6kkV1gAexc430+aq/Tb5PqWtfGYIK0F1ycZI5sHmM337LmrkVfkbReq2fRwGr0ABwYQ4NUwOOhR0jErK8RUI3gM5iFw2F1AdeQegmmwVGwTht3hhUl+XPwbhQjfr9f3f4twABFKMlDsLtkMQAAAABJRU5ErkJggg=="
+		}
+  },
+  // Spotify
+  {
+    "type": "appleScriptTitledButton",
+    "source": {
+      "inline": "if application \"Spotify\" is running then\rtell application \"Spotify\"\rif player state is playing then\rreturn (get artist of current track) & \" – \" & (get name of current track)\relse\rreturn \"\"\rend if\rend tell\rend if\rreturn \"\"\r"
+    },
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "if application \"Spotify\" is running then\rtell application \"Spotify\"\rif player state is playing then\rnext track\rend if\rend tell\rend if\r"
+    },
+    "refreshInterval": 1,
+    "image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTB3WXx3UXh3VXx7XYBkXFRpVLRyURmIaeAQAAAAEdFJOUwDDO3fSqUUkAAABbklEQVRIx61VbW6DMAztoAeYNA7ApB6gkzhAWS24wIAL0HABaK6/pHFNEhy8TXu/kPzkPD/8cTj8K7KPAqB+K5NhQPCUrABCXe7HOUYYZxgVRLiG8RfY4DUgFFtC7cffAfZTFBwBdhWEKfgEq4ocEjgj4ZQifO6/QG9kkETp1dDeVWfRKx3XYSW0LoqY5kCElXDrQkyeCCuh6WL0M4nIWQIyzqixdfKU1koFDKvyCA8NJMzU4xiD+b4kfHRpsIyKc6hBwjVptFHVY51EMAINNDFGJITKDNQcdpX74Hz0CQ3rY5qwMp4EIxrlafzrsYZ2Veb0DkRgfNCUok4Y1fqEijfyi2b8RE9beWqa48Y/uvCNMcH9btfUi+/CGLR1vhL6Zz9N/vBlaCU+7lwY/cmJ67Ryen/2tj23PLqJBodZH8vgj544vOL4pxfI5acrSFxi8hrkU9TSKr78ZpnL50A8KPJJEo+afBblwyqf5j/iGys5j6ScrST2AAAAAElFTkSuQmCC"
+    }
+  },
+  {
+    "type": "mute",
+    "bordered": false,
+    "align": "right",
+    "width": 35
+  },
+  {
+    "type": "volumeDown",
+    "bordered": false,
+    "align": "right",
+    "width": 35
+  },
+  {
+    "type": "volumeUp",
+    "bordered": false,
+    "align": "right",
+    "width": 35
+  },
+  { "type": "brightnessDown", "width": 35, "bordered": false, "align": "right" },
+  { "type": "brightnessUp", "width": 35, "bordered": false, "align": "right" },
+  {
+    "type": "play",
+    "align": "right",
+    "bordered": false,
+    "width": 38
+  },
+  { "type": "weather", "refreshInterval": 1800, "units": "metric", "align": "right", "bordered": false, "api_key": "84645702688e83a35e2549ca77f73369" },
+  {
+    "type": "timeButton",
+    "formatTemplate": "HH:mm",
+    "align": "right",
+    "bordered": false,
+    "locale": "pt_BR",
+    "timeZone": "UTC-3",
+    "longAction": "shellScript",
+    "longExecutablePath": "/usr/bin/pmset",
+    "longShellArguments": ["sleepnow"]
+  }
+]
