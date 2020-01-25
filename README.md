@@ -216,3 +216,13 @@ Right:
 - Play/Pause
 - Wheather (30 min update)
 - Time in my native country
+
+[@retroplasma preset](retroplasma/retroplasma_invisible.json)
+
+![](./retroplasma/retroplasma_invisible.png)
+
+- invisible touch bar for less distraction when watching videos etc.
+- small button on the left: lock mac
+- three big buttons in the center for spotify: previous, play/pause, next
+- small button on the right: mute audio
+- enable gestures for brightness/volume

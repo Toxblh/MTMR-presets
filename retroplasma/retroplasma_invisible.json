@@ -1,0 +1,54 @@
+[
+    {
+        "type": "staticButton",
+        "title": "",
+        "bordered": false,
+        "align": "left",
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to keystroke \"q\" using {control down, command down}"
+        },
+        "width": 64
+    },
+    {
+        "type": "staticButton",
+        "title": "",
+        "bordered": false,
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"Spotify\" to previous track"
+        },
+        "width": 286
+    },
+    {
+        "type": "staticButton",
+        "title": "",
+        "bordered": false,
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"Spotify\" to playpause"
+        },
+        "width": 286
+    },
+    {
+        "type": "staticButton",
+        "title": "",
+        "bordered": false,
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"Spotify\" to next track"
+        },
+        "width": 286
+    },
+    {
+        "type": "staticButton",
+        "title": "",
+        "bordered": false,
+        "align": "right",
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "set volume output muted not (output muted of (get volume settings))"
+        },
+        "width": 64
+    }
+]
