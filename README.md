@@ -226,3 +226,27 @@ Right:
 - three big buttons in the center for spotify: previous, play/pause, next
 - small button on the right: mute audio
 - enable gestures for brightness/volume
+
+[@utkini preset](utkini/items.json)
+![](./utkini/general.jpeg)
+
+Left:
+- Esc key
+- Exit MTMR
+- Finder (home path)
+- Sublime text
+- Note
+
+Center:
+- YouTube playing (safari)
+- VK music playing (safari)
+- Reminders. Show a random incomplete reminder
+
+Right:
+- Weather 
+- Lock Screen
+- Vol mute 
+- Vol down
+- Vol up
+- Play/pause
+- Time
