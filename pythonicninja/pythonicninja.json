@@ -1,0 +1,116 @@
+[
+  // { "type": "brightnessDown", "width": 20, "align": "left" },
+  {
+    "type": "brightness",
+    "width": 100,
+    "align": "left",
+    "image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAADrAAAA6wErbNfCAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAALpQTFRF//////+A/9tt/8Zx/79V/8hb8sxZ/9Fd+MVX+chb+cpZ+stY+tZh98FZ98JY9cRY9sRY9sJX+cxe98JY9cJX/dRi9shb9sla/dVi9sRY9sJX+9Ji98NY+clc+cpc/NNi/NRj+Mhb+Mpc9sNY9sJY/dNi98hb/NRi98Za+cxd98db+MZZ+MZa/NRi98RZ9sNY9sRY9sNY9sRY9sRZ98VZ+Mhb+ctc+s5e+s5f+9Bg+9Fg+9Jh/NNi/NRijpseZwAAADF0Uk5TAAIHCQwOFBYjKisxMkJDTldYWmBpa3BxcnR1eJqprq+wsbHCytPg4+bm5/D3+/z+/ornzl8AAAEjSURBVDjLlZPvX4IwEIcvG6klAWKlRGWC2Q9jPZWV2P7/f6sXkOFE+XRvdtv32W7b3YlsmJOmjuyzAIK9QAjhXsAHv2a5E3ulp5JEla4Xd9ZAjB7YmwaaeD3xNNot3Ha7GF2N9jbwSKQ1HM+MmY2HhyKRdejpSElvakp7uBAVuXbQs+df3Xxxu/2S3p9ucji39dbUVOyV7MgChlXdANcWcFPVV8DTOn9B6CuRWRVYAi8HovwwcCQFEmlvRPgEOJEESGuBBUC3BGpC5ACZlCFqLrkAuN/9zCUAk50flb8BzJ1dX716B6C/nYwiWXmhX9mqGynpTc33BwDzvp3ugWYk0rq8yyB7nDh2wXgafVq4x926kmss2sayb2ycf7ReY/Nut/8P+glLRhdA7jcAAAAASUVORK5CYII="
+    }
+  },
+  // { "type": "brightnessUp", "width": 20, "align": "left" },
+  // { "type": "network", "flip": true, "align": "left", "bordered": false },
+  // --- iTunes ---
+  // {
+  //   "type": "appleScriptTitledButton",
+  //   "source": {
+  //     "inline":
+  //       "if application \"iTunes\" is running then\rtell application \"iTunes\"\rif player state is playing then\rreturn (get artist of current track) & \" – \" & (get name of current track)\relse\rreturn \"\"\rend if\rend tell\rend if\rreturn \"\"\r"
+  //   },
+  //   "action": "appleScript",
+  //   "actionAppleScript": {
+  //     "inline":
+  //       "if application \"iTunes\" is running then\rtell application \"iTunes\"\rif player state is playing then\rnext track\rend if\rend tell\rend if\r"
+  //   },
+  //   "refreshInterval": 1,
+  //   "image": {
+  //     "base64":
+  //       "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"
+  //   }
+  // },
+  {
+    "type": "previous",
+    "width": 40
+  },
+  {
+    "type": "play",
+    "width": 40
+  },
+  {
+    "type": "next",
+    "width": 40
+  },
+  // --- Spotify ---
+  {
+    "type": "appleScriptTitledButton",
+    "source": {
+      "inline": "if application \"Spotify\" is running then\rtell application \"Spotify\"\rif player state is playing then\rreturn (get artist of current track) & \" – \" & (get name of current track)\relse\rreturn \"\"\rend if\rend tell\rend if\rreturn \"\"\r"
+    },
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "if application \"Spotify\" is running then\rtell application \"Spotify\"\rif player state is playing then\rnext track\rend if\rend tell\rend if\r"
+    },
+    "refreshInterval": 1,
+    "image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTB3WXx3UXh3VXx7XYBkXFRpVLRyURmIaeAQAAAAEdFJOUwDDO3fSqUUkAAABbklEQVRIx61VbW6DMAztoAeYNA7ApB6gkzhAWS24wIAL0HABaK6/pHFNEhy8TXu/kPzkPD/8cTj8K7KPAqB+K5NhQPCUrABCXe7HOUYYZxgVRLiG8RfY4DUgFFtC7cffAfZTFBwBdhWEKfgEq4ocEjgj4ZQifO6/QG9kkETp1dDeVWfRKx3XYSW0LoqY5kCElXDrQkyeCCuh6WL0M4nIWQIyzqixdfKU1koFDKvyCA8NJMzU4xiD+b4kfHRpsIyKc6hBwjVptFHVY51EMAINNDFGJITKDNQcdpX74Hz0CQ3rY5qwMp4EIxrlafzrsYZ2Veb0DkRgfNCUok4Y1fqEijfyi2b8RE9beWqa48Y/uvCNMcH9btfUi+/CGLR1vhL6Zz9N/vBlaCU+7lwY/cmJ67Ryen/2tj23PLqJBodZH8vgj544vOL4pxfI5acrSFxi8hrkU9TSKr78ZpnL50A8KPJJEo+afBblwyqf5j/iGys5j6ScrST2AAAAAElFTkSuQmCC"
+    }
+  },
+  {
+    "type": "currency",
+    "from": "EUR",
+    "to": "PLN",
+    "width": 40
+  },
+  {
+    "type": "currency",
+    "from": "USD",
+    "to": "PLN",
+    "width": 40
+  },
+  {
+    "type": "exitTouchbar",
+    "title": "✖",
+    "bordered": false,
+    "width": 25
+  },
+  {
+    "type": "dock",
+    "align": "right",
+    "width": 200
+  },
+  // { "type": "weather", "icon_type": "images", "units": "metric" },
+  // { "type": "sleep", "width": 44 },
+  {
+    "type": "mute",
+    "width": 40,
+    "align": "right"
+  },
+  // { "type": "volumeDown", "width": 20, "align": "right" },
+  {
+    "type": "volume",
+    "width": 100,
+    "align": "right",
+    "image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAQDSURBVFiF7Zd/TNRlHMdf3k/wkEAMR/YDOLjU3WEQlYJZDcQ0ps6Nsco/GNVOSixrzlxQWiQua2SI84p0uezH+jFqiWCMpUI3BfFkssDrkIEoEqdOxOPk4PqDL3fHFzzvwDVbvbfv9uz7+fF+P5/n832e5wt3MGJUCtl5wDmZR6WQngdibkYi8yIgI0sXGb4zLWFSs1h7qCG85MSfGUDheHaJl1jljECldFLsgJBDeTO7twq4UFxvZt2vJ/0i/mRxPLmJsbf080mA1XYDdd47qPM2+0RuKdiM9bfvffL1SUBYoAJLwRYsBVt8SgoQtjj+9gnITYz1qZwTgbcm/EfgUwXE6HcMcrj9L8yXrzEwOIQ6NIjUyJlMlfv/0fhdgeIGC+rSQxRaujgzK5xz0RFst3TxgKGcojozTj/ziSsQCqQDZ8WOQ04n+ioTJtsA1QfeR6OOAKDI8AvbVz2OaqqSNa/uoqG8nn3LEpkylmshoAEOAhdGXnpWIAM4DSwBAsTRpY1tmGwDHK3Y6iIHaDF38pz+YzYV7Oe7fRsxDznZUW8eb7IBQIrAsVYsIBn4QFBpAPo8I/sdg+TVNPHlZ6+jVMgB6LnUy669lSTMU2M8uJW7w4LRv2GgtCSX94x/YHMMigX0AbuBR4E3gaWeAvKBt4DlwKdAsGeksdPKXM29rplbL/fyyBPrOfJFJdWfl5OUsoFt+atpaungus2OTnMf1W3dYgHBwuSWAZuA18DdA0nAaqBRGLcBC0YiT168QpwuypXp6x9rmT/jLr5ZMR+AzDIjP1XUkboojppjzejiomjp6OYZ3EsFVArktUA88KFnBbxCKZUgk452dTrd/S6XSnA4hjB8pGe9Ph2FTIpC6tsHNuJVC6QB24ByhhvRhegQFXUn3I317Kpkjlt7ySwz8vzPxzD2XCVzZZLLbjrVyoPTp4m5lgi5C4WxCdxL8C6wn+EubQBGdVBq1EyyKxs43dyOdvb9hIVOo/5oEd+W/Q5A8cpkQkNUADSbOzG3XmDRUzqxgKvAS0AXcBh40bMCRmADcATIAVSekXKJhLcXzEG/roS+63YApocEkZOVRk5Wmou83z5Ads4ONibGohy7BCrgZeA4w5Wu8BQA8AOgAw4A/eLonPhoZkumkLo8n6aWDrGZZnMnKel5zAuU80qCeoxdyFkFaIGdIy/FO+EV4CthnCrOsOfph9ltaiUlPY85MbPQaiNRyGWcamyl6cw5ChbOJVsXOR45QI3wjILfh9Gah6J5IS6SqrMXae++xLUbDlZo7uGxJ7UEyPw/jCZ0GsolEpaqI27t6AP+HfeB/y+l/9lLqb3HZh9zqPsLIYd9IrExQbfh5zRIIesExt0a7wj8DUlsZET+5tgpAAAAAElFTkSuQmCC"
+    }
+  },
+  // { "type": "volumeUp", "width": 20, "align": "right" },
+  // { "type": "inputsource", "align": "right" },
+  {
+    "type": "battery",
+    "width": 60,
+    "align": "right",
+    "remainingtime": "yes",
+    "bordered": false
+  },
+  {
+    "type": "timeButton",
+    // "formatTemplate": "h:mm a",
+    "width": 44,
+    "bordered": false,
+    "align": "right",
+    "longAction": "shellScript",
+    "longExecutablePath": "/usr/bin/pmset",
+    "longShellArguments": ["sleepnow"]
+  }
+]
