@@ -5,6 +5,9 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 [@ReDetection preset](ReDetection/ReDetection.json)
 
+[@Pythonicninja preset](pythonicninja/pythonicninja.json)
+![](pythonicninja/pythonicninja.png)
+
 [@Toxblh preset](Toxblh/toxblh.json)
 ![](Toxblh/toxblh.png)
 
@@ -34,7 +37,7 @@ Customs:
 
 [spaniakos](spaniakos/spaniakosPreset.json)
 - Thanks to the above presets spaniakos preset is an all in one preset solution with different bars embeded into one master.
-- Main: Escape, native touchbar, running apps, Spotify with two-finger volume and three finger brightness control, Media/$$/Info sub bars, language change, battery%, sleep, time (only time 24H format), 
+- Main: Escape, native touchbar, running apps, Spotify with two-finger volume and three finger brightness control, Media/$$/Info sub bars, language change, battery%, sleep, time (only time 24H format),
 - Media bar: Brightness, mute, volume control, spotify control.
 - Crypt bar Various Crypto values preset, Some are in $ and some in €
 - Info: weather info, CPU, disk, Network meter, DnD (Do not Disturb), Day/Night mode, Countdown timer (tomato) , language selection , battery % date with day, month , time (12H format), AM/PM
@@ -243,9 +246,9 @@ Center:
 - Reminders. Show a random incomplete reminder
 
 Right:
-- Weather 
+- Weather
 - Lock Screen
-- Vol mute 
+- Vol mute
 - Vol down
 - Vol up
 - Play/pause
