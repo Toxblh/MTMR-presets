@@ -253,3 +253,36 @@ Right:
 - Vol up
 - Play/pause
 - Time
+
+[@trumad plexWidget](./trumad/items.json)
+![](./trumad/trumad.png)
+
+Pay attention to these variables at the start of the apple script which you'll need to personalise for this to work:
+
+set plexUrl to "YOUR.PLEX.URL.OR.IP.COM"
+(Your plex URL - domain/IP only, no https:// or port etc)
+
+set plexToken to "YOUR_PLEX_TOKEN"
+(https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/)
+
+set playerName to "PLAYER_ID_FOR_COMPUTER_MTMR_IS_USED_ON"
+(It's important to set a player name so that the currently displayed music is that which is playing on your touchbar mac, not some other device. The player name can be found by visiting http://YOUR_PLEX_URL:32400/status/sessions?X-Plex-Token=YOUR_PLEX_TOKEN in a browser while music is playing. In the "<Player" section of the XML output, look for a "title" attribute which shows the name Plex is giving your computer. Alternatively, in Plex settings view Authorised devices and copy the name from the top of the relevant entry)
+
+Touching the plex display on your touch screen will focus the Plex Media Player app, if you're using it. If you're using plex in a browser, maybe consider installing the app instead.
+
+Hopefully someone finds this useful. If there are any bugs or improvement that can be made to my apple script or anything, please let me know!
+
+[@zwb124 preset](./zwb124/zwb124.json)
+![](./zwb124/zwb124.png)
+
+### Widgets
+- Exit, Esc, Eject, Music, Weather, Battery, Pomodoro, DateTime, volumeDown, volumeUp, Mute, Screenshot
+
+### Customs
+- Eject: eject all external drivers and notifications
+- Music: Show app icon, show the singer and song name that is playing, click Pause or resume, long and hold the next song
+- Battery: Long press and hold show Activity Monitor
+- DateTime: Show full date time，Press and hold Show Calendar app
+- Screenshot: Click the Show screenshot, press and tap direct full screen screenshot.
+
+[@Prashant_Kesharwani preset](./Prashant_Kesharwani/items.json)

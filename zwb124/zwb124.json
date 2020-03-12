@@ -1,0 +1,130 @@
+[
+    {
+    "type": "exitTouchbar",
+    "image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABgUExURUdwTHZ2dqOio+Hh4dbV1ePj45CQkPn5+ebm5sbGxtva2qSkpNDQ0MjHyN/e3mRjZEZGRkxLSgkKCTo1PygpKA88Q/yqHuedKZ1wPWVPS/JVrlvMFE6dMcWINMNPjpdKcnIFGisAAAAQdFJOUwD+HMVz3v7++v6W/lhEs/4jVOGZAAADZUlEQVRYw61XiZaiMBAcFORw0IQOIof4/3+51QlKwiQc7207KI5UpfpI0vn5CdipjIvbOYGdb0Vcnn4O2Sk+Z6lj2Tnez/E7oTO2HNeH43cXPE7003l+ie6SYPIeXfJcsyTx9uiJRl/vqlKKhBBSCFKqovtVcyTrKk43DY8AkGxCm76lSkWa4rYSizLT8Ep9sbPhX6qKch6gDHrPv154cOEzLePCIgKRKHh4qQLwiUPJPM3Swo/P0mslVuCaQlRXaCj8418quYFnCrjh0RAbvNhhhmERh3I/XjPACycXJ8T2uhfPDIhDYtcD6iffj2cGFMTNql84IMURAiGhea7qBAFQB/BgUAhDYmXgkANfJ+JZQESaQNbPpnlZz72a5lljHlkvMgQUZR8Jv7MAEDwej2ftfqPKNrIkmCicIUDNkObx+hK88O1Z4xYojI4PmqMACeepBvJPBA1B004PtQ9NYH4EgXTnFabVyYTwW0Oa4IPRAhyCv9UUGw/uZBG8wDE9A/QKAd21D7YHRkFrQPa9j0BMPpR2EWgQlL80AT5pjYDzUHIILq4C4pGhEKO3YlXBhYNQfKvoQyDNsBzCet2FiBeWG8dQODGoTRgZu0rAUbxxEub0GgLSsPkuQADjNGAi0IJA6DDyJdYJiKcDE8gFAYcRFdDSXoKlAoEw4gXiVQIZJDBTgpE7FHiCKDSwkWKLQHIQl2lsADRVCCCy0GylsZhXg2maLtfP8LqoC8kpZXF4YY3dyXR8XS3d6XxQgVmS7AUlvJF8oyGXC4qzpIWs1hnizMOWS9oOH+Sb8e+W5DD0A7keOMu6H16P3RvTohuHvu+HXpK7rNsbixdP765714LfMDwNRoK1sVhbm9eo67oWKjrC6IKMD/bWtr65sgPdqMaPgL7/u7lCQrAasbZ2CAG/qaGHBhMCd3tfazBkjaG7FhcEcAwFeRqMcIuD5HXt2I3jmyPQDxheelqccJMFAaNCEPGBCMCHuYayk9vmZamnzdMCkMBWCyAxZQBtXpaWy0Yz8zSKSMGICkASRsX5l32o0Qy2um3LF+FP/ySDra5m8DTbNF1Os73Sru9q91M/fvPAIbYOHPrIAxFbR56kXDl1uYcuC7zv0OU59jEJH/vUvmPffzh4eo++2aGj7384fB86/v8D9YTH9SlTJskAAAAASUVORK5CYII="
+    },
+    "title": "",
+    "align": "left",
+    "bordered": false
+  },
+
+  {
+    "type": "escape",
+    //"width": 64,
+    "align": "left"
+  },
+  
+  {
+  	"type": "staticButton",
+ 		"title": "⏏︎ 弹出",
+        "bordered": true,
+        "align": "left",
+ 		"action": "appleScript",
+		"actionAppleScript": {
+			"inline": "tell application \"Finder\"\reject (every disk whose ejectable is true and local volume is true and free space is not equal to 0)\rdelay 2\ndisplay notification \"所有USB设备已拔出\" with title \"提示\" \rend tell\r"
+		},
+  },
+  
+  // Music，pause，next track，previous track，play
+     {
+    "type": "appleScriptTitledButton",
+    "source": {
+      "inline": "if application \"Music\" is running then\rtell application \"Music\"\rif player state is playing then\rreturn (get artist of current track) & \" – \" & (get name of current track)\relse\rreturn \" \"\rend if\rend tell\rend if\rreturn \"\"\r"
+    },
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "if application \"Music\" is running then\rtell application \"Music\"\rif player state is playing then\rpause\relse\rplay\rend if\rend tell\rend if\r"
+    },
+    "longAction": "appleScript",
+    "longActionAppleScript": {
+      "inline": "if application \"Music\" is running then\rtell application \"Music\"\rif player state is playing then\rnext track\rend if\rend tell\rend if\r"
+    },
+    "refreshInterval": 2,
+    "image": {
+      "base64": "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"
+    }
+  },
+  
+  //{ "type": "dock","autoResize": true},
+    
+  {
+    "type": "weather",
+    "align": "right",
+    "icon_type": "images",
+    "api_key": "ca93a0bb8cdb428552660d83249e4bc9",
+    "bordered": false,
+     "refreshInterval": 3600
+  },
+  
+  //电量信息，长按启动任务管理器
+   { 
+   "type": "battery",
+    "align": "right", 
+    "bordered": false, 
+    "remainingtime": "yes",
+    "longAction": "appleScript",
+    "longActionAppleScript": {"inline": "activate application \"Activity Monitor\""},
+     "refreshInterval": 60
+    },
+  
+    {
+      "type": "pomodoro",
+      "title":"⏰",
+      "align": "right",
+      "bordered":false,
+      "workTime": 1500, // set time work in seconds. Default 1500 (25 min)
+      "restTime": 300, // set time rest in seconds. Default 300 (5 min)
+    },
+
+  //长按启动日历
+  {
+    "type": "timeButton",
+    "formatTemplate": "M月dd日 E HH:mm",
+    "align": "right",
+    "locale": "zh_CN",
+    "bordered": false,
+    "longAction": "appleScript",
+    "longActionAppleScript": {
+      "inline": "activate application \"Calendar\""
+    },
+  },
+  
+  {
+    "type": "volumeDown",
+    "bordered": false,
+    "align": "right",
+    "width": 35
+  },
+  {
+    "type": "volumeUp",
+    "bordered": false,
+    "align": "right",
+    "width": 35
+  },
+  {
+    "type": "mute",
+    "bordered": false,
+    "align": "right",
+    "width": 35
+  },
+  
+  {
+  	"type": "staticButton",
+ 		"title": "",
+ 		"action": "appleScript",
+        "bordered": true,
+        "align": "right",
+		"actionAppleScript": {
+			"inline": "tell application \"System Events\"\nkey code 23 using {command down, shift down} \rend tell"
+		},
+		"longAction": "appleScript",
+        "longActionAppleScript": {
+            "inline": "tell application \"System Events\"\nkey code 20 using {command down, shift down} \rend tell"
+        },
+		"image": {
+      "base64": "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"
+		}
+  },
+  
+]
