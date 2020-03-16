@@ -327,5 +327,7 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 - Tab Navigator for multitab Apps (ex. Chrome, VSC)
 - Current App Setting Shortcut
 - Full screen (hold) then at full screen click for 'super' full screen (tested on Chrome only)
+- CPU %
+- close mode
 
 [@Prashant_Kesharwani preset](./Prashant_Kesharwani/items.json)
