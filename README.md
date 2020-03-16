@@ -285,4 +285,47 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 - DateTime: Show full date time，Press and hold Show Calendar app
 - Screenshot: Click the Show screenshot, press and tap direct full screen screenshot.
 
+[@AlexHg preset](./AlexHg/AlexHg.json)
+
+### Home
+![](./AlexHg/home.png)
+- Esc
+- **Beast (Dev) Mode**
+- App Dock, Spotify
+- Music Control
+- Volume Control
+- Battery
+- **Usefull Options**
+- Time & Block Mac
+
+### Beast Mode
+![](./AlexHg/developer_mode.png)
+- Close mode
+- VSC activator
+- Git Kraken activator
+- Workbench activator
+- Hyper Term activator
+- Jira Atlassian open in chrome
+- Jenkins open in chrome
+- AWS Console open in chrome
+
+- New window of active App
+- Select multiple coincidence on VSC (CMD + D shortcut)
+- Comment selected lines (CMD + shift + 7 shortcut) 
+- Search -> click: search on file (CMD + F shortcut); hold: search on complete project (CMD + shift + F shortcut)
+- Run command VSC -> click: search by file name and complete posibilities (CMD + P shortcut); hold: run command (CMD + shift + P shortcut)
+- console VSC -> click: Toggle console (CMD + key 33 shortcut); hold: new console (CMD + shift + key 33 shortcut)
+
+### Usefull Options
+![](./AlexHg/usefull_options.png)
+
+- esc
+- kill current app
+- illumination controls 
+- bightness controls with slide
+- Volume controls with slide
+- Tab Navigator for multitab Apps (ex. Chrome, VSC)
+- Current App Setting Shortcut
+- Full screen (hold) then at full screen click for 'super' full screen (tested on Chrome only)
+
 [@Prashant_Kesharwani preset](./Prashant_Kesharwani/items.json)
