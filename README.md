@@ -317,7 +317,7 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 - console VSC -> click: Toggle console (CMD + key 33 shortcut); hold: new console (CMD + shift + key 33 shortcut)
 
 ### Usefull Options
-![](./AlexHg/usefull_options.png)
+![](./AlexHg/usefull_shortcuts.png)
 
 - esc
 - kill current app
