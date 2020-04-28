@@ -311,7 +311,7 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 
 - New window of active App
 - Select multiple coincidence on VSC (CMD + D shortcut)
-- Comment selected lines (CMD + shift + 7 shortcut) 
+- Comment selected lines (CMD + shift + 7 shortcut)
 - Search -> click: search on file (CMD + F shortcut); hold: search on complete project (CMD + shift + F shortcut)
 - Run command VSC -> click: search by file name and complete posibilities (CMD + P shortcut); hold: run command (CMD + shift + P shortcut)
 - console VSC -> click: Toggle console (CMD + key 33 shortcut); hold: new console (CMD + shift + key 33 shortcut)
@@ -321,7 +321,7 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 
 - esc
 - kill current app
-- illumination controls 
+- illumination controls
 - bightness controls with slide
 - Volume controls with slide
 - Tab Navigator for multitab Apps (ex. Chrome, VSC)
@@ -331,3 +331,13 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 - close mode
 
 [@Prashant_Kesharwani preset](./Prashant_Kesharwani/items.json)
+
+[@de1ayer preset](./de1ayer/MTMR.json)
+
+> inspired by @megatops preset
+
+![main](./de1ayer/main.png)
+
+![fn](./de1ayer/fn.png)
+
+![media](./de1ayer/media.png)
