@@ -153,26 +153,6 @@
                 "width": 40
             },
             {
-                "type": "brightnessDown",
-                "bordered": false,
-                "align": "left",
-                "width": 40
-            },
-            {
-                "type": "brightness",
-                "width": 130,
-                "align": "left",
-                "image": {
-                    "base64": "iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAQAAAD41aSMAAAErklEQVR4Ae3cz2qd9ReF8ffQNgm0k1+TjqVJOrElGFAqVOxNFNuhiE6lmKHQ+9CWDsRDZorVlKJTpYT2FpSazvwVbDJrPeZxuGcvNLjPcjVrfy9gw/OB/DkH9nCEyWQymUwmk2GdNQbnN+D81nnKU28C9/yAN4F9fncC8/z+BOb5/QnM8/sTmOf3J7DMPzJ7bgTm+f0JzPP7E/jnNyfwz29OYJ9/hGA1ALr8NgT++c0J/PObE/jnNyfwz29O4J/fnMA/vznB8cgP8Pt/k8A/vzmBf35zAv/85gT++c0JzPPrCfQAx30CEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQP8scJY3uMi7XONzvmKX/QBoA0zY4Cbf8TwA2gAneI8v+DMA2gCLXON7DgOgDfAmXzMLgDbAGl/yVwC0ATb4OQDaABM+5I8AaAP8j28CoA7wKS8CoA3wNr8GQBtgmd0AaAOc5kEApAE4xTQASoCBCdMAKAEGTvEgAEqAgdPsBkAJMLDCbwFQAgy8w4sAKAEGbgZACzDwrRvA+msGcJb/82qzpgRY5+lrBjDw0ciuhmu9DfnNASb8Mk+ChvzmAAMbzOZH0JDfHmDgNsyLQJDfAGCN2bwIBPkNAAamMB8CQX4LgIsczodAkN8CYGCHmsab1YL8JgAfwDwIBPlNAJZ4Pg8CQX4TgIHb0E8gyG8D8D70Ewjy2wCcYL//VKwgvw3AwA/QTSDIbwTwGXQTCPIbAbwF3QSC/EYAEw66CQT5jQAGHkMvgSC/FcAUegnG8wfgFvQSjOcPwPXug8nj+QNwBXoJxvMHYAN6CcbzB+A89BKM5w/ACvQSjOcPwCK0EugBAiAmyI8gPUF+CesJ8meoniD/iOkJ8lFEvbUiyIdxHfkLYIwgANOu/AUwSpAvZLryF8AoQb6S7MpfADICA4DNvvwFICMwANjqy18AMgIDgJ2G/CMAYwR7xxDgJAd9+QtARGAAcLUzfwGICAwA7nTmLwAJgQHAEvud+QtAQmAAcKM3fwFICAwA7nfmPzrAwCp7xwDgEoe9+QtAQGAAsN2fvwD6CdwALvB3f/4C6CdwA7jbn78A+gncADaZ9ecvgH4CL4AJDzvzjwPoCfQAHzfkbwAogtcLYJlnvNqs5mzlv/nuKc9WBmALdAABuMxLHUAAzvEEVAABOMMjUAEEYIGfQAUQgAnbuv0BWGBbtz8AZ/hRtz8A53ik2x+AyzxR7Q/AhC1eqvYHYJl7qv0BmPAJz1T7A7DJQ9X+AFzgLjPN/gBcYpuZYn8AlrjBfQ7nvz8AJ7nKHZ7Pe38AJmyyxQ4HzGECsMgK59ngCte5xZTHFT4AFhOAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAA+t/4weTe+/36N2BD0J8/AEUgyh+AIhDlD0ARiPIHoAhE+QNQ13pF+QNQBKL8ASgCUf4AFIEofwCKQJQ/AEUgyR+AIhDkD0AR7CnzB6AIRPkDUASi/AEoAlH+ABSBKH8AikCUPwB1rVeUPwBFIMofgCIQ5Q9AEYjyB6AIKn8ARASVPwACgsofAAXBkfIHIC8AAcgLQADy/gF68AO0VMa28wAAAABJRU5ErkJggg=="
-                }
-            },
-            {
-                "type": "brightnessUp",
-                "bordered": false,
-                "align": "left",
-                "width": 40
-            },
-            {
                 "type": "mute",
                 "bordered": true,
                 "align": "left",
@@ -222,6 +202,26 @@
                 "width": 50
             }
         ]
+    },
+    {
+      "type": "brightnessDown",
+      "bordered": false,
+      "align": "left",
+      "width": 40
+    },
+    {
+      "type": "brightness",
+      "width": 130,
+      "align": "left",
+      "image": {
+          "base64": "iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAQAAAD41aSMAAAErklEQVR4Ae3cz2qd9ReF8ffQNgm0k1+TjqVJOrElGFAqVOxNFNuhiE6lmKHQ+9CWDsRDZorVlKJTpYT2FpSazvwVbDJrPeZxuGcvNLjPcjVrfy9gw/OB/DkH9nCEyWQymUwmk2GdNQbnN+D81nnKU28C9/yAN4F9fncC8/z+BOb5/QnM8/sTmOf3J7DMPzJ7bgTm+f0JzPP7E/jnNyfwz29OYJ9/hGA1ALr8NgT++c0J/PObE/jnNyfwz29O4J/fnMA/vznB8cgP8Pt/k8A/vzmBf35zAv/85gT++c0JzPPrCfQAx30CEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQP8scJY3uMi7XONzvmKX/QBoA0zY4Cbf8TwA2gAneI8v+DMA2gCLXON7DgOgDfAmXzMLgDbAGl/yVwC0ATb4OQDaABM+5I8AaAP8j28CoA7wKS8CoA3wNr8GQBtgmd0AaAOc5kEApAE4xTQASoCBCdMAKAEGTvEgAEqAgdPsBkAJMLDCbwFQAgy8w4sAKAEGbgZACzDwrRvA+msGcJb/82qzpgRY5+lrBjDw0ciuhmu9DfnNASb8Mk+ChvzmAAMbzOZH0JDfHmDgNsyLQJDfAGCN2bwIBPkNAAamMB8CQX4LgIsczodAkN8CYGCHmsab1YL8JgAfwDwIBPlNAJZ4Pg8CQX4TgIHb0E8gyG8D8D70Ewjy2wCcYL//VKwgvw3AwA/QTSDIbwTwGXQTCPIbAbwF3QSC/EYAEw66CQT5jQAGHkMvgSC/FcAUegnG8wfgFvQSjOcPwPXug8nj+QNwBXoJxvMHYAN6CcbzB+A89BKM5w/ACvQSjOcPwCK0EugBAiAmyI8gPUF+CesJ8meoniD/iOkJ8lFEvbUiyIdxHfkLYIwgANOu/AUwSpAvZLryF8AoQb6S7MpfADICA4DNvvwFICMwANjqy18AMgIDgJ2G/CMAYwR7xxDgJAd9+QtARGAAcLUzfwGICAwA7nTmLwAJgQHAEvud+QtAQmAAcKM3fwFICAwA7nfmPzrAwCp7xwDgEoe9+QtAQGAAsN2fvwD6CdwALvB3f/4C6CdwA7jbn78A+gncADaZ9ecvgH4CL4AJDzvzjwPoCfQAHzfkbwAogtcLYJlnvNqs5mzlv/nuKc9WBmALdAABuMxLHUAAzvEEVAABOMMjUAEEYIGfQAUQgAnbuv0BWGBbtz8AZ/hRtz8A53ik2x+AyzxR7Q/AhC1eqvYHYJl7qv0BmPAJz1T7A7DJQ9X+AFzgLjPN/gBcYpuZYn8AlrjBfQ7nvz8AJ7nKHZ7Pe38AJmyyxQ4HzGECsMgK59ngCte5xZTHFT4AFhOAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAA+t/4weTe+/36N2BD0J8/AEUgyh+AIhDlD0ARiPIHoAhE+QNQ13pF+QNQBKL8ASgCUf4AFIEofwCKQJQ/AEUgyR+AIhDkD0AR7CnzB6AIRPkDUASi/AEoAlH+ABSBKH8AikCUPwB1rVeUPwBFIMofgCIQ5Q9AEYjyB6AIKn8ARASVPwACgsofAAXBkfIHIC8AAcgLQADy/gF68AO0VMa28wAAAABJRU5ErkJggg=="
+      }
+    },
+    {
+      "type": "brightnessUp",
+      "bordered": false,
+      "align": "left",
+      "width": 40
     },
     {
       "type": "yandexWeather",
