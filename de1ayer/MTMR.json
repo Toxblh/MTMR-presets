@@ -224,6 +224,7 @@
     "formatTemplate": "HH:mm zzz",
     "timeZone": "MSK",
     "width": 100,
-    "align": "right"
+    "align": "right",
+    "bordered": true
   }
 ]
