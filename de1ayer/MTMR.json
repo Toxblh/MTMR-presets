@@ -222,7 +222,7 @@
   },
   {
     "type": "battery",
-    "width": 35,
+    "width": 60,
     "align": "right",
     "bordered": false
   },
