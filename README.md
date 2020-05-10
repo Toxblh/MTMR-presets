@@ -341,3 +341,43 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 ![fn](./de1ayer/fn.png)
 
 ![media](./de1ayer/media.png)
+
+
+[@donaldzou preset](./donaldzou/items.json)
+![main](./donaldzou/tap.png)
+**Main**
+
+Left
+- ese key
+- Brightness down
+- Brightness Up
+- Mute
+- Sound down
+- Sound up
+
+Right
+- Music
+- Whether
+- Time
+- Battery
+- Sleep
+
+**Music Key**
+![music](./donaldzou/music.png)
+- Will show **Tap here to play music** if "Music" is not running, you can tap it and it will open music and start playing
+- **Tap** Pause or play song if Music is running
+- **Long Tap** Next song if Music is running
+------------------
+![youtube](./donaldzou/youtube.png)
+- If **Chrome/Safari/Opera** is running and a Youtube Video is playing
+  - Will show the name of the video
+  - **Tap** Pause or play the video
+  - **Long Tap** Next video
+
+**Battery Button**
+
+- **Long Tap** Bring laptop to screensaver mode
+
+**Moon Button**
+- **Long Tap** Bring laptop to sleep
+
