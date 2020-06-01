@@ -377,3 +377,13 @@ Right
 
 **Moon Button**
 - **Long Tap** Bring laptop to sleep
+
+
+[@prateek3255 preset](./prateek3255/items.json)
+
+- Cool icons for exitting the TouchBar, volume and brightness slider.
+- Play/Pause songs in spotify by tapping the spotify item.
+
+![spotify-play](./prateek3255/spotify-play.png)
+
+![spotify-pause](./prateek3255/spotify-paused.png)
