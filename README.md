@@ -340,4 +340,3 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 
 ![fn](./de1ayer/fn.png)
 
-![media](./de1ayer/media.png)
