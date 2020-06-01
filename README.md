@@ -340,9 +340,6 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 
 ![fn](./de1ayer/fn.png)
 
-![media](./de1ayer/media.png)
-
-
 [@donaldzou preset](./donaldzou/items.json)
 ![main](./donaldzou/tap.png)
 **Main**
@@ -380,4 +377,3 @@ Right
 
 **Moon Button**
 - **Long Tap** Bring laptop to sleep
-
