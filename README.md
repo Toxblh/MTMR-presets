@@ -387,3 +387,18 @@ Right
 ![spotify-play](./prateek3255/spotify-play.png)
 
 ![spotify-pause](./prateek3255/spotify-paused.png)
+
+[@BitYoungjae preset](./BitYoungjae/items.json)
+
+Decorated with a **simple** look.
+
+![main](./BitYoungjae/main.png)
+
+### Detail
+
+**Touch All**
+![All](./BitYoungjae/All.png)
+**Touch Display**
+![main](./BitYoungjae/Display.png)
+**Touch Volume**
+![main](./BitYoungjae/Volume.png)
