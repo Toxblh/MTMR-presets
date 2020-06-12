@@ -402,3 +402,22 @@ Decorated with a **simple** look.
 ![main](./BitYoungjae/Display.png)
 **Touch Volume**
 ![main](./BitYoungjae/Volume.png)
+
+
+
+
+
+### FunctionBar by *e-simpson*
+
+[@e-simpson's "FunctionBar" preset](./e-simpson/FunctionBar.json)
+
+![FunctionBar Screenshot](./e-simpson/screenshot.png)
+
+| Left Aligned                                                 | Right Aligned                                                |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1. Dock<br />2. Apple Music info (if playing or paused)<br />  - Tap to pause/unpause <br />  - ♫ denotes playing, ❙ ❙ denotes paused <br />  - Hold to skip track<br /> | 1. Brightness and volume sliders <br />2. Battery percent <br />3. Date <br />4. Profile Picture (must be manually imported) |
+
+
+
+
+
