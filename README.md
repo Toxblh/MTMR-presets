@@ -420,4 +420,9 @@ Decorated with a **simple** look.
 
 
 
+### YouTube Music Oriented
 
+[preset](./mukmyash/items.json)
+
+![YouTube Music Oriented Screenshot1](./mukmyash/with-controll-strip.png)
+![YouTube Music Oriented Screenshot2](./mukmyash/with-controll-strip-play.png)

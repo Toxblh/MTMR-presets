@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Now Playing (YouTube Music)",
+        "type": "appleScriptTitledButton",
+        "source": {
+            "inline": "if application \"Safari\" is running then\r\ttell application \"Safari\"\r\t\trepeat with t in tabs of windows\r\t\t\ttell t\r\t\t\t\tif URL starts with \"https:\/\/music.youtube.com\" or URL starts with \"http:\/\/music.youtube.com\" then\r\t\t\t\t\ttry\r\t\t\t\t\t\tlocal groupName, trackName, timeTrack, response\r\t\t\t\t\t\tset response to \"\"\r\t\t\t\t\t\tset groupName to do JavaScript \"document.getElementsByClassName('byline ytmusic-player-bar')[0]?.firstChild.innerText || ''\"\r\t\t\t\t\t\tset trackName to do JavaScript \"document.getElementsByClassName('title ytmusic-player-bar')[0]?.innerText|| ''\"\r\t\t\t\t\t\tset timeTrack to do JavaScript \"document.getElementsByClassName('time-info ytmusic-player-bar')[0]?.innerText|| ''\"\r\t\t\t\t\t\t\r\t\t\t\t\t\tif timeTrack is not equal to \"\" then\r\t\t\t\t\t\t\tset response to response & \"(\" & timeTrack & \") \"\r\t\t\t\t\t\tend if\r\t\t\t\t\t\t\r\t\t\t\t\t\tif groupName is not equal to \"\" then\r\t\t\t\t\t\t\tset response to response & groupName\r\t\t\t\t\t\tend if\r\t\t\t\t\t\t\r\t\t\t\t\t\tif trackName is not equal to \"\" then\r\t\t\t\t\t\t\tif response is not equal to \"\" then\r\t\t\t\t\t\t\t\tset response to response & \" - \" & trackName\r\t\t\t\t\t\t\telse\r\t\t\t\t\t\t\t\tset response to response & trackName\r\t\t\t\t\t\t\tend if\r\t\t\t\t\t\tend if\r\t\t\t\t\t\t\r\t\t\t\t\t\tif response is equal to \"\" then return \"...........................\"\r\t\t\t\t\t\treturn response\r\t\t\t\t\ton error errorMsg\r\t\t\t\t\t\treturn errorMsg\r\t\t\t\t\tend try\r\t\t\t\tend if\r\t\t\tend tell\r\t\tend repeat\r\tend tell\rend if\rreturn \"Open YouTube Music\""
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "if application \"Safari\" is not running then\r\ttell application \"Safari\" to activate\rend if\r\rtell application \"Safari\"\r\trepeat with t in tabs of windows\r\t\ttell t\r\t\t\tif URL starts with \"https:\/\/music.youtube.com\" or URL starts with \"http:\/\/music.youtube.com\" then\r\t\t\t\treturn\r\t\t\tend if\r\t\tend tell\r\tend repeat\rend tell\r\rtell application \"Safari\" to open location \"https:\/\/music.youtube.com\""
+        },
+        "refreshInterval": 15,
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKZlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgExAAIAAAAiAAAAWodpAAQAAAABAAAAfAAAAAAAAABIAAAAAQAAAEgAAAABQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpAAADoAEAAwAAAAEAAQAAoAIABAAAAAEAAAAYoAMABAAAAAEAAAAYAAAAACssTnYAAAAJcEhZcwAACxMAAAsTAQCanBgAAASWaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA1LjQuMCI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgICAgICAgICB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIKICAgICAgICAgICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx4bXBNTTpJbnN0YW5jZUlEPnhtcC5paWQ6NDkyODI2OEYxMUFGMTFFQUFBRjE4M0Y0RDRBMjFEQ0E8L3htcE1NOkluc3RhbmNlSUQ+CiAgICAgICAgIDx4bXBNTTpEb2N1bWVudElEPnhtcC5kaWQ6NDkyODI2OTAxMUFGMTFFQUFBRjE4M0Y0RDRBMjFEQ0E8L3htcE1NOkRvY3VtZW50SUQ+CiAgICAgICAgIDx4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ+eG1wLmRpZDpk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"
+        },
+    },
+    {
+        "name": "Previous (YouTube Music)",
+        "type": "staticButton",
+        "title": "",
+        "action": "appleScript",
+        "align": "right",
+        "width": 52,
+        "bordered": false,
+        "actionAppleScript": {
+            "inline": "if application \"Safari\" is running then\r\ttell application \"Safari\"\r\t\trepeat with t in tabs of windows\r\t\t\ttell t\r\t\t\t\tif URL starts with \"https:\/\/music.youtube.com\" or URL starts with \"http:\/\/music.youtube.com\" then\r\t\t\t\t\tdo JavaScript \"document.getElementsByClassName('previous-button ytmusic-player-bar')[0].click()\"\r\t\t\t\tend if\r\t\t\tend tell\r\t\tend repeat\r\tend tell\rend if"
+        },
+        "refreshInterval": 15,
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAG5lWElmTU0AKgAAAAgAAwESAAMAAAABAAEAAAExAAIAAAARAAAAModpAAQAAAABAAAARAAAAABBZG9iZSBJbWFnZVJlYWR5AAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAPKADAAQAAAABAAAAPAAAAAA0BeEQAAABy2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5BZG9iZSBJbWFnZVJlYWR5PC94bXA6Q3JlYXRvclRvb2w+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgopLs09AAAB70lEQVRoBe2X4W2DMBCFoeoAjEBGyAbJJjBBs0HTCToC3qArZIRsUEbIBvRZ8kmoSjC27yJaPf4cGO7xvhfrFKqKBxNgAkyACTABJsAEmAATYAJMgAkwASbABP5bAvUzgYZh6Oq6fsc7m2ma9n3fjxrvn+m20N0t6b5qvDCmAUMHgA54rp0968/H2XXyaY6uKXAw5H/RQzLNQkOJrgkwDLVh63YLvpNvaeiqAsNQE0BPyTQLDZq6KsDeEPyeAPuG6s9VDgvdYmCYksnbqlAGESvdbGAYujd5i5mtdMVYMnAwtKnJKzBr6mpggG528q4BlWeiwAA1mbww0DjnPlFVJ7qAPapRYEzeb2/ukUDuOnS/cntL+l5Kmv9ibxTY/8kHmNOGg25voRvzGQX2Xx5d1/UB/BITTLhvpbtoIQos3QC/AvwI8CPWrrJeWq10H/laDSwCMHgB+D5syVHWS6uV7m9fycAiAIMO4DuAf2DtJuul1UpXfGUDiwAMngEt4LJcXK10i4E9GczdxCAunV/TOCx0VYAFDgZHbHP1ia6pqwo8A9/sRDcBnoFf8ItvaqKbAs/AHcBlsMlEH+V+bsVWv6cr+rmyun3+68t/auqqVpWVrrZP6jEBJsAEmAATYAJMgAkwASbABJgAE2ACT0jgB4rq8/kXJxbYAAAAAElFTkSuQmCC"
+        }
+    },
+    {
+        "type": "play",
+        "bordered": false,
+        "align": "right",
+        "width": 52
+    },
+    {
+        "name": "Next (YouTube Music)",
+        "type": "staticButton",
+        "title": "",
+        "action": "appleScript",
+        "align": "right",
+        "width": 52,
+        "bordered": false,
+        "actionAppleScript": {
+            "inline": "if application \"Safari\" is running then\r\ttell application \"Safari\"\r\t\trepeat with t in tabs of windows\r\t\t\ttell t\r\t\t\t\tif URL starts with \"https:\/\/music.youtube.com\" or URL starts with \"http:\/\/music.youtube.com\" then\r\t\t\t\t\tdo JavaScript \"document.getElementsByClassName('next-button ytmusic-player-bar')[0].click()\"\r\t\t\t\tend if\r\t\t\tend tell\r\t\tend repeat\r\tend tell\rend if"
+        },
+        "refreshInterval": 5,
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAG5lWElmTU0AKgAAAAgAAwESAAMAAAABAAEAAAExAAIAAAARAAAAModpAAQAAAABAAAARAAAAABBZG9iZSBJbWFnZVJlYWR5AAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAPKADAAQAAAABAAAAPAAAAAA0BeEQAAABy2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5BZG9iZSBJbWFnZVJlYWR5PC94bXA6Q3JlYXRvclRvb2w+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgopLs09AAACEUlEQVRoBe2XgW2DMBBFQ9UBGIFu0BHSDTpC2KCdoOoG7QSwQdmgjNANwghsQM/IQo5l7MM+kyj6kVCwz37x/z+9ksMBLzgAB+AAHIADcAAOwAE4AAfgAByAA3AADtybA0VIUNu2Z1pTTtP0Te9fdV2PoT2cei5u6LMfQguoXtFVFkXxQde5aZoTjSVeFUFM7psENMTgJDw5IAMl/k5pd44aa4oSXuN+ErdlQSIWcRJ2YStK+4cO/UuJH10LIucUt8nAXY4Tm/AC0DedTnywC2vjlYTt5T1xKfCazbUB9jg2YZvzqv6+SQQF3pR2MWF8NLhVAmfZKpXwAqSbkdPRmQlv5pobXPdSCZtss/OezELivcmN7ug5ErZ1OTt6RMIu7uaOniNh+2A31dH3SNg2YO7oqhnZhcQxq6PvkbCtY+7o9qTAeO7o9F/i2ce6hmDfebLXriFYffVeMiibufSQ8udjP/qKwrWLbk1dWgp/wQ1B9xCsHkTUDw0xhVpUFDenYNYTVygRRz2Jm0twq1MdHQdOmUrmSgvutNAhRZVjrxhXSnBPQtVjXu84bMqUODdV8KAT7VJUOfbm4h5iBavGcTOd12HY6tRWwUkdcvUUzN/Qnv3sEkew6rQlXa1OVarz5uJ6xQcFk8gnJZga0uAlbSzm4m48BpbDATgAB+AAHIADcAAOwAE4AAfgAByAA/fowD9H2jXwFBuGHwAAAABJRU5ErkJggg=="
+        }
+    },
+    {
+        "type": "battery",
+        "refreshInterval": 60,
+        "align": "right",
+        "bordered": false
+    },
+    {
+        "type": "timeButton",
+        "formatTemplate": "HH:mm",
+        "width": 45,
+        "align": "right"
+    }
+]
