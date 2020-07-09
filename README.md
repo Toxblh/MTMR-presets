@@ -311,7 +311,7 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 
 - New window of active App
 - Select multiple coincidence on VSC (CMD + D shortcut)
-- Comment selected lines (CMD + shift + 7 shortcut) 
+- Comment selected lines (CMD + shift + 7 shortcut)
 - Search -> click: search on file (CMD + F shortcut); hold: search on complete project (CMD + shift + F shortcut)
 - Run command VSC -> click: search by file name and complete posibilities (CMD + P shortcut); hold: run command (CMD + shift + P shortcut)
 - console VSC -> click: Toggle console (CMD + key 33 shortcut); hold: new console (CMD + shift + key 33 shortcut)
@@ -321,7 +321,7 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 
 - esc
 - kill current app
-- illumination controls 
+- illumination controls
 - bightness controls with slide
 - Volume controls with slide
 - Tab Navigator for multitab Apps (ex. Chrome, VSC)
@@ -331,3 +331,98 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 - close mode
 
 [@Prashant_Kesharwani preset](./Prashant_Kesharwani/items.json)
+
+[@de1ayer preset](./de1ayer/MTMR.json)
+
+> inspired by @megatops preset
+
+![main](./de1ayer/main.png)
+
+![fn](./de1ayer/fn.png)
+
+[@donaldzou preset](./donaldzou/items.json)
+![main](./donaldzou/tap.png)
+**Main**
+
+Left
+- ese key
+- Brightness down
+- Brightness Up
+- Mute
+- Sound down
+- Sound up
+
+Right
+- Music
+- Whether
+- Time
+- Battery
+- Sleep
+
+**Music Key**
+![music](./donaldzou/music.png)
+- Will show **Tap here to play music** if "Music" is not running, you can tap it and it will open music and start playing
+- **Tap** Pause or play song if Music is running
+- **Long Tap** Next song if Music is running
+------------------
+![youtube](./donaldzou/youtube.png)
+- If **Chrome/Safari/Opera** is running and a Youtube Video is playing
+  - Will show the name of the video
+  - **Tap** Pause or play the video
+  - **Long Tap** Next video
+
+**Battery Button**
+
+- **Long Tap** Bring laptop to screensaver mode
+
+**Moon Button**
+- **Long Tap** Bring laptop to sleep
+
+
+[@prateek3255 preset](./prateek3255/items.json)
+
+- Cool icons for exitting the TouchBar, volume and brightness slider.
+- Play/Pause songs in spotify by tapping the spotify item.
+
+![spotify-play](./prateek3255/spotify-play.png)
+
+![spotify-pause](./prateek3255/spotify-paused.png)
+
+[@BitYoungjae preset](./BitYoungjae/items.json)
+
+Decorated with a **simple** look.
+
+![main](./BitYoungjae/main.png)
+
+### Detail
+
+**Touch All**
+![All](./BitYoungjae/All.png)
+**Touch Display**
+![main](./BitYoungjae/Display.png)
+**Touch Volume**
+![main](./BitYoungjae/Volume.png)
+
+
+
+
+
+### FunctionBar by *e-simpson*
+
+[@e-simpson's "FunctionBar" preset](./e-simpson/FunctionBar.json)
+
+![FunctionBar Screenshot](./e-simpson/screenshot.png)
+
+| Left Aligned                                                 | Right Aligned                                                |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1. Dock<br />2. Apple Music info (if playing or paused)<br />  - Tap to pause/unpause <br />  - ♫ denotes playing, ❙ ❙ denotes paused <br />  - Hold to skip track<br /> | 1. Brightness and volume sliders <br />2. Battery percent <br />3. Date <br />4. Profile Picture (must be manually imported) |
+
+
+
+
+### YouTube Music Oriented
+
+[preset](./mukmyash/items.json)
+
+![YouTube Music Oriented Screenshot1](./mukmyash/with-controll-strip.png)
+![YouTube Music Oriented Screenshot2](./mukmyash/with-controll-strip-play.png)
