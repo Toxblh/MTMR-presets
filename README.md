@@ -426,3 +426,18 @@ Decorated with a **simple** look.
 
 ![YouTube Music Oriented Screenshot1](./mukmyash/with-controll-strip.png)
 ![YouTube Music Oriented Screenshot2](./mukmyash/with-controll-strip-play.png)
+
+[@Alsastre](./Alsastre/items.json)
+![](./Alsastre/Alsastre.png)
+From left to right:
+
+1. Dock without Spotify
+2. Spotify icon
+   1. Long press: Next song
+   2. Press Play/Pause
+3. Weather. See https://github.com/Toxblh/MTMR#weather
+4. Do not disturbe
+5. Batery %
+6. Date
+   1. Long Press: Lock computer
+7. Exit MTMR
