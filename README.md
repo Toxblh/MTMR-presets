@@ -230,6 +230,16 @@ Right:
 - small button on the right: mute audio
 - enable gestures for brightness/volume
 
+[@ohheyjosh](ohheyjosh/ohheyjosh.json)
+![](ohheyjosh/ohheyjosh.png)
+
+- Music bar occupies most of left side
+- Local date and time centered by right buttons
+- Empty button to help with centering
+- Brightness toggle buttons
+- Volume mute and slider
+- Colored lock/screensaver button
+
 [@utkini preset](utkini/items.json)
 ![](./utkini/general.jpeg)
 
