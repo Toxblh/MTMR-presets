@@ -451,3 +451,14 @@ From left to right:
 6. Date
    1. Long Press: Lock computer
 7. Exit MTMR
+
+[@edoardoo preset](edoardoo/items.json)
+
+![](./edoardoo/main.png)
+
+Use gestures for volume and brightness (2 and 3 fingers slide on the touchbar)  
+
+Buttons are widely spaced to avoid mistap.  
+
+Widgets:
+- ExitMTMR, MediaKeys, Spotify (tap to open), DoNotDisturb, Mute,Lock, Network, Battery, time (HH:mm:ss)
