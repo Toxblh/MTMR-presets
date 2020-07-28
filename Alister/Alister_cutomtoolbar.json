@@ -1,3 +1,25 @@
+//readme
+
+
+
+//
+The toolbar "Alister" has the features: 
+
+-Esc button
+-Brigtness Dimmer (with fun sun icon)
+-Dock - to scroll between open windows
+-Spotify - currently playing- tap to go to next song
+-Volume - pink to add a little color to an otherwise boring black keyboard
+-Sleep button - log off screen goes blanbk
+-Timer Tomato - 20 minutes to help focus
+-Weather - hyperlink to San Francicso weather station when clicked (you can change to your local)
+-Date - Month and day- Hyperlinks to google clanadar (week view) when tapped
+
+
+enjoy!
+
+
+
 [ 
   { "type": "escape", "width": 40 },
   // { "type": "brightnessDown", "width": 20, "align": "left" },
