@@ -61,14 +61,14 @@
     },
     "action": "keyPress",
     "keycode": 131,
-    "width": 75,
+    "width": 50,
     "align": "left"
   },
   {
     "type": "mute",
     "bordered": true,
     "align": "right",
-    "width": 75
+    "width": 50
   },
   { "type": "volumeDown", "width": 40, "align": "right" },
   {
