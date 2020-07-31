@@ -3,6 +3,12 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 ---
 
+[@munchikin preset](munchikin/items.json)
+![](munchikin/munchikin.png)
+Widgets : 
+- lock, Bright control, Memo, VSCode, launchpad, mute, volume contrl, music control, battery, CPU monitoring
+
+
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 [@Pythonicninja preset](pythonicninja/pythonicninja.json)
