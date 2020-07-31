@@ -453,7 +453,6 @@ From left to right:
 7. Exit MTMR
 
 [@edoardoo preset](edoardoo/items.json)
-
 ![](./edoardoo/main.png)
 
 Use gestures for volume and brightness (2 and 3 fingers slide on the touchbar)  
@@ -468,3 +467,38 @@ Widgets:
 ![](munchikin/munchikin.png)
 Widgets : 
 - lock, Bright control, Memo, VSCode, launchpad, mute, volume contrl, music control, battery, CPU monitoring
+
+[@lolapatch](./Lola/Lola.json)
+
+Main : 
+- Settings
+- Numbers
+- Launchpad
+- Mute
+- Dock (open apps)
+- Airdrop (when finder open)
+- Hide window (cmd + W)
+- Quit  (cmd + Q)
+- Save  (cmd + S)
+- Delete (cmd + delete)
+- Empty trash
+- Screen Capture
+- PU
+- Quit Touch Bar 
+<img width="1004" alt="Main" src="https://user-images.githubusercontent.com/68507896/87878305-b7679700-c9e3-11ea-8a47-ca1c7b71de12.png">
+
+Settings : 
+- Close
+- Brightness
+- Sound
+- Mute
+- Keyboard brightness down
+- Keyboard Brightness up
+- Close
+- Quit Touch Bar
+<img width="1004" alt="Settings" src="https://user-images.githubusercontent.com/68507896/87878316-c9e1d080-c9e3-11ea-8d99-0f16eedfbd78.png">
+
+- Numbers
+- Open calculator
+- Close
+<img width="1004" alt="Numbers" src="https://user-images.githubusercontent.com/68507896/87878311-c2222c00-c9e3-11ea-92e4-6e9dcefa6600.png">
