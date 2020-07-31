@@ -230,6 +230,16 @@ Right:
 - small button on the right: mute audio
 - enable gestures for brightness/volume
 
+[@ohheyjosh](ohheyjosh/ohheyjosh.json)
+![](ohheyjosh/ohheyjosh.png)
+
+- Music bar occupies most of left side
+- Local date and time centered by right buttons
+- Empty button to help with centering
+- Brightness toggle buttons
+- Volume mute and slider
+- Colored lock/screensaver button
+
 [@utkini preset](utkini/items.json)
 ![](./utkini/general.jpeg)
 
@@ -442,6 +452,21 @@ From left to right:
    1. Long Press: Lock computer
 7. Exit MTMR
 
+[@edoardoo preset](edoardoo/items.json)
+![](./edoardoo/main.png)
+
+Use gestures for volume and brightness (2 and 3 fingers slide on the touchbar)  
+
+Buttons are widely spaced to avoid mistap.  
+
+Widgets:
+- ExitMTMR, MediaKeys, Spotify (tap to open), DoNotDisturb, Mute,Lock, Network, Battery, time (HH:mm:ss)
+
+
+[@munchikin preset](munchikin/items.json)
+![](munchikin/munchikin.png)
+Widgets : 
+- lock, Bright control, Memo, VSCode, launchpad, mute, volume contrl, music control, battery, CPU monitoring
 
 [@lolapatch](./Lola/Lola.json)
 
@@ -477,4 +502,3 @@ Settings :
 - Open calculator
 - Close
 <img width="1004" alt="Numbers" src="https://user-images.githubusercontent.com/68507896/87878311-c2222c00-c9e3-11ea-92e4-6e9dcefa6600.png">
-
