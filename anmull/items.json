@@ -1,0 +1,253 @@
+[
+    {
+        "type": "escape",
+        "width": 70,
+        "align": "left"
+    },
+    {
+        "type": "mute",
+        "bordered": false,
+        "width": 70,
+        "align": "left"
+    },
+    {
+        "type": "group",
+        "align": "right",
+        "bordered": false,
+        "title": "🔆",
+        "width": 40,
+        "items": [
+            {
+                "type": "close",
+                "bordered": false,
+                "align": "left"
+            },
+            {
+                "type": "brightnessDown",
+                "bordered": false,
+                "align": "left",
+                "width": 70
+            },
+            {
+                "type": "brightness",
+                "width": 200,
+                "align": "left",
+                "image": {
+                    "base64": "iVBORw0KGgoAAAANSUhEUgAAAIAAAACAAQMAAAD58POIAAAABlBMVEX3yzj3yzcmklc1AAAAAnRSTlP5AcTqp1oAAAGcSURBVHhe1dZBjsMgDAXQj1iw5AgchaPB0TgKR2DJAoWR7RBorZnOLCeLCr02rQPmU0y5ergHC6p7g2LfIJv/CG2DZyhpwWUZcljQDQP8ggaCa0NFYrCvMGAWZEQGLMAbXA/EE8iDQAeSgJdlaAITcLJQFZDSCZonMAyFKrvmPYC8wVeGY2gbPEPfEBgGQXEEkeGCkXIzEsOEpZr8LJgC2c4CmFkMA98PALPaG6ofBLG5G3rsBGGEG/ix+BEfKAT2gExgDgBfLxDGBi6eMD0w6AsL4gOdJqIhHBBINzS6/YJ/oDLD/QCGIG8odr9q2B+uZoMnaN9ABdKCC3AoQJSiOwZgkYGwoAOGwC9oBHgF/A7c325RP6sK49KzgKHS1cN9mA81hZ9nXS+UBr22uh10w+iW0k0nbZmRDkAcIFCtrZtfbw+9gfQW05tQb9NsZ+aNvGFvdR0GKy6q3XGxA0WDV6EksGNLIBM0T2AEzuh7D8ep4vMMWB4JpJ24OqR1jJ9BX5AY3JH86rBQx4k6cNSR9L+PV4FiP/2Z6OGGLzXuuIOdwig0AAAAAElFTkSuQmCC"
+                }
+            },
+            {
+                "type": "brightnessUp",
+                "bordered": false,
+                "align": "left",
+                "width": 70
+            },
+            {
+                "type": "staticButton",
+                "title": "⌨️",
+                "align": "left",
+                "width": 70,
+                "action": "appleScript",
+                "actionAppleScript": {
+                    "inline": "do shell script \"open /System/Library/PreferencePanes/Keyboard.prefPane\""
+                },
+                "bordered": false
+            },
+            {
+                "type": "illuminationDown",
+                "bordered": false,
+                "align": "left",
+                "width": 70
+            },
+            {
+                "type": "illuminationUp",
+                "bordered": false,
+                "align": "left",
+                "width": 70
+            }
+        ]
+    },
+    {
+        "type": "group",
+        "align": "right",
+        "bordered": false,
+        "title": "🔊",
+        "width": 20,
+        "items": [
+            {
+                "type": "close",
+                "bordered": false,
+                "align": "left",
+                "width": 70
+            },
+            {
+                "type": "mute",
+                "bordered": false,
+                "align": "left",
+                "width": 70
+            },
+            {
+                "type": "volumeDown",
+                "bordered": false,
+                "align": "left",
+                "width": 70
+            },
+            {
+                "type": "volume",
+                "width": 200,
+                "align": "left"
+            },
+            {
+                "type": "volumeUp",
+                "bordered": false,
+                "align": "left",
+                "width": 70
+            },
+            {
+                "type": "previous",
+                "bordered": false,
+                "align": "center",
+                "width": 70
+            },
+            {
+                "type": "play",
+                "bordered": false,
+                "align": "center",
+                "width": 70
+            },
+            {
+                "type": "next",
+                "bordered": false,
+                "align": "center",
+                "width": 70
+            }
+        ]
+    },
+    {
+        "type": "appleScriptTitledButton",
+        "source": {
+            "inline": "if application \"Music\" is running then\ntell application \"Music\"\nif player state is playing then\nreturn (get artist of current track) & \" – \" & (get name of current track)\nelse\nreturn \"\"\nend if\nend tell\nend if\nreturn \"\"\n"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "if application \"Music\" is running then\ntell application \"Music\"\nif player state is playing then\nnext track\nend if\nend tell\nend if\n"
+        },
+        "longAction": "appleScript",
+        "longActionAppleScript": {
+            "inline": "if application \"Music\" is running then\ntell application \"Music\"\nif player state is playing then\nprev track\nend if\nend tell\nend if\n"
+        },
+        "refreshInterval": 2,
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAwFBMVEVHcEx+Vuoswft6nNIJAwYBAQIHChMAAAAOBASmTe9NlfeYib+1d65Xff7lVWQ2jskob5ymRl98LkAjLlL+WlXjUGF7Q7zQTrzMWJ4ts+lIQYfJUnCKe7Hj5uvn6u7r7vGFY/xzcv0/o/1LpfNbwvFZn9yXxe7A2+y8VNSiiu+WYuHhZIv3W27nkajyuMX18/X49vfy3uj08PPTbZztXoDgVaH7+vrx7/P61t34eIP9/PzTy+rt6u/WmtC4tenf5Oks82uqAAAAHXRSTlMA9/79LjpWDRv8/v7+/ffDmGM7bfy3tv3g6ouYxKNqzU8AAAR7SURBVHhe3JPbjpswEIZ7gYQlW0igoEZl38DnE6ck2/d/q3rGwMLSpLu3/caKrZDvZ4aIH/8zZVmShXT8tk1I3bXtBajatqtTynfuTWpwd4iqrclX+yBNh45UozXzbOyo5CSEqLqm/IpOQJ+Umw9YNYkQun8OkpoHfZz7+cQoQ+BpkNd+i/rKOYK/bKJsqstF9f0Mdabve8X59fmTIMmfxsWH7QjmWg8JT+8vJrf9Ohs7F5m15L4pn/oGrNcY6f/aQ0nQf4ZV0nO5JZBzAmmX/k2qvCMGXF5VFa847xHtfUdODdQijNk1UPkDXYAHDuh8wXpfk09+UQWVPXCh7nJCV1QiABCQZKybvxbHIUgXJrPqmZDci0hsuvdmiTcPdhyibEIaYE9vQEdfrD73a7y2jDXlsQFpPiEy2+0BbTKnFgoODRzQiz6h73MAqFsLxf4viNHoFA8LDlDQ/LR2jzAG6rIerC5372BUOpvZhhUyqMuHsu7OGFzG0u7G3sjHBDFaDYC5sthSJlcjjO2u3ykt9hOg4/IyKCRdqtHlr7eADUPpNgPp4iOZzjmNlY8cuhpAXhModXrQK+/01zoDPILVQ/AYo0NyJqiU6gEqrxvdHkJxjaM7EeOw+AlUKB0SEAHbb/pWbAE/7ckffO7gTy1l16smEIThIoJoYzAxOVaT5ZsFvGn0hgso+///Vd+Zgd2UlJzTi76zbtT4PDO7JPbvfk5KAhflL7d42N9u47tfC243YV18v097rPQnqk99f5kguN24zXtE9agRAAlswDEhPDbs8AVOANIa5rRtyqwUFgko/bz+EKAn4PHNipHfty2+m2nZ61pwSQKBu4MXGKKI7GVrn/iYpiOKIRG4GN93T6EdRhvQxCcQAMdLshb0TR3bp/DR/gKDwmKa8nyOdgTSGC2CZDawQBKxYB0IAMKRjKmZ/Lquyxo0KqFXqutLtAiubfsXQQYUlY6G6PpUliVYoLJV9XURHIK2fa15lWVozvHrE1KSwMVUdXCwAjmDSKSv6bIskUxEg/9ToKvY/bNHj2PLnOIapu7peVkOGDMozf2LlaCq+Aokh/B4HAjHQm/PIzzPFWgWFEVRoooKn5VKDLamuoc0gH2Qxy5RMsLTyzgQMK+aUwEFSRqQvDAAn8Am4hESONQkfI6o+ee6kGg1t5cB+ATuGo+dUuBfXWYFYCW6KspKN8ql2sX2GdgRJqVeSk2CIx1P4MI+owyW3tkB7C08cAgQZrADcEcXg0WVGNXsdhd7A+4QWUaA6XIZYJo5MAu9RA6wEkShl3WGkInGnwYQTKMsqoRfDrA6xJUNtq8S2KFYC3/FAbYNRgwOdRF+Z/n1NcCQDYRsp9mhfwB+05BPADYdeosXwWEffuAGh832GD8Oef4tRRQ8PDyDYQu/X4JI+G0Dhjifcz2saA0c7YX/RHH9OFO0bhpmAYMGfv0Ml4ugKR4xDPgfKeaAvlB34r+k2Ifh4xLHZDjd7/HlEYZ7i3/VEYQ2AWjBv66ABBYOWEf/mwWL63/mN8DWr4i7B+uxAAAAAElFTkSuQmCC"
+        }
+    },
+    {
+        "type": "weather",
+        "units": "imperial",
+        "align": "right",
+        "icon_type": "images",
+        "api_key": "[ENTER YOUR API KEY]",
+        "bordered": false,
+        "action": "appleScript",
+        // This could be done with $CITY, but quoting is an issue so it's just safer to hard-code it.
+        "actionAppleScript": {
+            "inline": "do shell script \"curl https://wttr.in/SFO.png --silent --output /tmp/SFO.png; open -W /tmp/SFO.png; rm /tmp/SFO.png\""
+        }
+    },
+    {
+        "type": "battery",
+        "align": "right",
+        "bordered": false
+    },
+    {
+        "type": "shellScriptTitledButton",
+        "width": 50,
+        "refreshInterval": 5,
+        "source": {
+            "inline": "mtmr_vpncheck"
+        },
+        "align": "right",
+        "bordered": false
+    },
+    {
+        "type": "shellScriptTitledButton",
+        "width": 70,
+        "refreshInterval": 20,
+        "source": {
+            "inline": "echo \"$(TZ=US/Pacific date +%a | sed 's/^\\([A-Z][a-z]\\).*/\\1/g') $(TZ=US/Pacific date +%m/%d)\""
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "do shell script \"open -a Calendar\""
+        },
+        "align": "right",
+        "bordered": false
+    },
+    {
+        "type": "shellScriptTitledButton",
+        "width": 50,
+        "refreshInterval": 5,
+        "source": {
+            "inline": "TZ=US/Pacific date +%H:%M"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "do shell script \"TZ=US/Pacific date +%Y-%m-%dT%H:%M:%S%z | /usr/bin/pbcopy\"\ntell application \"System Events\"\nset activeApp to name of first application process whose frontmost is true\nkeystroke \"v\" using command down\nend tell"
+        },
+        "align": "right",
+        "bordered": false
+    },
+    {
+        "type": "shellScriptTitledButton",
+        "width": 50,
+        "refreshInterval": 5,
+        "source": {
+            "inline": "TZ=Europe/London date +%H:%M"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "do shell script \"TZ=Europe/London date +%Y-%m-%dT%H:%M:%S%z | /usr/bin/pbcopy\"\ntell application \"System Events\"\nset activeApp to name of first application process whose frontmost is true\nkeystroke \"v\" using command down\nend tell"
+        },
+        "align": "right",
+        "bordered": false
+    },
+    {
+        "type": "shellScriptTitledButton",
+        "width": 50,
+        "refreshInterval": 5,
+        "source": {
+            "inline": "TZ=Asia/Hong_Kong date +%H:%M"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "do shell script \"TZ=Asia/Hong_Kong date +%Y-%m-%dT%H:%M:%S%z | /usr/bin/pbcopy\"\ntell application \"System Events\"\nset activeApp to name of first application process whose frontmost is true\nkeystroke \"v\" using command down\nend tell"
+        },
+        "align": "right",
+        "bordered": false
+    },
+    {
+        "type": "appleScriptTitledButton",
+        "source": {
+            "inline": "set dndstate to do shell script \"defaults -currentHost read ~/Library/Preferences/ByHost/com.apple.notificationcenterui doNotDisturb\"\nif dndstate = \"1\" then\nset val to {\" \", \"on\"}\nelse\nset val to {\" \", \"off\"}\nend if\nreturn val"
+        },
+        "refreshInterval": 1,
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to keystroke \"D\" using {shift down, control down, option down, command down}"
+        },
+        "bordered": true,
+        "width": 50,
+        "align": "right",
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAAKcAAACmCAMAAACIlG97AAABp1BMVEUAAABLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0uvxXqsAAAAjXRSTlMABxswSkYUOmN/k6OooqSrPSpQfqGqcxITSYmnppAkGaVXAQyWHm0CAzeemZoaKI0LHX1WqZGIBlQJH5gNPpxiGINDezWgOSxhQUVCbC4OThVRap8zEQ98gZImR2WClDIthHRPMQUKlTSFnTZviwgXIWspIFJ3SFk/JWgij4ZmEFp5h4BpJ3VnbnZxOCNzD/GTAAAGWElEQVR4Ae3aBXfbSBsF4BsGad4b0IQ0TrVuvFaKAZcZ3JSZ63LdLjMzU/c/L69P0xhknPngER4eZjjq/7q6e3r74LL+gcGhYc9XwhE4qmt0bDwQpUlqmZiEk6amZ8LA8G+SmoWL1o2ljPBfOnohDfesH5sTwxJKKgP3ZF6MhM+SiSxcE8/PiM9VojH3Qtm3QXE17fXANfMbPT7HbNoMx2zZ6vF5hgtwy+K4cA1ZiuGUeFlyXCMaciyYmW3Ctcz2HXBJdqdorhWmdsElu1PCMvw9e+GSfaJZht4/CYdkDwjLkoNwyMIhYVneYTike5NhWeYIHHJUNMvLr4c7jgkrkBW4Y6RyMI/DHSeEFehUDGecFFYSZeCMU8JKzGk44wwrk7NwxaywIjkHV5wPWJnaAUfsmsuxIrkAR8SHDCvzdsERFy+xsmgZjrgsrMJcgRuuKlahr8ER10NWoXrghmmP1eyHG7qF1fjH4YT4hmY16iaccMtjVfk0XLCgWJUuwAmFiFUFR+GC7ojVhQtwwe0cq7sDF9wVVqcPwAHpYdagRuCAe4o1qN1wwH3W4sewb7ewljk44EGOtRyBfVOGNRVg32DIWsKHsC72WOJys/RIsab8KKyb0AnCOQvbioa1BRnYdkyxNnUQti0xAZmEZY8NE5ArsGw+YAKqG5YVNEtcru9PmER+BXYthCxxeRb3UsAk1D7YdTzHJEwf7LrBZAqwqhgymZdh1aJiMq/AqlcDJpMrwqaHPpNRGdj0GhNS87DpdSakC7Apz6TmYNEbPpMyZ2HPm4pJqQHY81bApPTbsOedPBPbBHse5ZmYvAtrBhQT8wdhzSmPyaksbOk1TE49gi3v5Zicfh+2jPmsg9kFSz6IWIfoQ1jykWI9ZJfrw2TL54LO5FkXVYQVH9cZTq8XHTXSV5rG1Sf/Bjpokr34S7/H+kSfoIMmpAd/Kfqsk3yKjpmV0nLmBtZJf5ZGh6RT2u/C3z5nvbyT6JAXhB7+8QXrpr5ER2Qicrj+jrPE3xqjA7IpTQ4lb+htnaCfEFIP4h9TwvrJXbTdQ1k1x02HbICaQpv1RCQp/fjXVjbA/6wLbbXZ458ClHzlswHm8yLaaGGj5p/GUbISsBHydRptE39j+CczVmnhOzn5tn3BZMS/BKMowQwboy+iPXYMCf8WdqEEO0M2Rr5Low12bY/4jxk84/uADZKvi2i5vSnDf8g0nhFHbJR83oUWm9wT8l9mCs/6QbNR5rMptNTB/T5LUlilR7FhvrqLFjosmiVmDKtk82yCHI/RIuuPeHyGrMNqx302QbZ+iZZYyZvqGxcZYTN8dTKNpsXHhavIGJ53h83xPvsUTcqkhKtF6/G8c8LmaPnkDTTh7OlIczX/RaxxNmKzonxvEQ3acU4MnycZrPVjyKZ56sIuNGDXBSVcaybpQdX6iXxYd0ivLHtSx7bvTz5bITLvP8oiuZ5rJmJZG2KU86Zha2ilBt9FEumbx/crzfK8PpT3c46t4sumtwfOoqqFo4W88lnRxhjlLUZsIa3MXGE+U0QZ8e6RA3fCQLMKbx6VvB+ytbRSuVdeLvTtO7oy231l8mBmdnTkYeHInK+UZg1bUdEVYVtEKsjnlchfH5+JyBZUds6jI3LjqCJ+QkfIIqrZInSCLKO6XwwdoLfFqO5LRQdIBrU8FVonO1Hbd0LLdCqL2oo3crRLdiOJg0KrZB+SGRBaJAeQ1GmhNeZQFkkVZwwt0ZsWkNzjOz7tkG7U48p+TRvkKOqzLqAFcgz1+lXYcTKC+p1hp8kJNGKzYWedRGN+DTQ7J/cUjVq337dfhZK4csewI3LBLJrxeEbYAWbuPJpT7ERff+nQLjRtQHJsL7kYowUO3hC2UaguozWK7ZyKeNevomWeKsO20DKNVvryF2EbeDe60WJbnnhssUjditFy8TkJ2UK5qLCAtrjyfpRjq8jtbrTN4s/GZyuo4btoqzd/MiGblJP799Jot6kfI2ETQvNgNzri7Lk74rMhWnmDU+iczPG80qyXMhOPYnRWtueHKAiZmA7M0rEibIi/37k9DPwko+DwSWH+MSwqrny1NZR8xAr8QIU3jr+0AAekp8588MXnG3xP5fOBivyc+fvPz7/+2sNXF4twS7F/8eMzr370wdh7vacGHr3z1ptvwFX/9zt0ErvFAfgi8AAAAABJRU5ErkJggg=="
+        },
+        "alternativeImages": {
+            "on": {
+                "base64": "iVBORw0KGgoAAAANSUhEUgAAAKcAAACmCAMAAACIlG97AAACK1BMVEUAAABXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLpXTLoNBB3cAAAAuXRSTlMACylHbmkeV5O92/P68vX/Wz94vPDx/f6sGxxtzfn49Nc2Jdb39oECEt8to6sDBFLM+3frSOTlJzvSECu7gPy+BSzYywl9Di7jFFzpkiTDZOa3T+5VQpFhZ2OhRBV0H+B5xA2e7UwZFrnA6CjZOWoBlhHC3UpDxa24HZd2Se8+CLoPGt5NaMfqUAelzwwjVjGgPTCUYnuya4ReUTebMtXImBjTSwqGQbTKv36dOq6QmqSwqFTaJjRFU3dRCAwAAAarSURBVHgB7dqFg9NIwwbwB+dIOw+SSbF0kATpXbsUZ/ejh7u7u7vLsj3c5dzd3eV7/7tT6Folqc288ou7ZxSG+p8uXbt17wGT9ezV+6k+ViQq2BeG6tKv/wBbSIdkTAwcBCMNHjLUteP8hxo2HCYa0X+kJ/iE448aDfOM6T9WeGwlhiVgnsTTvmBb6pkkTJNqGCfSbMcfD9OkekyQbM+xJsI0DZMsduBNngLDTJ1msSOPjTBL0wDBTsT/pWCU1HSRYSf+szNglJmzFDvzZs+BSZJzhcPO3GHzYJL5wxTzSC9YCJMsEg7zcBYPgkGSSwTzEkthkMZlinlZy2GQrivizCu+EgZZpRzmt3oMzLFGsQCxFuboK1iAWgdzrBcswBk2A8bYIFiIn4AxNgoWEt8EY2xmYWoLTDFcsCC1FabYZrMwOQeGmLc9w4LUDhgitdNjYdYuGGL3HhbmT4ch9goW4e2DGfZLFhE7AEMcdFmE7AYzDLFYzCGY4bBgMel1MELqiMNi5FEY4ZjFolYfhwkaoyzKOQEjnPBZlL0KJjjsszj3JExwKsPiTsMEZxSLc5bAAMf7sIRoXxjgbJQlyPkwwDmWkp4B/eYLlrIdBjifYSkXoN9FjyU1Q7/eLktxL0G7lMUck39LLZIlZZ+DdgNjLCk7HLpd9lianYBuayRLiy6FblcYgBoEza7GGYC6Bs0abAYgu0KzZoc5Jn/v1xlEdi30anSZY3Iq7obNIKKLoNe6DIPwbkKvIwymGVpddhnMLWjVJBnMbWh1x2YwmbvQ6VKEwcgEdLrHgGQDdLrPgJxm6JRlUNuh0YMIg4pvgT4PJYOSj6DP8zaDir0AfV7MMrDJ0Kcly8DUS9DmkWRg6ZehzSsWg5NJ6NLdY3CyBbq8mmFwsdegS/80Q/B2QZPXfYbgvwFN3owyDLULerxlMziN9YI2ZxmKvAwt3s4yFKs76qpvj3DJuJzsA9TRIHbH33paDMd/B3U0UHTD3y5HGJJ4F3UzXES74h8TGFLsveOok9HDYpEu+Mf7DMvagDoZpWjhsQ8YWvRD1EXCJ/uEDzhz0h+lUAfJYQ75VPAfva4a9M8I0umNxy4Khic+Rs1dUiRlLzx23GUZohdRYxN9khQ98cQ0liH93ieoqSkW/2Ij59M0y+C9fxc11DjJ4V8GIOczm+UQn49GzaS+8PiXeH/k3HVZFvUlamUGff7N7odW41ie2G7UxpxnBf/hdkGrr1yWR309GjUwb7bPx4aijW9slkl9fhdVt3CYx8fEELQxw2e5xPufoMoGLXD5hDcYbX0bY7m89y6iqpYuTjNnJNrpJlm2dPRjVNFy4TDH6492kllWQKxLoUrGrLTYhhiB9r6LsALqow9RFWtXx9nWWHSQUKxEOrrhOCo2Y51gO6I/OjrNyljvvYsKJYYptuePQUdbBSsTE+88QAW2bPIdtpd+Os9qPivlZ7tfRpnmbFVxdiQS6Ox7lxWz5I5dKMOuHVKxs3HBK6qGpdQboc9033RLhSj2/SHNavC911qSCK7bAc9nXhNSyOehx+qISfnySwji+NF1h2SM+Vk9kN+PGVZLWk1+4dEWFHVy1YnVMs2CJqWQX5PPKorJ+PbmhsRd5DFjft8lp13bYRFWAwp5zWV1OVJmbt9qvrlo1drhXa8NWpoY/lzfS80Xtqdl1GEJ01DQNcGa8KN2NiuV+msQjTAQMRWFbbVoiMwAFJG6TkOIJhQzVdAIajqK+ylOAzizUijuQ0kDiJko5WdB7dRclPa1oGbOsCRKu/tLhnqJ+QhiqaJWYhGC6aWokVqCoDYJahNflkRQl4fGqYmzohHBXT0doR6qK8LYt9ihDmoVwvnVpgZiDcL6TbHuRF+E9/+sN7Ee5ZgSZ31tQHl+sx3WT+ZfKNeviyM6P6Hg9p2Osy4y9nBU4upQwTrwtm9DZS5vUqy5PTvnoWK9VIa1JXanUAVLfxGsIVfuRXXcrWVSxDq4H1Xzs4yzJhwxBNX04U+CNWAdOYwqm3rdYpX50WMpVF1qq3BZRRn/RCNq4tprfobVok4dRs00/ehFWA3RPmdQUw9/8FxWKCPOnT2OWrv4vS9YAdc7Px91sWXraRVhWWLS6n0R9ZP4LitjDEt6A1tSqK9kt29922Vgjh2/suYydJjxzVezXTsdJBbsXm9uuAqN7n726TRXZH0WELGle2TdjUYY4PjFza9/8P6EiCWzWTvqpzPe32Mykr1/79Kdpsswy+WeTW9vfuvN1/u/2v2VRy0vPv/wAf7HVH8AQ4MEp/MgAUAAAAAASUVORK5CYII="
+            },
+            "off": {
+                "base64": "iVBORw0KGgoAAAANSUhEUgAAAKcAAACmCAMAAACIlG97AAABp1BMVEUAAABLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0uvxXqsAAAAjXRSTlMABxswSkYUOmN/k6OooqSrPSpQfqGqcxITSYmnppAkGaVXAQyWHm0CAzeemZoaKI0LHX1WqZGIBlQJH5gNPpxiGINDezWgOSxhQUVCbC4OThVRap8zEQ98gZImR2WClDIthHRPMQUKlTSFnTZviwgXIWspIFJ3SFk/JWgij4ZmEFp5h4BpJ3VnbnZxOCNzD/GTAAAGWElEQVR4Ae3aBXfbSBsF4BsGad4b0IQ0TrVuvFaKAZcZ3JSZ63LdLjMzU/c/L69P0xhknPngER4eZjjq/7q6e3r74LL+gcGhYc9XwhE4qmt0bDwQpUlqmZiEk6amZ8LA8G+SmoWL1o2ljPBfOnohDfesH5sTwxJKKgP3ZF6MhM+SiSxcE8/PiM9VojH3Qtm3QXE17fXANfMbPT7HbNoMx2zZ6vF5hgtwy+K4cA1ZiuGUeFlyXCMaciyYmW3Ctcz2HXBJdqdorhWmdsElu1PCMvw9e+GSfaJZht4/CYdkDwjLkoNwyMIhYVneYTike5NhWeYIHHJUNMvLr4c7jgkrkBW4Y6RyMI/DHSeEFehUDGecFFYSZeCMU8JKzGk44wwrk7NwxaywIjkHV5wPWJnaAUfsmsuxIrkAR8SHDCvzdsERFy+xsmgZjrgsrMJcgRuuKlahr8ER10NWoXrghmmP1eyHG7qF1fjH4YT4hmY16iaccMtjVfk0XLCgWJUuwAmFiFUFR+GC7ojVhQtwwe0cq7sDF9wVVqcPwAHpYdagRuCAe4o1qN1wwH3W4sewb7ewljk44EGOtRyBfVOGNRVg32DIWsKHsC72WOJys/RIsab8KKyb0AnCOQvbioa1BRnYdkyxNnUQti0xAZmEZY8NE5ArsGw+YAKqG5YVNEtcru9PmER+BXYthCxxeRb3UsAk1D7YdTzHJEwf7LrBZAqwqhgymZdh1aJiMq/AqlcDJpMrwqaHPpNRGdj0GhNS87DpdSakC7Apz6TmYNEbPpMyZ2HPm4pJqQHY81bApPTbsOedPBPbBHse5ZmYvAtrBhQT8wdhzSmPyaksbOk1TE49gi3v5Zicfh+2jPmsg9kFSz6IWIfoQ1jykWI9ZJfrw2TL54LO5FkXVYQVH9cZTq8XHTXSV5rG1Sf/Bjpokr34S7/H+kSfoIMmpAd/Kfqsk3yKjpmV0nLmBtZJf5ZGh6RT2u/C3z5nvbyT6JAXhB7+8QXrpr5ER2Qicrj+jrPE3xqjA7IpTQ4lb+htnaCfEFIP4h9TwvrJXbTdQ1k1x02HbICaQpv1RCQp/fjXVjbA/6wLbbXZ458ClHzlswHm8yLaaGGj5p/GUbISsBHydRptE39j+CczVmnhOzn5tn3BZMS/BKMowQwboy+iPXYMCf8WdqEEO0M2Rr5Low12bY/4jxk84/uADZKvi2i5vSnDf8g0nhFHbJR83oUWm9wT8l9mCs/6QbNR5rMptNTB/T5LUlilR7FhvrqLFjosmiVmDKtk82yCHI/RIuuPeHyGrMNqx302QbZ+iZZYyZvqGxcZYTN8dTKNpsXHhavIGJ53h83xPvsUTcqkhKtF6/G8c8LmaPnkDTTh7OlIczX/RaxxNmKzonxvEQ3acU4MnycZrPVjyKZ56sIuNGDXBSVcaybpQdX6iXxYd0ivLHtSx7bvTz5bITLvP8oiuZ5rJmJZG2KU86Zha2ilBt9FEumbx/crzfK8PpT3c46t4sumtwfOoqqFo4W88lnRxhjlLUZsIa3MXGE+U0QZ8e6RA3fCQLMKbx6VvB+ytbRSuVdeLvTtO7oy231l8mBmdnTkYeHInK+UZg1bUdEVYVtEKsjnlchfH5+JyBZUds6jI3LjqCJ+QkfIIqrZInSCLKO6XwwdoLfFqO5LRQdIBrU8FVonO1Hbd0LLdCqL2oo3crRLdiOJg0KrZB+SGRBaJAeQ1GmhNeZQFkkVZwwt0ZsWkNzjOz7tkG7U48p+TRvkKOqzLqAFcgz1+lXYcTKC+p1hp8kJNGKzYWedRGN+DTQ7J/cUjVq337dfhZK4csewI3LBLJrxeEbYAWbuPJpT7ERff+nQLjRtQHJsL7kYowUO3hC2UaguozWK7ZyKeNevomWeKsO20DKNVvryF2EbeDe60WJbnnhssUjditFy8TkJ2UK5qLCAtrjyfpRjq8jtbrTN4s/GZyuo4btoqzd/MiGblJP799Jot6kfI2ETQvNgNzri7Lk74rMhWnmDU+iczPG80qyXMhOPYnRWtueHKAiZmA7M0rEibIi/37k9DPwko+DwSWH+MSwqrny1NZR8xAr8QIU3jr+0AAekp8588MXnG3xP5fOBivyc+fvPz7/+2sNXF4twS7F/8eMzr370wdh7vacGHr3z1ptvwFX/9zt0ErvFAfgi8AAAAABJRU5ErkJggg=="
+            }
+        }
+    }
+]

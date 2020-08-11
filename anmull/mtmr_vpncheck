@@ -1,0 +1,20 @@
+#!/bin/zsh
+#
+#------------------------------------------------------------------------------#
+#  Check if VPN is connected by looking for the utun interface and IP address.
+#
+#  In my tests, the utun5 interface will only exist when connected to VPN. In
+#  the event it does exist, it should not have an IP address assigned to it
+#  until you are connected to the VPN provider.
+#------------------------------------------------------------------------------#
+
+# Force using the Apple ifconfig to avoid checking for GNU version.
+OUTPUT=$(/sbin/ifconfig utun5 2&>/dev/null | grep "inet" | grep " 10\.")
+
+# If it finds a 10. IP address, then return code will be 0, otherwise 1.
+RESULT=$?
+if [[ $RESULT -ne 0 ]]; then
+    echo -e "\033[31mVPN\033[m"
+else
+    echo -e "\033[30;42mVPN\033[m"
+fi
