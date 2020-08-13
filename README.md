@@ -455,9 +455,9 @@ From left to right:
 [@edoardoo preset](edoardoo/items.json)
 ![](./edoardoo/main.png)
 
-Use gestures for volume and brightness (2 and 3 fingers slide on the touchbar)  
+Use gestures for volume and brightness (2 and 3 fingers slide on the touchbar)
 
-Buttons are widely spaced to avoid mistap.  
+Buttons are widely spaced to avoid mistap.
 
 Widgets:
 - ExitMTMR, MediaKeys, Spotify (tap to open), DoNotDisturb, Mute,Lock, Network, Battery, time (HH:mm:ss)
@@ -465,12 +465,12 @@ Widgets:
 
 [@munchikin preset](munchikin/items.json)
 ![](munchikin/munchikin.png)
-Widgets : 
+Widgets :
 - lock, Bright control, Memo, VSCode, launchpad, mute, volume contrl, music control, battery, CPU monitoring
 
 [@lolapatch](./Lola/Lola.json)
 
-Main : 
+Main :
 - Settings
 - Numbers
 - Launchpad
@@ -484,10 +484,10 @@ Main :
 - Empty trash
 - Screen Capture
 - PU
-- Quit Touch Bar 
+- Quit Touch Bar
 <img width="1004" alt="Main" src="https://user-images.githubusercontent.com/68507896/87878305-b7679700-c9e3-11ea-8a47-ca1c7b71de12.png">
 
-Settings : 
+Settings :
 - Close
 - Brightness
 - Sound
@@ -510,3 +510,7 @@ VPN indicator, copy/paste ISO-8601 datetime, retrieve additional weather info, c
 See [README](./anmull/README.md) for details on using the configuration and what is on each row.
 
 ![](./anmull/images/screenshot.png)
+
+[@adorow preset](./adorow/items.json)
+![](./adorow/screenshot_main.png)
+![](./adorow/screenshot_status.png)
