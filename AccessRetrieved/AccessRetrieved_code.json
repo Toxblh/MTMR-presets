@@ -1,0 +1,765 @@
+  // Left side of touchbar
+  [
+    {
+      "type": "escape",
+      "width": 64,
+      "align": "left"
+    },
+    {
+      "type": "dock",
+      "autoResize": true,
+      "align": "left"
+    },
+    {
+      "type": "staticButton",
+      "title": "",
+      "width": 10,
+      "bordered": false
+    },
+  
+    // Group: Music
+    {
+      "type": "group",
+      "align": "left",
+      "bordered": false,
+      "title": "Music",
+      "items": [
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 15,
+          "bordered": false
+        },
+        {
+          "type": "music",
+          "align": "center",
+          "bordered": false,
+          "refreshInterval": 2,
+          "disableMarquee": true
+        },
+        {
+          "type": "staticButton",
+          "title": "",
+          "bordered": false,
+          "width": 32
+        },
+        {
+          "type": "previous",
+          "width": 38,
+          "bordered": false
+        },
+        {
+          "type": "play",
+          "bordered": false,
+          "width": 38
+        },
+        {
+          "type": "next",
+          "width": 38,
+          "bordered": false
+        },
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 5,
+          "bordered": false
+        },
+        {
+          "type": "mute",
+          "width": 64,
+          "bordered": false
+        },
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 5,
+          "bordered": false
+        },
+        {
+          "type": "volumeDown",
+          "bordered": false,
+          "width": 64
+        },
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 5,
+          "bordered": false
+        },
+        {
+          "type": "volumeUp",
+          "bordered": false,
+          "width": 64
+        },
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 10,
+          "bordered": false
+        },
+        {
+          "type": "close",
+          "width": 64,
+          "bordered": true,
+          "align": "right"
+        },
+      ]
+    },
+    {
+      "type": "staticButton",
+      "title": "",
+      "width": 5,
+      "bordered": false
+    },
+
+
+    // Group: Controls
+    {
+      "type": "group",
+      "align": "left",
+      "bordered": false,
+      "title": "Controls",
+      "items": [
+        {
+          "type": "staticButton",
+          "title": "☠︎ Kill app (hold)",
+          "width": 120,
+          "longAction": "appleScript",
+          "longActionAppleScript": {
+              "inline": "tell application \"System Events\" to key code 53 using {command down, option down, shift down}"
+          },
+          "align": "left"
+        },
+        {
+          "type": "staticButton",
+          "width": 5,
+          "title": "",
+          "bordered": false,
+          "background": ""
+        },
+        {
+          "type": "group",
+          "title": "Other",
+          "width": 64,
+          "align": "left",
+          "items": [
+            {
+              "type": "pomodoro",
+              "workTime": 3600,
+              "restTime": 600,
+              "bordered": false
+            },
+            {
+              "type": "staticButton",
+              "title": "",
+              "width": 5,
+              "bordered": false
+            },
+            {
+              "type": "inputsource",
+              "bordered": false
+            },
+            {
+              "type": "staticButton",
+              "title": "",
+              "width": 5,
+              "bordered": false
+            },
+            {
+              "type": "staticButton",
+               "title": "",
+               "action": "appleScript",
+                  "bordered": false,
+              "actionAppleScript": {
+                "inline": "tell application \"System Events\"\nkey code 23 using {command down, shift down} \rend tell"
+              },
+              "longAction": "appleScript",
+                  "longActionAppleScript": {
+                      "inline": "tell application \"System Events\"\nkey code 20 using {command down, shift down} \rend tell"
+                  },
+              "image": {
+                "base64": "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"
+              }
+            },
+            {
+              "type": "staticButton",
+              "title": "",
+              "width": 5,
+              "bordered": false
+            },
+            {
+              "type": "darkMode",
+              "width": 64
+            },
+            {
+              "type": "staticButton",
+              "title": "",
+              "width": 5,
+              "bordered": false
+            },
+            {
+              "type": "close",
+              "width": 38,
+              "bordered": true,
+              "align": "right"
+            }
+          ]
+        },
+        {
+          "type": "staticButton",
+          "width": 75,
+          "bordered": false,
+          "title": "Brightness"
+        },
+        {
+          "type": "brightness",
+          "width": 190
+        },
+        {
+          "type": "illuminationDown",
+          "width": 64,
+          "bordered": false,
+          "align": "right"
+        },
+        {
+          "type": "illuminationUp",
+          "width": 64,
+          "bordered": false,
+          "align": "right"
+        },
+        {
+          "type": "mute",
+          "width": 64,
+          "bordered": false,
+          "align": "right"
+        },
+        {
+          "type": "volumeDown",
+          "bordered": false,
+          "width": 64,
+          "align": "right"
+        },
+        {
+          "type": "volumeUp",
+          "bordered": false,
+          "width": 64,
+          "align": "right"
+        },
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 15,
+          "bordered": false,
+          "align": "right"
+        },
+        {
+          "type": "group",
+          "align": "left",
+          "title": "💩ℹ💩",
+          "items": [
+            {
+              "type": "group",
+              "align": "left",
+              "bordered": true,
+              "title": "Presets",
+              "items": [
+                {
+                  "type": "group",
+                  "align": "center",
+                  "bordered": true,
+                  "title": "Media",
+                  "items": [
+                    {
+                      "type": "music",
+                      "align": "center",
+                      "bordered": false,
+                      "refreshInterval": 2,
+                      "disableMarquee": true,
+                      "align": "left"
+                    },
+                    {
+                      "type": "staticButton",
+                      "width": 5,
+                      "title": "",
+                      "bordered": false
+                    },
+  
+  
+                    {
+                      "type": "staticButton",
+                      "title": "",
+                      "width": 5,
+                      "bordered": false
+                    },
+                    {
+                      "type": "mute",
+                      "width": 64,
+                      "bordered": false,
+                      "align": "right"
+                    },
+                    {
+                      "type": "staticButton",
+                      "title": "",
+                      "width": 5,
+                      "bordered": false
+                    },
+                    {
+                      "type": "volumeDown",
+                      "bordered": false,
+                      "width": 64,
+                      "align": "right"
+                    },
+                    {
+                      "type": "staticButton",
+                      "title": "",
+                      "width": 5,
+                      "bordered": false
+                    },
+                    {
+                      "type": "volumeUp",
+                      "bordered": false,
+                      "width": 64,
+                      "align": "right"
+                    },
+  
+  
+  
+  
+  
+                    { "type": "escape"},
+                    { "type": "previous", "width": 44, "align": "right", "bordered": false},
+                    { "type": "play", "width": 44, "align": "right", "bordered": false},
+                    { "type": "next", "width": 44, "align": "right", "bordered": false},
+                    {
+                      "type": "yandexWeather",
+                      "refreshInterval": 600,
+                      "align": "right",
+                      "bordered": false
+                    },
+                    {
+                      "type": "shellScriptTitledButton",
+                      "width": 80,
+                      "refreshInterval": 2,
+                      "source": {
+                        "inline": "top -l 2 -n 0 -F | egrep -o ' \\d*\\.\\d+% idle' | tail -1 | awk -F% '{p = 100 - $1; if (p > 30) c = \"\\033[33m\"; if (p > 70) c = \"\\033[30;43m\"; printf \"%s%4.1f%%\\n\", c, p}'"
+                      },
+                      "action": "appleScript",
+                      "actionAppleScript": {
+                        "inline": "activate application \"Activity Monitor\"\rtell application \"System Events\"\r\ttell process \"Activity Monitor\"\r\t\ttell radio button \"CPU\" of radio group 1 of group 2 of toolbar 1 of window 1 to perform action \"AXPress\"\r\tend tell\rend tell"
+                      },
+                      "align": "right",
+                      "image": {
+                        "base64":
+                        "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA/1BMVEUAAADaACbYACfYACfjABzXACjYACfXACjYACfYACfYACfYACfdACLYACfXACjYACfVACv/AADXACjYACfYACfXACjYACfXACjaACXYACfYACfVACvYACfYACfZACbZACbYACfYACfZACb/AADYACfYACfVACrXACjVACu/AEDYACfYACfYACfXACjXACjYACfXACjYACfYACfYACfXACjYACfXACjYACfYACfZACbYACfYACfMADPYACfYACfYACfYACfYACfZACbXACjYACfYACfRAC7XACjYACfZACbWACnXACjXACjYACfTACzZACb/AADYACfYACfYACcAAAA+zneGAAAAU3RSTlMAItK+CVPjh3xUxPwPiGDQGAMtSKmN3Vk+wPQG/e26oIJBnwJCdiuAHgTmw+6BX+IgfaqLUvKOW8VKnagK+vBwYrhlc/urCznvhSyUbOEXPAFjGh/ektAAAAABYktHRACIBR1IAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4ggWETQWgEDcSgAAAqVJREFUWMPtl4ly2jAQhsUNNlcw5r4SICEHLSQhCQRyX73T/u//LpUlLIyxbMAznWmn/0ywo5U+27tr7ZoQuwLBUJidRKIxPhKLRtgxHAoGiLfiQIKdKFCTxjGpQmEDCSC+BiAFpNlJBsgaxyyQYQNpIPUf8AcAOzktD+iaoQJQNI5FoMAGdCCv5XZclpfKFXiqUi5Jllf1mvdyQzW96gigd4h6o+mhRp1O0x3vvwa1VSWeqrZU1Jyeogy01ggSVQsoO/i/gjq9/u6u+2LDXq2jshqLHNCgdsCVwO0NILdi0oDmuoAmoImhQDzFRPNnb36L7U43NVfc2EH2D9h5t9OePyIF5IU9uIhvkyN7iiXmQUIOj8x/lB6f0bTaQ3ZA+9iaNCH2Lpg6btsBIRJOpJl0E9ABTvof5kqEGeCjMaN/AnRMgM5XJcI2J1J1gf6S48Tb2Ae6JkAjdgmAeJ1XAOJ1Xg8wGJ6elXwAzkeGjy62BgxG3MuXnoCIkmEq8EQyAUPgajyhPxJAga9SIiRqzwMOuAbGZDrDjQRgKkpiqiPgFphM74B7d4BKy2cyy1RcBvSodUb/HiSAIl+VlEfh8cm4wvPL9nnw+gbc+kkkUVioO95etwe8PBuP8vQoBzg7UQAe5t7syZwoCaMA3AN30wlzh3MYJYkkADeYTckYuJYlkiSVBeCKZtSY/gxlqezlxEt+pdFg6zBesPXn1ih8Aj5vkAels9PhYCkPsl++kg0AQu4dyuqmugIQm+qS5Nv6N+D7wm7d1skPc4xu666Fhd6BxU6r+jub8tNaWNxK29EhsdpR/sVn7FlLm0txPdgni+JrFNd3p+K67MQtyrsp3w2G7xbHd5Plv83z3Wj6b3V9N9ssFv7afaa//ZPn3wD4/vje8PP/N7TebS0hgZhEAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA4LTIyVDE3OjUyOjIyKzAyOjAwc2qUYAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wOC0yMlQxNzo1MjoyMiswMjowMAI3LNwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC"
+                      },
+                      "bordered": false
+                    },
+                    {
+                      "type": "timeButton",
+                      "align": "right",
+                      "bordered": false,
+                      "action": "openUrl",
+                      "url": "ical://"
+                    },
+                    {
+                      "type": "close",
+                      "width": 38,
+                      "bordered": true,
+                      "align": "right"
+                    },
+                  ]
+                },
+                {
+                  "type": "staticButton",
+                  "width": 5,
+                  "title": "",
+                  "bordered": false
+                },
+                {
+                  "type": "group",
+                  "width": 64,
+                  "align": "left",
+                  "title": "Dock",
+                  "items": [
+                    {
+                      "type": "staticButton",
+                      "title": "",
+                      "width": 5,
+                      "bordered": false
+                    },
+                    {
+                      "type": "dock",
+                      "bordered": false,
+                      "width": 1025
+                    },
+                    {
+                      "type": "staticButton",
+                      "width": 5,
+                      "title": "",
+                      "bordered": false
+                    },
+                    {
+                      "type": "close",
+                      "width": 38,
+                      "bordered": true,
+                      "align": "right"
+                    },
+                  ]
+                },
+                {
+                  "type": "staticButton",
+                  "width": 5,
+                  "title": "",
+                  "bordered": false
+                },
+                {
+                  "type": "close",
+                  "width": 38,
+                  "bordered": true
+                },
+                {
+                  "type": "group",
+                  "align": "left",
+                  "title": "Time",
+                  "items": [
+                    {
+                      "type": "staticButton",
+                      "title": "Beijing (北京):",
+                      "bordered": false,
+                      "align": "left"
+                  },
+                  {
+                      "type": "timeButton",
+                      "formatTemplate": "E, MMM d, h:mm:ss a",
+                      "timeZone": "GMT+8",
+                      "width": 180,
+                      "bordered": false,
+                      "align": "left"
+                  },
+                    {
+                      "type": "staticButton",
+                      "title": "|",
+                      "width": 10,
+                      "bordered": false,
+                      "align": "left"
+                    },
+                    {
+                      "type": "staticButton",
+                      "title": "Surrey (素里):",
+                      "bordered": false,
+                      "align": "left"
+                  },
+                  {
+                      "type": "timeButton",
+                      "formatTemplate": "E, MMM d, h:mm:ss a",
+                      "timeZone": "UTC-8",
+                      "width": 180,
+                      "bordered": false,
+                      "align": "left"
+                  },
+                  {
+                    "type": "staticButton",
+                    "title": "|",
+                    "width": 10,
+                    "bordered": false,
+                    "align": "left"
+                  },
+                  {
+                    "type": "staticButton",
+                    "title": "Taipei (台北):",
+                    "bordered": false,
+                    "align": "left"
+                },
+                {
+                    "type": "timeButton",
+                    "formatTemplate": "E, MMM d, h:mm:ss a",
+                    "timeZone": "GMT+8",
+                    "width": 180,
+                    "bordered": false,
+                    "align": "left"
+                },
+                  {
+                    "type": "close",
+                    "width": 38,
+                    "bordered": true
+                  },
+                  ]
+                },
+              ]
+            },
+            {
+              "type": "group",
+              "width": 80,
+              "bordered": true,
+              "title": "Welcome",
+              "align": "left",
+              "items": [
+                {
+                  "type": "staticButton",
+                  "width": 450,
+                  "title": "",
+                  "bordered": false
+                },
+                {
+                  "type": "shellScriptTitledButton",
+                  "align": "center",
+                  "bordered": false,
+                  "width": 70,
+                  "source": {
+                    "inline": "printf Welcome"
+                  }
+                },
+                {
+                  "type": "shellScriptTitledButton",
+                  "align": "center",
+                  "bordered": false,
+                  "width": 40,
+                  "source": {
+                    "inline": "printf back,"
+                  }
+                },
+                {
+                  "type": "shellScriptTitledButton",
+                  "align": "center",
+                  "bordered": false,
+                  "width": 45,
+                  "source": {
+                    "inline": "printf Jerry"
+                  }
+                },
+                {
+                  "type": "shellScriptTitledButton",
+                  "align": "center",
+                  "bordered": false,
+                  "width": 25,
+                  "source": {
+                    "inline": "printf Hu!"
+                  }
+                },
+                {
+                  "type": "staticButton",
+                  "title": "",
+                  "width": 5,
+                  "bordered": false
+                },
+                {
+                  "type": "close",
+                  "width": 38,
+                  "bordered": true,
+                  "align": "right"
+                }
+              ]
+            },
+            {
+              "type": "staticButton",
+              "title": "",
+              "width": 5,
+              "bordered": false,
+              "align": "left"
+            },
+            {
+              "type": "network",
+              "flip": true,
+              "align": "right",
+              "bordered": false
+            },
+            {
+              "type": "shellScriptTitledButton",
+              "width": 80,
+              "refreshInterval": 2,
+              "source": {
+                "inline": "top -l 2 -n 0 -F | egrep -o ' \\d*\\.\\d+% idle' | tail -1 | awk -F% '{p = 100 - $1; if (p > 30) c = \"\\033[33m\"; if (p > 70) c = \"\\033[30;43m\"; printf \"%s%4.1f%%\\n\", c, p}'"
+              },
+              "action": "appleScript",
+              "actionAppleScript": {
+                "inline": "activate application \"Activity Monitor\"\rtell application \"System Events\"\r\ttell process \"Activity Monitor\"\r\t\ttell radio button \"CPU\" of radio group 1 of group 2 of toolbar 1 of window 1 to perform action \"AXPress\"\r\tend tell\rend tell"
+              },
+              "align": "right",
+              "image": {
+                "base64":
+                "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA/1BMVEUAAADaACbYACfYACfjABzXACjYACfXACjYACfYACfYACfYACfdACLYACfXACjYACfVACv/AADXACjYACfYACfXACjYACfXACjaACXYACfYACfVACvYACfYACfZACbZACbYACfYACfZACb/AADYACfYACfVACrXACjVACu/AEDYACfYACfYACfXACjXACjYACfXACjYACfYACfYACfXACjYACfXACjYACfYACfZACbYACfYACfMADPYACfYACfYACfYACfYACfZACbXACjYACfYACfRAC7XACjYACfZACbWACnXACjXACjYACfTACzZACb/AADYACfYACfYACcAAAA+zneGAAAAU3RSTlMAItK+CVPjh3xUxPwPiGDQGAMtSKmN3Vk+wPQG/e26oIJBnwJCdiuAHgTmw+6BX+IgfaqLUvKOW8VKnagK+vBwYrhlc/urCznvhSyUbOEXPAFjGh/ektAAAAABYktHRACIBR1IAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4ggWETQWgEDcSgAAAqVJREFUWMPtl4ly2jAQhsUNNlcw5r4SICEHLSQhCQRyX73T/u//LpUlLIyxbMAznWmn/0ywo5U+27tr7ZoQuwLBUJidRKIxPhKLRtgxHAoGiLfiQIKdKFCTxjGpQmEDCSC+BiAFpNlJBsgaxyyQYQNpIPUf8AcAOzktD+iaoQJQNI5FoMAGdCCv5XZclpfKFXiqUi5Jllf1mvdyQzW96gigd4h6o+mhRp1O0x3vvwa1VSWeqrZU1Jyeogy01ggSVQsoO/i/gjq9/u6u+2LDXq2jshqLHNCgdsCVwO0NILdi0oDmuoAmoImhQDzFRPNnb36L7U43NVfc2EH2D9h5t9OePyIF5IU9uIhvkyN7iiXmQUIOj8x/lB6f0bTaQ3ZA+9iaNCH2Lpg6btsBIRJOpJl0E9ABTvof5kqEGeCjMaN/AnRMgM5XJcI2J1J1gf6S48Tb2Ae6JkAjdgmAeJ1XAOJ1Xg8wGJ6elXwAzkeGjy62BgxG3MuXnoCIkmEq8EQyAUPgajyhPxJAga9SIiRqzwMOuAbGZDrDjQRgKkpiqiPgFphM74B7d4BKy2cyy1RcBvSodUb/HiSAIl+VlEfh8cm4wvPL9nnw+gbc+kkkUVioO95etwe8PBuP8vQoBzg7UQAe5t7syZwoCaMA3AN30wlzh3MYJYkkADeYTckYuJYlkiSVBeCKZtSY/gxlqezlxEt+pdFg6zBesPXn1ih8Aj5vkAels9PhYCkPsl++kg0AQu4dyuqmugIQm+qS5Nv6N+D7wm7d1skPc4xu666Fhd6BxU6r+jub8tNaWNxK29EhsdpR/sVn7FlLm0txPdgni+JrFNd3p+K67MQtyrsp3w2G7xbHd5Plv83z3Wj6b3V9N9ssFv7afaa//ZPn3wD4/vje8PP/N7TebS0hgZhEAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA4LTIyVDE3OjUyOjIyKzAyOjAwc2qUYAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wOC0yMlQxNzo1MjoyMiswMjowMAI3LNwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC"
+              },
+              "bordered": false
+            },
+            {
+              "type": "staticButton",
+              "title": "",
+              "width": 5,
+              "bordered": false
+            },
+            {
+              "type": "close",
+              "width": 38,
+              "bordered": true,
+              "align": "right"
+            },
+          ]
+        },
+  
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 5,
+          "bordered": false
+        },
+        {
+          "type": "appleScriptTitledButton",
+          "source": {
+            "inline": "set mem to do shell script \"ps -A -o %mem | awk '{s+=$1}END{print s}'\"\rreturn mem & \"%\""
+          },
+          "action": "appleScript",
+          "actionAppleScript": {
+            "inline": "activate application \"Activity Monitor\"\rtell application \"System Events\"\r\ttell process \"Activity Monitor\"\r\t\ttell radio button \"CPU\" of radio group 1 of group 2 of toolbar 1 of window 1 to perform action \"AXPress\"\r\tend tell\rend tell"
+          },
+          "refreshInterval": 5,
+          "align": "right",
+          "image": {
+            "base64": "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"
+          }
+        },
+        {
+          "type": "close",
+          "width": 38,
+          "bordered": true,
+          "align": "right"
+        },
+      ]
+    },
+    {
+      "type": "staticButton",
+      "title": "",
+      "width": 5,
+      "bordered": false
+    },
+
+    // Group: Safari
+    {
+      "type": "group",
+      "align": "left",
+      "title": "Safari",
+      "items": [
+        {
+          "type": "staticButton",
+          "title": "Youtube",
+          "bordered": true,
+          "action": "openUrl",
+          "url": "https://youtube.com/",
+          "background": "FF3333"
+        },
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 5,
+          "bordered": false
+        },
+        {
+          "type": "staticButton",
+          "title": "果果丫丫哔哩哔哩空间",
+          "bordered": true,
+          "action": "openUrl",
+          "url": "https://space.bilibili.com/606853395/",
+          "background": "#FF9C33"
+        },
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 5,
+          "bordered": false
+        },
+        {
+          "type": "staticButton",
+          "title": "Surreyhome - DSM",
+          "bordered": true,
+          "action": "openUrl",
+          "url": "https://surreyhome.us6.quickconnect.to",
+          "background": "339CFF"
+        },
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 5,
+          "bordered": false
+        },
+        {
+          "type": "staticButton",
+          "title": "Netflix",
+          "bordered": true,
+          "action": "openUrl",
+          "url": "https://www.netflix.com/browse",
+          "background": "FF3333"
+        },
+        {
+          "type": "staticButton",
+          "title": "",
+          "width": 5,
+          "bordered": false
+        },
+        {
+          "type": "close",
+          "width": 64,
+          "bordered": true,
+          "align": "right"
+        },
+      ]
+    },
+    {
+      "type": "staticButton",
+      "width": 40,
+      "bordered": false,
+      "title": ""
+    },
+    {
+      "type": "staticButton",
+      "title": "Jerry Hu - 胡家睿",
+      "align": "right",
+      "bordered": false,
+      "action": "openUrl",
+      "url": "file:///Users/jerryhu/Library/Application%20Support/MTMR/Contacts.png",
+      "width": 250,
+      "image": {
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdB....",
+        "filePath": "/Users/jerryhu/Library/Application Support/MTMR/123.jpg"
+      }
+    },
+    
+  
+    // Right side of touchbar
+    {
+      "type": "yandexWeather",
+      "refreshInterval": 600,
+      "bordered": false,
+      "align": "right",
+      "action": "openUrl",
+      "url": "https://weather.com/"
+    },
+    {
+      "type": "battery",
+      "align": "right",
+      "bordered": false,
+      "image": {
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdB....",
+        "filePath": "/Users/jerryhu/Library/Application Support/MTMR/battery.png"
+      },
+      "action": "openUrl",
+      "url": "x-apple.systempreferences:com.apple.preference.battery"
+    },
+    {
+      "type": "timeButton",
+      "formatTemplate": "HH:mm",
+      "align": "right",
+      "bordered": false,
+      "longAction": "shellScript",
+      "longExecutablePath": "/usr/bin/pmset",
+      "longShellArguments": ["sleepnow"],
+      "action": "openUrl",
+      "url": "https://time.is"
+    },
+    {
+      "type": "exitTouchbar",
+      "bordered": false,
+      "align": "right",
+      "image": {
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABgUExURUdwTHZ2dqOio+Hh4dbV1ePj45CQkPn5+ebm5sbGxtva2qSkpNDQ0MjHyN/e3mRjZEZGRkxLSgkKCTo1PygpKA88Q/yqHuedKZ1wPWVPS/JVrlvMFE6dMcWINMNPjpdKcnIFGisAAAAQdFJOUwD+HMVz3v7++v6W/lhEs/4jVOGZAAADZUlEQVRYw61XiZaiMBAcFORw0IQOIof4/3+51QlKwiQc7207KI5UpfpI0vn5CdipjIvbOYGdb0Vcnn4O2Sk+Z6lj2Tnez/E7oTO2HNeH43cXPE7003l+ie6SYPIeXfJcsyTx9uiJRl/vqlKKhBBSCFKqovtVcyTrKk43DY8AkGxCm76lSkWa4rYSizLT8Ep9sbPhX6qKch6gDHrPv154cOEzLePCIgKRKHh4qQLwiUPJPM3Swo/P0mslVuCaQlRXaCj8418quYFnCrjh0RAbvNhhhmERh3I/XjPACycXJ8T2uhfPDIhDYtcD6iffj2cGFMTNql84IMURAiGhea7qBAFQB/BgUAhDYmXgkANfJ+JZQESaQNbPpnlZz72a5lljHlkvMgQUZR8Jv7MAEDwej2ftfqPKNrIkmCicIUDNkObx+hK88O1Z4xYojI4PmqMACeepBvJPBA1B004PtQ9NYH4EgXTnFabVyYTwW0Oa4IPRAhyCv9UUGw/uZBG8wDE9A/QKAd21D7YHRkFrQPa9j0BMPpR2EWgQlL80AT5pjYDzUHIILq4C4pGhEKO3YlXBhYNQfKvoQyDNsBzCet2FiBeWG8dQODGoTRgZu0rAUbxxEub0GgLSsPkuQADjNGAi0IJA6DDyJdYJiKcDE8gFAYcRFdDSXoKlAoEw4gXiVQIZJDBTgpE7FHiCKDSwkWKLQHIQl2lsADRVCCCy0GylsZhXg2maLtfP8LqoC8kpZXF4YY3dyXR8XS3d6XxQgVmS7AUlvJF8oyGXC4qzpIWs1hnizMOWS9oOH+Sb8e+W5DD0A7keOMu6H16P3RvTohuHvu+HXpK7rNsbixdP765714LfMDwNRoK1sVhbm9eo67oWKjrC6IKMD/bWtr65sgPdqMaPgL7/u7lCQrAasbZ2CAG/qaGHBhMCd3tfazBkjaG7FhcEcAwFeRqMcIuD5HXt2I3jmyPQDxheelqccJMFAaNCEPGBCMCHuYayk9vmZamnzdMCkMBWCyAxZQBtXpaWy0Yz8zSKSMGICkASRsX5l32o0Qy2um3LF+FP/ySDra5m8DTbNF1Os73Sru9q91M/fvPAIbYOHPrIAxFbR56kXDl1uYcuC7zv0OU59jEJH/vUvmPffzh4eo++2aGj7384fB86/v8D9YTH9SlTJskAAAAASUVORK5CYII="
+      },
+    }
+  ]

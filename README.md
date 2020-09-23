@@ -514,3 +514,44 @@ See [README](./anmull/README.md) for details on using the configuration and what
 [@adorow preset](./adorow/items.json)
 ![](./adorow/screenshot_main.png)
 ![](./adorow/screenshot_status.png)
+
+
+[@AccessRetrieved preset](AccessRetrieved/AccessRetrieved_code.json)
+![](AccessRetrieved/Main.png)
+![](AccessRetrieved/Controls.png)
+![](AccessRetrieved/Other.png)
+![](AccessRetrieved/Info.png)
+![](AccessRetrieved/Presets.png)
+![](AccessRetrieved/Welcome.png)
+![](AccessRetrieved/Safari.png)
+![](AccessRetrieved/Time.png)
+![](AccessRetrieved/Music.png)
+![](AccessRetrieved/Dock.png)
+
+Features:
+- <kbd>esc</kbd>
+- Dock
+- Music
+- Prev., Next, Play/Pause
+- Kill app
+- Brightness control
+- Keyboard illumination
+- Mute/lower vol./louder vol.
+- Memory uasge
+- Poromodo
+- Input source
+- Screenshot
+- Darkmode
+- Presets: Dock, World time, and Media
+- Simple welcome screen
+- Safari website shortcuts
+- Account name and prof. picture
+- Weather
+- Battery and remaining time
+- Time
+- Exit MTMR
+
+Main Screen widgets:
+- <kbd>esc</kbd>, Dock, Music, Controls, Safari, Profile Picture and Account name, weather, battery, time, exit mtmr
+
+
