@@ -3,6 +3,46 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 ---
 
+[@AccessRetrieved preset](AccessRetrieved/AccessRetrieved_code.json)
+![](AccessRetrieved/Main.png)
+![](AccessRetrieved/Controls.png)
+![](AccessRetrieved/Other.png)
+![](AccessRetrieved/Info.png)
+![](AccessRetrieved/Presets.png)
+![](AccessRetrieved/Welcome.png)
+![](AccessRetrieved/Safari.png)
+![](AccessRetrieved/Time.png)
+![](AccessRetrieved/Music.png)
+
+Features:
+- <kbd>esc</kbd>
+- Dock
+- Music
+- Prev., Next, Play/Pause
+- Kill app
+- Brightness control
+- Keyboard illumination
+- Mute/lower vol./louder vol.
+- Memory uasge
+- Poromodo
+- Input source
+- Screenshot
+- Darkmode
+- Presets: Dock, World time, and Media
+- Simple welcome screen
+- Safari website shortcuts
+- Account name and prof. picture
+- Weather
+- Battery and remaining time
+- Time
+- Exit MTMR
+
+Main Screen widgets:
+- <kbd>esc</kbd>, Dock, Music, Controls, Safari, Profile Picture and Account name, weather, battery, time, exit mtmr
+
+
+
+
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 [@Pythonicninja preset](pythonicninja/pythonicninja.json)
