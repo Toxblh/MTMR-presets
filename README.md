@@ -13,6 +13,7 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 ![](AccessRetrieved/Safari.png)
 ![](AccessRetrieved/Time.png)
 ![](AccessRetrieved/Music.png)
+![](AccessRetrieved/Dock.png)
 
 Features:
 - <kbd>esc</kbd>
