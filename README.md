@@ -555,3 +555,29 @@ Main Screen widgets:
 - <kbd>esc</kbd>, Dock, Music, Controls, Safari, Profile Picture and Account name, weather, battery, time, exit mtmr
 
 
+[@r12habh preset](./r12habh/item.json)
+
+#### Youtube Music with time status
+
+![](r12habh/TouchBarShot_YTMusicTime.png)
+
+#### Youtube Music without time status
+
+![](r12habh/TouchBarShot_YTMusic.png)
+
+#### Spotify
+
+![](r12habh/TouchBarShot_Spotify_Music.png)
+
+#### Media and other buttons
+
+![](r12habh/TouchBarShot_Media_Others.png)
+
+
+### Issues
+- Uses too much CPU which results in heating
+
+### To Do
+- Add on click play/pause for YouTube Music
+- Add on long click next track for YouTube Music
+- Find a way to run Spotify and YouTube Music together but only one showing in the TouchBar.
