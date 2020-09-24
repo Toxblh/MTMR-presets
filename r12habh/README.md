@@ -19,10 +19,10 @@
 ![](./TouchBarShot_Media_Others.png)
 
 
-#### Issues
+### Issues
 - Uses too much CPU which results in heating
 
-#### To Do
+### To Do
 - Add on click play/pause for YouTube Music
 - Add on long click next track for YouTube Music
 - Find a way to run Spotify and YouTube Music together but only one showing in the TouchBar.
