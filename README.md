@@ -581,3 +581,22 @@ Main Screen widgets:
 - Add on click play/pause for YouTube Music
 - Add on long click next track for YouTube Music
 - Find a way to run Spotify and YouTube Music together but only one showing in the TouchBar.
+
+
+[@sw0rl0k preset](sw0rl0k/item.json)
+![](sw0rl0k/main.png)
+
+Features:
+- Control Strip (emulated default)
+- Notion
+- Telegram
+- Firefox
+- VS Code
+- Pomodoro
+- Mute button
+- Play button
+- Weather
+- Time
+
+Control Strip:
+![](sw0rl0k/controls.png)
