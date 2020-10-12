@@ -600,3 +600,10 @@ Features:
 
 Control Strip:
 ![](sw0rl0k/controls.png)
+
+[@egerix preset](egerix/items.json)
+
+Main panel:
+![](egerix/preview/main.png)
+Settings panel with "ExitMTMR" button:
+![](egerix/preview/settings.png)
