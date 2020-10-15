@@ -2,6 +2,8 @@
 Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr). Feel free to send your own configs in pull-requests. Do not forget to attach a screenshot (⇧⌘6) and write some description to this README.
 
 ---
+[@Aldiskatel preset](Aldiskatel/items.json)
+![](https://github.com/aldiskatel/MTMR-presets/raw/master/Aldiskatel/Touchbar.png)
 
 [@ReDetection preset](ReDetection/ReDetection.json)
 
@@ -10,9 +12,6 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 [@Toxblh preset](Toxblh/toxblh.json)
 ![](Toxblh/toxblh.png)
-
-[@Aldiskatel preset](Aldiskatel/items.json)
-![](https://github.com/aldiskatel/MTMR-presets/raw/master/Aldiskatel/Touchbar.png)
 
 Widgets:
 - NightShift, DnD, Reminders, Pomodoro, Currencies, Weather, Play, Input, Battery, Time (tap for sleep)
