@@ -3,7 +3,7 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 ---
 [@RenaldiPranata preset](RenaldiPranata/itemsjson)
-![](RenaldiPranata/main touchbar.png)
+![](RenaldiPranata/main.png)
 
 [@ReDetection preset](ReDetection/ReDetection.json)
 
