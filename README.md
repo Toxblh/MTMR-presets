@@ -5,10 +5,16 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 [@RenaldiPranata preset](RenaldiPranata/items.json)
 
 ![](RenaldiPranata/main.png)
+![](RenaldiPranata/auxilaris.png)
+![](RenaldiPranata/elctrical.png)
 
-![](RenaldiPranata/auxilaries.png)
+Widgets:
+- Battery, Time
 
-![](RenaldiPranata/electrical.png)
+Customs:
+- Show media in auxilaries group
+- Show smarthome controller in electrical group
+- Integrate smart device with ifttt
 
 [@ReDetection preset](ReDetection/ReDetection.json)
 
