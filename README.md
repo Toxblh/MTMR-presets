@@ -2,6 +2,7 @@
 Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr). Feel free to send your own configs in pull-requests. Do not forget to attach a screenshot (⇧⌘6) and write some description to this README.
 
 ---
+
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 [@Pythonicninja preset](pythonicninja/pythonicninja.json)
@@ -609,3 +610,17 @@ Settings panel with "ExitMTMR" button:
 
 [@Aldiskatel preset](Aldiskatel/items.json)
 ![](https://github.com/aldiskatel/MTMR-presets/raw/master/Aldiskatel/Touchbar.png)
+
+[@RenaldiPranata preset](RenaldiPranata/items.json)
+
+![](RenaldiPranata/main.png)
+![](RenaldiPranata/auxilaris.png)
+![](RenaldiPranata/elctrical.png)
+
+Widgets:
+- Battery, Time
+
+Customs:
+- Show media in auxilaries group
+- Show smarthome controller in electrical group
+- Integrate smart device with ifttt
