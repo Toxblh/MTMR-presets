@@ -2,8 +2,13 @@
 Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr). Feel free to send your own configs in pull-requests. Do not forget to attach a screenshot (⇧⌘6) and write some description to this README.
 
 ---
-[@RenaldiPranata preset](RenaldiPranata/itemsjson)
+[@RenaldiPranata preset](RenaldiPranata/items.json)
+
 ![](RenaldiPranata/main.png)
+
+![](RenaldiPranata/auxilaries.png)
+
+![](RenaldiPranata/electrical.png)
 
 [@ReDetection preset](ReDetection/ReDetection.json)
 
