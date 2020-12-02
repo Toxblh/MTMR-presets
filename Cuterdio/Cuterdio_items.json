@@ -1,0 +1,78 @@
+﻿[
+  // Exit
+  {
+    "type": "escape",
+    "width": 64,
+    "align": "left"
+  },
+
+  // Cuterdio
+  {
+    "type": "shellScriptTitledButton",
+    "width": 700,
+    "refreshInterval": 10,
+    "align": "center",
+    "source": {
+      "inline": "echo -e $(cat ~/Library/Cuterdio/TrackInfo.txt)"
+    },
+    "actions": [
+      {
+        "trigger": "singleTap",
+        "action": "appleScript",
+        "actionAppleScript": {
+          "inline": "activate application \"Cuterdio\""
+        }
+      }
+    ],
+    "image": {
+       "filePath": "~/Library/Cuterdio/TrackInfo.png"
+    },
+    "bordered": false
+  },
+
+  // Microphone
+  {
+    "type": "appleScriptTitledButton",
+    "bordered": true,
+    "align": "right",
+    "width": 48,
+    "refreshInterval": 1,
+    "source": {
+      "inline": "if input volume of (get volume settings) = 0 then\rreturn \"  🔴  \"\relse\rreturn \"  ⚪️  \"\rend if"
+    },
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "if input volume of (get volume settings) = 0 then\rset level to 100\rset volume input volume level\rreturn {\" \", \"muted\"}\relse\rset level to 0\rset volume input volume level\rreturn {\" \", \"unmuted\"}\rend if"
+    }
+  },
+  // Play pause
+  {
+    "type": "play",
+    "align": "right",
+    "bordered": false,
+    "width": 64
+  },
+  // Volume
+  {
+    "type": "appleScriptTitledButton",
+    "refreshInterval": 2,
+    "align": "right",
+    "width": 48,
+    "source": {
+      "inline": "set curVolume to get volume settings\rif output muted of curVolume is false then\rreturn \"  🔈  \"\relse\rreturn \"  🔇  \"\rend if"
+    },
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "set curVolume to get volume settings\rif output muted of curVolume is false then\rset volume with output muted\relse\rset volume without output muted\rend if"
+    }
+  },
+  // Time
+  {
+    "type": "timeButton",
+    "formatTemplate": "E    dd.MM    HH:mm",
+    "locale": "de_DE",
+    "align": "right",
+    "bordered": false,
+    "longAction": "appleScript", "longActionAppleScript": { "inline": "tell application \"MTMR\" to quit" }
+  }
+]
