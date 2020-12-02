@@ -624,3 +624,13 @@ Customs:
 - Show media in auxilaries group
 - Show smarthome controller in electrical group
 - Integrate smart device with ifttt
+
+[@Cuterdio preset](Cuterdio/Cuterdio_items.json)
+![](Cuterdio/Cuterdio_TouchBar.png)
+
+Widgets:
+- Song information with cover art for [Cuterdio - Internet Radio](https://cuterdio.com)
+- Close MTMR via tap on time
+- Mic-Mute with toggle emoji
+- Play-Pause
+- Speaker-Mute with toggle emoji
