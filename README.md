@@ -634,3 +634,22 @@ Widgets:
 - Mic-Mute with toggle emoji
 - Play-Pause
 - Speaker-Mute with toggle emoji
+
+[@minimalistic preset](minimalistic/minimalistic.json)
+
+![](minimalistic/touchbar.png)
+
+**Copy Folder mtmr to ~/Pictures so look like ~/Pictures/mtmr**
+
+### Features:
+- Custom Esc
+- Show Label
+- Battery in Percent
+- CPU Usage in Percent 
+- Ram Usage in Percent
+- Free Space Storage
+- Weather
+- Custom Date and Clock
+- Sleep shorcut
+- Swipe two finger to adjust Volume
+- Swipe three finger to adjust Brightness
