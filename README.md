@@ -639,6 +639,8 @@ Widgets:
 
 ![](minimalistic/touchbar.png)
 
+**Copy Folder mtmr to ~/Pictures so look like ~/Pictures/mtmr**
+
 ### Features:
 - Custom Esc
 - Show Label
@@ -651,6 +653,3 @@ Widgets:
 - Sleep shorcut
 - Swipe two finger to adjust Volume
 - Swipe three finger to adjust Brightness
-
-### TODO
-- Copy Folder mtmr to ~/Pictures so look like ~/Pictures/mtmr
