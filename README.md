@@ -636,6 +636,7 @@ Widgets:
 - Speaker-Mute with toggle emoji
 
 [@minimalistic preset](minimalistic/minimalistic.json)
+
 ![](minimalistic/touchbar.png)
 
 ### Features:
