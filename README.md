@@ -656,10 +656,10 @@ Widgets:
 
 [@Functional Touchbar Preset](lnugraha/item.json)
 
-Both WiFi and Bluetooth are **ON**
+Both WiFi and Bluetooth are **OFF**
 ![](lnugraha/touchbar_screenshot_00.png)
 
-Both WiFi and Bluetooth are **OFF**
+Both WiFi and Bluetooth are **ON**
 ![](lnugraha/touchbar_screenshot_01.png)
 
 ### Features:
@@ -682,3 +682,7 @@ Both WiFi and Bluetooth are **OFF**
 - Date and time
   - Long press to sleep your MacBook
 - Exit MTMR
+
+### WishLists
+- Single tap to activate or deactivate WiFi
+- A better icon for Wifi signals
