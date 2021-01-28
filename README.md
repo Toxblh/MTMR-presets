@@ -653,3 +653,36 @@ Widgets:
 - Sleep shorcut
 - Swipe two finger to adjust Volume
 - Swipe three finger to adjust Brightness
+
+[@Functional Touchbar Preset](lnugraha/item.json)
+
+Both WiFi and Bluetooth are **OFF**
+![](lnugraha/touchbar_screenshot_00.png)
+
+Both WiFi and Bluetooth are **ON**
+![](lnugraha/touchbar_screenshot_01.png)
+
+### Features:
+- Reduce brightness
+  - Press option (⌥) and brightness to quickly go to System Preferences and deactivate/activate True Tone Display 
+- Increase brightness
+- Reduce keyboard backlit 
+- Increase keyboard backlit
+- Eject all disks 
+- WiFi On/Off
+  - Single tap to activate WiFi
+  - Double tap to deactivate WiFi
+  - Triple tap or long press to go to Network Settings in System Preferences
+- Bluetooth On/Off
+  - Make sure that you have installed blueutil (brew cask blueutil) to enable this feature
+  - Long press to go to Bluetooth Connectivity in System Preferences
+- Decrease volume
+- Increase volume
+- Mute
+- Date and time
+  - Long press to sleep your MacBook
+- Exit MTMR
+
+### WishLists
+- Single tap to activate or deactivate WiFi
+- A better icon for Wifi signals
