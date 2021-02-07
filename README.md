@@ -1,4 +1,5 @@
 # My TouchBar My Rules Presets
+
 Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr). Feel free to send your own configs in pull-requests. Do not forget to attach a screenshot (⇧⌘6) and write some description to this README.
 
 
@@ -844,3 +845,15 @@ Both WiFi and Bluetooth are **ON**
 ### WishLists
 - Single tap to activate or deactivate WiFi
 - A better icon for Wifi signals
+
+
+---
+
+[minimal preset](minimal/items.json)
+
+**Main menu:**
+![](minimal/screenshot-01.png)
+
+**Alternative menu (after pressing ••• in main menu):**
+![](minimal/screenshot-02.png)
+
