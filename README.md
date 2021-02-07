@@ -751,7 +751,7 @@ Settings panel with "ExitMTMR" button:
 
 
 [@Aldiskatel preset](Aldiskatel/items.json)
-![](https://github.com/aldiskatel/MTMR-presets/raw/master/Aldiskatel/Touchbar.png)
+![](Aldiskatel/Touchbar.png)
 
 
 ---
