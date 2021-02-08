@@ -1,12 +1,23 @@
 # My TouchBar My Rules Presets
+
 Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr). Feel free to send your own configs in pull-requests. Do not forget to attach a screenshot (⇧⌘6) and write some description to this README.
+
 
 ---
 
+
 [@ReDetection preset](ReDetection/ReDetection.json)
+
+
+---
+
 
 [@Pythonicninja preset](pythonicninja/pythonicninja.json)
 ![](pythonicninja/pythonicninja.png)
+
+
+---
+
 
 [@Toxblh preset](Toxblh/toxblh.json)
 ![](Toxblh/toxblh.png)
@@ -22,18 +33,37 @@ Customs:
 - Spotify shuffle
 - Spotify what is play, tap for next
 
+
+---
+
+
 [@luongvo209 preset](luongvo209/luongvo209.json)
 ![](luongvo209/luongvo209.png)
+
+
+---
 
 
 [@aadi_vs_anand preset](aadi_vs_anand/aadi_vs_anand.json)
 ![](aadi_vs_anand/aadi_vs_anand1.png)
 ![](aadi_vs_anand/aadi_vs_anand2.png)
 
+
+---
+
+
 [@Frityet](Frityet/items.json)
 ![](Frityet/TouchBarShot.png)
 
+
+---
+
+
 [ML-Present](ML-Present/ML-Present.json)
+
+
+---
+
 
 [spaniakos](spaniakos/spaniakosPreset.json)
 - Thanks to the above presets spaniakos preset is an all in one preset solution with different bars embeded into one master.
@@ -46,6 +76,10 @@ Customs:
 ![](spaniakos/Crypto.png)
 ![](spaniakos/Info.png)
 
+
+---
+
+
 [@darkomen78](darkomen78/slg.json)
 ![](darkomen78/main.png)
 - Battery, CPU, Network, (reserved for disk activity), Music Prev, Music Play/Pause, Music Next, Music Track, Sound volume down, Sound slide, Sound volume up, Input language, Screensaver
@@ -55,6 +89,10 @@ Only two custom things here (and an icon for the battery) :
 - CPU button is more based on what you can see in Activity Monitor. You must copy the AppleScript file [cpu.scpt](darkomen78/cpu.scpt) to the folder : /Users/Shared/MTMR/
 - The last button "power lock", simply start the screensaver (and lock the current session). I prefer that than a full sleep or a sleep display.
 Now, i'm seeking for a disk real-time activity button.
+
+
+---
+
 
 [@megatops preset](megatops/MTMR.json)
 
@@ -115,6 +153,10 @@ Now, i'm seeking for a disk real-time activity button.
 * Shanghai data & time
 * Other countries/cities
 
+
+---
+
+
 [@bobrosoft preset](bobrosoft/bobrosoft.json)
 
 ![](./bobrosoft/touchbar.png)
@@ -133,6 +175,10 @@ Now, i'm seeking for a disk real-time activity button.
 - Click on currency (EUR/RUB pair) opens up business website, currently rbc.ru (you can change to yours)
 - NightShift button
 - No brightness or volume buttons there because you can use built-in two/three-finger slide gestures on bar for that
+
+
+---
+
 
 [@docceri preset](docceri/docceriPreset.json)
 
@@ -161,6 +207,8 @@ Crypto menu:
 If you click any of the crypto prices, this will redirect you to the corresponding currency's cryptowat.ch chart.
 
 
+---
+
 
 [@mrcsmxms preset](mrcsmxms/items.json)
 
@@ -168,6 +216,10 @@ If you click any of the crypto prices, this will redirect you to the correspondi
 
 Widgets:
 - Escape, ExitMTMR, Brightness, PlayButton (iTunes), Volume, network, CPU-Load, sleep, battery
+
+
+---
+
 
 [@KoenvGinkel preset](pinkelPreset/items.json)
 
@@ -177,6 +229,10 @@ Widgets:
 Features:
 - When paused there is a resume button integrated in the line.
 - When playing there is a pause button integrated in the line.
+
+
+---
+
 
 [@metasean preset](metasean/items.json) &
 [randomQuotes script](metasean/randomQuotes.sh)
@@ -200,6 +256,10 @@ Widgets:
 
 Includes a shellScriptTitledButton filePath script to generate a random quote in a random foreground color, as well as an example of an inline script to display a single specific quote.
 
+
+---
+
+
 [@luchesigui preset](luchesigui/luchesigui.json)
 
 ![](./luchesigui/luchesigui.png)
@@ -220,6 +280,10 @@ Right:
 - Wheather (30 min update)
 - Time in my native country
 
+
+---
+
+
 [@retroplasma preset](retroplasma/retroplasma_invisible.json)
 
 ![](./retroplasma/retroplasma_invisible.png)
@@ -230,6 +294,10 @@ Right:
 - small button on the right: mute audio
 - enable gestures for brightness/volume
 
+
+---
+
+
 [@ohheyjosh](ohheyjosh/ohheyjosh.json)
 ![](ohheyjosh/ohheyjosh.png)
 
@@ -239,6 +307,10 @@ Right:
 - Brightness toggle buttons
 - Volume mute and slider
 - Colored lock/screensaver button
+
+
+---
+
 
 [@utkini preset](utkini/items.json)
 ![](./utkini/general.jpeg)
@@ -264,6 +336,10 @@ Right:
 - Play/pause
 - Time
 
+
+---
+
+
 [@trumad plexWidget](./trumad/items.json)
 ![](./trumad/trumad.png)
 
@@ -282,6 +358,10 @@ Touching the plex display on your touch screen will focus the Plex Media Player 
 
 Hopefully someone finds this useful. If there are any bugs or improvement that can be made to my apple script or anything, please let me know!
 
+
+---
+
+
 [@zwb124 preset](./zwb124/zwb124.json)
 ![](./zwb124/zwb124.png)
 
@@ -294,6 +374,10 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 - Battery: Long press and hold show Activity Monitor
 - DateTime: Show full date time，Press and hold Show Calendar app
 - Screenshot: Click the Show screenshot, press and tap direct full screen screenshot.
+
+
+---
+
 
 [@AlexHg preset](./AlexHg/AlexHg.json)
 
@@ -340,7 +424,15 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 - CPU %
 - close mode
 
+
+---
+
+
 [@Prashant_Kesharwani preset](./Prashant_Kesharwani/items.json)
+
+
+---
+
 
 [@de1ayer preset](./de1ayer/MTMR.json)
 
@@ -349,6 +441,10 @@ Hopefully someone finds this useful. If there are any bugs or improvement that c
 ![main](./de1ayer/main.png)
 
 ![fn](./de1ayer/fn.png)
+
+
+---
+
 
 [@donaldzou preset](./donaldzou/items.json)
 ![main](./donaldzou/tap.png)
@@ -389,6 +485,9 @@ Right
 - **Long Tap** Bring laptop to sleep
 
 
+---
+
+
 [@prateek3255 preset](./prateek3255/items.json)
 
 - Cool icons for exitting the TouchBar, volume and brightness slider.
@@ -397,6 +496,10 @@ Right
 ![spotify-play](./prateek3255/spotify-play.png)
 
 ![spotify-pause](./prateek3255/spotify-paused.png)
+
+
+---
+
 
 [@BitYoungjae preset](./BitYoungjae/items.json)
 
@@ -414,7 +517,7 @@ Decorated with a **simple** look.
 ![main](./BitYoungjae/Volume.png)
 
 
-
+---
 
 
 ### FunctionBar by *e-simpson*
@@ -437,6 +540,10 @@ Decorated with a **simple** look.
 ![YouTube Music Oriented Screenshot1](./mukmyash/with-controll-strip.png)
 ![YouTube Music Oriented Screenshot2](./mukmyash/with-controll-strip-play.png)
 
+
+---
+
+
 [@Alsastre](./Alsastre/items.json)
 ![](./Alsastre/Alsastre.png)
 From left to right:
@@ -452,6 +559,10 @@ From left to right:
    1. Long Press: Lock computer
 7. Exit MTMR
 
+
+---
+
+
 [@edoardoo preset](edoardoo/items.json)
 ![](./edoardoo/main.png)
 
@@ -463,10 +574,17 @@ Widgets:
 - ExitMTMR, MediaKeys, Spotify (tap to open), DoNotDisturb, Mute,Lock, Network, Battery, time (HH:mm:ss)
 
 
+---
+
+
 [@munchikin preset](munchikin/items.json)
 ![](munchikin/munchikin.png)
 Widgets :
 - lock, Bright control, Memo, VSCode, launchpad, mute, volume contrl, music control, battery, CPU monitoring
+
+
+---
+
 
 [@lolapatch](./Lola/Lola.json)
 
@@ -503,6 +621,10 @@ Settings :
 - Close
 <img width="1004" alt="Numbers" src="https://user-images.githubusercontent.com/68507896/87878311-c2222c00-c9e3-11ea-92e4-6e9dcefa6600.png">
 
+
+---
+
+
 [@anmull](./anmull/items.json)
 
 VPN indicator, copy/paste ISO-8601 datetime, retrieve additional weather info, custom Do Not Disturb, and more.
@@ -511,9 +633,16 @@ See [README](./anmull/README.md) for details on using the configuration and what
 
 ![](./anmull/images/screenshot.png)
 
+
+---
+
+
 [@adorow preset](./adorow/items.json)
 ![](./adorow/screenshot_main.png)
 ![](./adorow/screenshot_status.png)
+
+
+---
 
 
 [@AccessRetrieved preset](AccessRetrieved/AccessRetrieved_code.json)
@@ -555,6 +684,9 @@ Main Screen widgets:
 - <kbd>esc</kbd>, Dock, Music, Controls, Safari, Profile Picture and Account name, weather, battery, time, exit mtmr
 
 
+---
+
+
 [@r12habh preset](./r12habh/item.json)
 
 #### Youtube Music with time status
@@ -583,6 +715,9 @@ Main Screen widgets:
 - Find a way to run Spotify and YouTube Music together but only one showing in the TouchBar.
 
 
+---
+
+
 [@sw0rl0k preset](sw0rl0k/item.json)
 ![](sw0rl0k/main.png)
 
@@ -601,6 +736,10 @@ Features:
 Control Strip:
 ![](sw0rl0k/controls.png)
 
+
+---
+
+
 [@egerix preset](egerix/items.json)
 
 Main panel:
@@ -608,8 +747,16 @@ Main panel:
 Settings panel with "ExitMTMR" button:
 ![](egerix/preview/settings.png)
 
+
+---
+
+
 [@Aldiskatel preset](Aldiskatel/items.json)
-![](https://github.com/aldiskatel/MTMR-presets/raw/master/Aldiskatel/Touchbar.png)
+![](Aldiskatel/Touchbar.png)
+
+
+---
+
 
 [@RenaldiPranata preset](RenaldiPranata/items.json)
 
@@ -625,6 +772,10 @@ Customs:
 - Show smarthome controller in electrical group
 - Integrate smart device with ifttt
 
+
+---
+
+
 [@Cuterdio preset](Cuterdio/Cuterdio_items.json)
 ![](Cuterdio/Cuterdio_TouchBar.png)
 
@@ -634,6 +785,10 @@ Widgets:
 - Mic-Mute with toggle emoji
 - Play-Pause
 - Speaker-Mute with toggle emoji
+
+
+---
+
 
 [@minimalistic preset](minimalistic/minimalistic.json)
 
@@ -653,6 +808,10 @@ Widgets:
 - Sleep shorcut
 - Swipe two finger to adjust Volume
 - Swipe three finger to adjust Brightness
+
+
+---
+
 
 [@Functional Touchbar Preset](lnugraha/item.json)
 
@@ -686,3 +845,15 @@ Both WiFi and Bluetooth are **ON**
 ### WishLists
 - Single tap to activate or deactivate WiFi
 - A better icon for Wifi signals
+
+
+---
+
+[minimal preset](minimal/items.json)
+
+**Main menu:**
+![](minimal/screenshot-01.png)
+
+**Alternative menu (after pressing ••• in main menu):**
+![](minimal/screenshot-02.png)
+

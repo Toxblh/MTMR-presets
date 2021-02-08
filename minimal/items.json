@@ -1,0 +1,130 @@
+[
+  {
+    "align": "left",
+    "bordered": false,
+    "formatTemplate": "EEEE, MMMM d, YYYY @ HH:mm",
+    "type": "timeButton"
+  },
+  {
+    "align": "right",
+    "bordered": true,
+    "type": "mute"
+  },
+  {
+    "align": "right",
+    "bordered": true,
+    "type": "volumeDown"
+  },
+  {
+    "align": "right",
+    "bordered": true,
+    "type": "volumeUp"
+  },
+  {
+    "align": "right",
+    "bordered": true,
+    "type": "brightnessDown"
+  },
+  {
+    "align": "right",
+    "bordered": true,
+    "type": "brightnessUp"
+  },
+  {
+    "align": "right",
+    "bordered": true,
+    "items": [
+      {
+        "type": "brightnessDown",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "brightnessUp",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "bordered": false,
+        "width": 12
+      },
+      {
+        "type": "illuminationDown",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "illuminationUp",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "bordered": false,
+        "width": 12
+      },
+      {
+        "type": "previous",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "play",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "next",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "bordered": false,
+        "width": 12
+      },
+      {
+        "type": "mute",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "volumeDown",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "volumeUp",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "bordered": false,
+        "width": 12
+      },
+      {
+        "type": "sleep",
+        "title": "Lock",
+        "align": "left",
+        "bordered": true
+      },
+      {
+        "type": "close",
+        "align": "right",
+        "bordered": true
+      }
+    ],
+    "title": "•••",
+    "type": "group"
+  }
+]
