@@ -1,8 +1,8 @@
 **This preset consists of:**  
  Network Speed,  
  Spotify current track,  
- increase brightness,  
  decrease brightness,  
+ increase brightness,  
  buttons to switch to the previous/next track in your playlist,  
  "coffee break"-button(turns off your display),  
  mute button, volume control,  
