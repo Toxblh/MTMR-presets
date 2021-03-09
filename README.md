@@ -876,11 +876,14 @@ Both WiFi and Bluetooth are **ON**
 
 
 [@Aarons preset](AaronsPreset/AaronsPreset.json)
+
 **Main:**
 <img width="1004" alt="Touch Bar Bild 2021-03-09 um 18 37 58" src="https://user-images.githubusercontent.com/7556347/110513495-95538e00-8106-11eb-92dc-9a5dae57fa78.png">
+
 **DEV group:**
 <img width="1004" alt="Touch Bar Bild 2021-03-09 um 18 38 29" src="https://user-images.githubusercontent.com/7556347/110513560-a7353100-8106-11eb-9756-fbf8c1da288f.png">
 The DEV group can be used to start programs used for developing purposes (I might add some stuff there). One could also use it for shortcuts (I prefer to use the Clion and PyCharm native touchbar instead of MTMR)
+
 **SONOS group:**
 <img width="1004" alt="Touch Bar Bild 2021-03-09 um 18 38 57" src="https://user-images.githubusercontent.com/7556347/110513615-b74d1080-8106-11eb-80bd-82a65417ebfa.png">
 The SONOS group leverages the [Menu Bar Controller for Sonos](https://mbc-for-sonos.app) to control the volume of my SONOS speakers.
