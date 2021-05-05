@@ -29,6 +29,18 @@
   },
   {
     "type": "shellScriptTitledButton",
+    "source": {
+      "inline": "bash ~/Pictures/mtmr/trackpad_battery.sh"
+    },
+    "refreshInterval": 2,
+    "align": "left",
+    "bordered": false,
+    "image": {
+      "filePath": "~/Pictures/mtmr/trackpad.png"
+    }
+  },
+  {
+    "type": "shellScriptTitledButton",
     "width": 80,
     "refreshInterval": 2,
     "source": {
