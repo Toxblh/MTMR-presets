@@ -911,5 +911,5 @@ Currency and Crypto Group - Some coins and currencies
 
 ---
 
-[@kocierik preset](kocierik/TouchBar.json)
+[@kocierik preset](kocierik/kocierik.json)
 ![](kocierik/TouchBar.png)
