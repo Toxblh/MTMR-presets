@@ -2,6 +2,11 @@
 
 Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr). Feel free to send your own configs in pull-requests. Do not forget to attach a screenshot (⇧⌘6) and write some description to this README.
 
+---
+
+
+[@kocierik preset](kocierik/TouchBar.json)
+![](kocierik/TouchBar.png)
 
 ---
 
