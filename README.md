@@ -5,12 +5,6 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 ---
 
 
-[@kocierik preset](kocierik/TouchBar.json)
-![](kocierik/TouchBar.png)
-
----
-
-
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 
@@ -913,3 +907,9 @@ Time Group - with timer and world time
 
 Currency and Crypto Group - Some coins and currencies
 <img width="1085" alt="4 Cryto Folder" src="https://user-images.githubusercontent.com/81223337/117534138-797a4480-aff0-11eb-8a21-103110320f2f.png">
+
+
+---
+
+[@kocierik preset](kocierik/TouchBar.json)
+![](kocierik/TouchBar.png)
