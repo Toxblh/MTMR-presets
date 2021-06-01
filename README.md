@@ -37,6 +37,17 @@ Customs:
 [@lensonyuan preset](lensonyuan/items.json)
 ![](lensonyuan/TouchBarShots.png)
 
+Widgets:
+- CPU utilization, Memory utilization，CPU temperature, network,  Battery, Data time, etc..
+
+features:
+- Use stats command to display CPU temperature.
+- The usage of CPU and memory is consistent with the data in the activity monitor of Apple system.
+- cpu utilization use the top command info.
+- memory utilization use the ps command info.
+- Real time network speed display
+
+
 [@luongvo209 preset](luongvo209/luongvo209.json)
 ![](luongvo209/luongvo209.png)
 
