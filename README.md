@@ -913,3 +913,9 @@ Currency and Crypto Group - Some coins and currencies
 
 [@kocierik preset](kocierik/TouchBar.json)
 ![](kocierik/TouchBar.png)
+
+---
+
+[@zhaoruheng preset](zhaoruheng/zhaoruheng.json)
+![](zhaoruheng/zhaoruheng.png)
+- Esc,ExitMTMR,Battery, CPU, Network, Time, Music Prev, Music Play/Pause, Music Next,, Sound volume down,, Sound volume up,Sound slide, Screensaver,Sleep,Delete
