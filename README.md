@@ -887,34 +887,48 @@ The DEV group can be used to start programs used for developing purposes (I migh
 The SONOS group leverages the [Menu Bar Controller for Sonos](https://mbc-for-sonos.app) to control the volume of my SONOS speakers.
 
 
-
 ---
 
 [@SonyMiner preset](SonyMiner)
+2021-05-13: Made som changes Moved main bar groups to the right so they are easier to access from the right hand. Also moved to the right all the sub-groups. Also replaced text in the groups for icons.
 
-Main TouchBar - Web group, Dock, Apps direct access, Battery, Date and Time, Weather, Media group, Time group, Currency group
-<img width="1085" alt="0 Main TouchBar" src="https://user-images.githubusercontent.com/81223337/117534111-59e31c00-aff0-11eb-8a6c-2c395b1b5f8e.png">
+Main TouchBar - ESC, Dock, Battery, Weather, Wind Speed locations Group, Date and Time,  Apps direct access, Media group, Time group, Currency group, Web group
+<img width="1085" alt="0 Main TouchBar" src="https://user-images.githubusercontent.com/81223337/118175913-05e19880-b431-11eb-92e3-f957587bfdc2.png">
 
-Web bookmarks Group
-<img width="1085" alt="1 WWW Folder" src="https://user-images.githubusercontent.com/81223337/117534121-67000b00-aff0-11eb-9024-69f13fd53d24.png">
+Weather and Wind Groups. By clicking yo go the website of your choice for weather or wind. Here examples  
+<img width="1085" alt="1 Weather - Wind" src="https://user-images.githubusercontent.com/81223337/118178081-d1bba700-b433-11eb-833b-24b42ac5b4a8.png">
+<img width="1085" alt="1 Wind" src="https://user-images.githubusercontent.com/81223337/118177757-683b9880-b433-11eb-8ae3-afae6756286e.png">
+
 
 Media Group - Sound, music and brightness controls 
 <img width="1085" alt="2 Media" src="https://user-images.githubusercontent.com/81223337/117534128-6cf5ec00-aff0-11eb-8370-d7b00518bbbc.png">
 
 Time Group - with timer and world time
-<img width="1085" alt="3 Time" src="https://user-images.githubusercontent.com/81223337/117534131-73846380-aff0-11eb-89ad-98727f41e75d.png">
+<img width="1085" alt="3 Time" src="https://user-images.githubusercontent.com/81223337/118177107-8785f600-b432-11eb-8e6d-6d452e4f8f2d.png">
 
 Currency and Crypto Group - Some coins and currencies
 <img width="1085" alt="4 Cryto Folder" src="https://user-images.githubusercontent.com/81223337/117534138-797a4480-aff0-11eb-8a21-103110320f2f.png">
 
+Web bookmarks Group
+<img width="1085" alt="5 WWW Group" src="https://user-images.githubusercontent.com/81223337/118176233-71c40100-b431-11eb-8b4c-9a6a88014bec.png">
+Sub-Web bookmarks Group example
+<img width="1085" alt="5 WWW Sub-Group News" src="https://user-images.githubusercontent.com/81223337/118176493-c6677c00-b431-11eb-81a1-611785f1c2b7.png">
+<img width="1085" alt="5 WWW Sub-Group Buy" src="https://user-images.githubusercontent.com/81223337/118177414-f3685e80-b432-11eb-8fff-035299d69d20.png">
+
 
 ---
 
-[@kocierik preset](kocierik/TouchBar.json)
+[@kocierik preset](kocierik/kocierik.json)
 ![](kocierik/TouchBar.png)
 
+---
+
+[@zhaoruheng preset](zhaoruheng/zhaoruheng.json)
+![](zhaoruheng/zhaoruheng.png)
+- Esc,ExitMTMR,Battery, CPU, Network, Time, Music Prev, Music Play/Pause, Music Next,, Sound volume down,, Sound volume up,Sound slide, Screensaver,Sleep,Delete
 
 ---
+
 [@lensonyuan preset](lensonyuan/items.json)
 ![](lensonyuan/TouchBarShots.png)
 
