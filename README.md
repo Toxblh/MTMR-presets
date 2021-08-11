@@ -178,6 +178,29 @@ Now, i'm seeking for a disk real-time activity button.
 ---
 
 
+[@bruneitor preset](bruneitor/bruneitor_items.json)
+
+![](./bruneitor/bruneitor_items.png)
+
+Productivity touchbar
+
+Features:
+- Kill Apps
+- Battery percentage
+- Weather (Cº)
+- CPU Usage
+- Internet Connection
+- Dock with open apps
+- Screen Brightness
+- Keyboard Brightness
+- Music Controls
+- Mute Control
+- Do not disturb
+
+
+---
+
+
 [@docceri preset](docceri/docceriPreset.json)
 
 ![](./docceri/Touch%20Bar%20Shot%202019-08-24%20at%2013.28.17.png)
