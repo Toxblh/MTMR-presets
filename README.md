@@ -925,6 +925,7 @@ Sub-Web bookmarks Group example
 
 [@zhaoruheng preset](zhaoruheng/zhaoruheng.json)
 ![](zhaoruheng/zhaoruheng.png)
+
 - Esc,ExitMTMR,Battery, CPU, Network, Time, Music Prev, Music Play/Pause, Music Next,, Sound volume down,, Sound volume up,Sound slide, Screensaver,Sleep,Delete
 
 ---
@@ -942,3 +943,22 @@ features:
 - memory utilization use the ps command info.
 - Real time network speed display
 
+---
+
+[@wonz_preset](wonz/items.json)
+
+![touchbar](wonz/touchbar.png)
+
+Features:
+
+- Quit Touch Bar
+- CPU
+- Disk
+- Network meter
+- Spotify
+- displaySleep
+- volumeDown/Up
+- mute
+- battery
+- weather
+- timeButton
