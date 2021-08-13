@@ -945,9 +945,9 @@ features:
 
 ---
 
-[@wonz_preset](wonz/items.json)
+[@wonz_preset](Wonz/items.json)
 
-![touchbar](wonz/touchbar.png)
+![touchbar](Wonz/touchbar.png)
 
 Features:
 
