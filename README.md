@@ -178,6 +178,20 @@ Now, i'm seeking for a disk real-time activity button.
 ---
 
 
+[@docceri preset](docceri/docceriPreset.json)
+
+![](./docceri/Touch%20Bar%20Shot%202019-08-24%20at%2013.28.17.png)
+![](./docceri/Touch%20Bar%20Shot%202019-08-24%20at%2013.28.22.png)
+
+Main:
+- esc key
+- crypto menu (see below)
+- keyboard light intensity - and +
+- weekday, date and time (12H)
+- volume controls
+---
+
+
 [@bruneitor preset](bruneitor/bruneitor_items.json)
 
 ![](./bruneitor/bruneitor_items.png)
@@ -197,21 +211,6 @@ Features:
 - Mute Control
 - Do not disturb
 
-
----
-
-
-[@docceri preset](docceri/docceriPreset.json)
-
-![](./docceri/Touch%20Bar%20Shot%202019-08-24%20at%2013.28.17.png)
-![](./docceri/Touch%20Bar%20Shot%202019-08-24%20at%2013.28.22.png)
-
-Main:
-- esc key
-- crypto menu (see below)
-- keyboard light intensity - and +
-- weekday, date and time (12H)
-- volume controls
 - current weather (create your own API, instructions are on the main page)
 - charge level (FYI: if you are not charging the battery, it shows how many hours you can use the computer on battery)
 - "x" - for exiting the preset
@@ -964,4 +963,25 @@ features:
 - cpu utilization use the top command info.
 - memory utilization use the ps command info.
 - Real time network speed display
+
+---
+
+[@bruneitor preset](bruneitor/bruneitor_items.json)
+
+![](./bruneitor/bruneitor_items.png)
+
+Productivity touchbar
+
+Features:
+- Kill Apps
+- Battery percentage
+- Weather (Cº)
+- CPU Usage
+- Internet Connection
+- Dock with open apps
+- Screen Brightness
+- Keyboard Brightness
+- Music Controls
+- Mute Control
+- Do not disturb
 
