@@ -2,7 +2,6 @@
 
 Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr). Feel free to send your own configs in pull-requests. Do not forget to attach a screenshot (⇧⌘6) and write some description to this README.
 
-
 ---
 
 
@@ -35,7 +34,6 @@ Customs:
 
 
 ---
-
 
 [@luongvo209 preset](luongvo209/luongvo209.json)
 ![](luongvo209/luongvo209.png)
@@ -178,7 +176,6 @@ Now, i'm seeking for a disk real-time activity button.
 
 
 ---
-
 
 [@docceri preset](docceri/docceriPreset.json)
 
@@ -800,7 +797,7 @@ Widgets:
 - Custom Esc
 - Show Label
 - Battery in Percent
-- CPU Usage in Percent 
+- CPU Usage in Percent
 - Ram Usage in Percent
 - Free Space Storage
 - Weather
@@ -823,11 +820,11 @@ Both WiFi and Bluetooth are **ON**
 
 ### Features:
 - Reduce brightness
-  - Press option (⌥) and brightness to quickly go to System Preferences and deactivate/activate True Tone Display 
+  - Press option (⌥) and brightness to quickly go to System Preferences and deactivate/activate True Tone Display
 - Increase brightness
-- Reduce keyboard backlit 
+- Reduce keyboard backlit
 - Increase keyboard backlit
-- Eject all disks 
+- Eject all disks
 - WiFi On/Off
   - Single tap to activate WiFi
   - Double tap to deactivate WiFi
@@ -857,3 +854,131 @@ Both WiFi and Bluetooth are **ON**
 **Alternative menu (after pressing ••• in main menu):**
 ![](minimal/screenshot-02.png)
 
+---
+
+[deethereal preset](deethereal_preset/items.json)
+**This preset consists of:**
+ Network Speed,
+ Spotify current track,
+ decrease brightness,
+ increase brightness,
+ buttons to switch to the previous/next track in your playlist,
+ "coffee break"-button(turns off your display),
+ mute button, volume control,
+ current battery status,
+ local time.
+![alt text](https://raw.githubusercontent.com/deethereal/MTMR-presets/master/deethereal_preset/touch_screen.png)
+
+---
+
+
+[@Aarons preset](AaronsPreset/AaronsPreset.json)
+
+**Main:**
+<img width="1004" alt="Touch Bar Bild 2021-03-09 um 18 37 58" src="https://user-images.githubusercontent.com/7556347/110513495-95538e00-8106-11eb-92dc-9a5dae57fa78.png">
+
+**DEV group:**
+<img width="1004" alt="Touch Bar Bild 2021-03-09 um 18 38 29" src="https://user-images.githubusercontent.com/7556347/110513560-a7353100-8106-11eb-9756-fbf8c1da288f.png">
+The DEV group can be used to start programs used for developing purposes (I might add some stuff there). One could also use it for shortcuts (I prefer to use the Clion and PyCharm native touchbar instead of MTMR)
+
+**SONOS group:**
+<img width="1004" alt="Touch Bar Bild 2021-03-09 um 18 38 57" src="https://user-images.githubusercontent.com/7556347/110513615-b74d1080-8106-11eb-80bd-82a65417ebfa.png">
+The SONOS group leverages the [Menu Bar Controller for Sonos](https://mbc-for-sonos.app) to control the volume of my SONOS speakers.
+
+
+---
+
+[@SonyMiner preset](SonyMiner)
+2021-05-13: Made som changes Moved main bar groups to the right so they are easier to access from the right hand. Also moved to the right all the sub-groups. Also replaced text in the groups for icons.
+
+Main TouchBar - ESC, Dock, Battery, Weather, Wind Speed locations Group, Date and Time,  Apps direct access, Media group, Time group, Currency group, Web group
+<img width="1085" alt="0 Main TouchBar" src="https://user-images.githubusercontent.com/81223337/118175913-05e19880-b431-11eb-92e3-f957587bfdc2.png">
+
+Weather and Wind Groups. By clicking yo go the website of your choice for weather or wind. Here examples
+<img width="1085" alt="1 Weather - Wind" src="https://user-images.githubusercontent.com/81223337/118178081-d1bba700-b433-11eb-833b-24b42ac5b4a8.png">
+<img width="1085" alt="1 Wind" src="https://user-images.githubusercontent.com/81223337/118177757-683b9880-b433-11eb-8ae3-afae6756286e.png">
+
+
+Media Group - Sound, music and brightness controls
+<img width="1085" alt="2 Media" src="https://user-images.githubusercontent.com/81223337/117534128-6cf5ec00-aff0-11eb-8370-d7b00518bbbc.png">
+
+Time Group - with timer and world time
+<img width="1085" alt="3 Time" src="https://user-images.githubusercontent.com/81223337/118177107-8785f600-b432-11eb-8e6d-6d452e4f8f2d.png">
+
+Currency and Crypto Group - Some coins and currencies
+<img width="1085" alt="4 Cryto Folder" src="https://user-images.githubusercontent.com/81223337/117534138-797a4480-aff0-11eb-8a21-103110320f2f.png">
+
+Web bookmarks Group
+<img width="1085" alt="5 WWW Group" src="https://user-images.githubusercontent.com/81223337/118176233-71c40100-b431-11eb-8b4c-9a6a88014bec.png">
+Sub-Web bookmarks Group example
+<img width="1085" alt="5 WWW Sub-Group News" src="https://user-images.githubusercontent.com/81223337/118176493-c6677c00-b431-11eb-81a1-611785f1c2b7.png">
+<img width="1085" alt="5 WWW Sub-Group Buy" src="https://user-images.githubusercontent.com/81223337/118177414-f3685e80-b432-11eb-8fff-035299d69d20.png">
+
+
+---
+
+[@kocierik preset](kocierik/kocierik.json)
+![](kocierik/TouchBar.png)
+
+---
+
+[@zhaoruheng preset](zhaoruheng/zhaoruheng.json)
+![](zhaoruheng/zhaoruheng.png)
+
+- Esc,ExitMTMR,Battery, CPU, Network, Time, Music Prev, Music Play/Pause, Music Next,, Sound volume down,, Sound volume up,Sound slide, Screensaver,Sleep,Delete
+
+---
+
+[@lensonyuan preset](lensonyuan/items.json)
+![](lensonyuan/TouchBarShots.png)
+
+Widgets:
+- CPU utilization, Memory utilization，CPU temperature, network,  Battery, Data time, etc..
+
+features:
+- Use stats command to display CPU temperature.
+- The usage of CPU and memory is consistent with the data in the activity monitor of Apple system.
+- cpu utilization use the top command info.
+- memory utilization use the ps command info.
+- Real time network speed display
+
+---
+
+[@wonz_preset](Wonz/items.json)
+
+![touchbar](Wonz/touchbar.png)
+
+Features:
+
+- Quit Touch Bar
+- CPU
+- Disk
+- Network meter
+- Spotify
+- displaySleep
+- volumeDown/Up
+- mute
+- battery
+- weather
+- timeButton
+
+---
+
+[@bruneitor preset](bruneitor/bruneitor_items.json)
+
+![](./bruneitor/bruneitor_items.png)
+
+Productivity touchbar
+
+Features:
+- Kill Apps
+- Battery percentage
+- Weather (Cº)
+- CPU Usage
+- Internet Connection
+- Dock with open apps
+- Screen Brightness
+- Keyboard Brightness
+- Music Controls
+- Mute Control
+- Do not disturb
