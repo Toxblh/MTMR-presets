@@ -995,3 +995,23 @@ Features:
 - Music Controls
 - Mute Control
 - Do not disturb
+
+---
+
+[@Adm preset](Adm/adm_crypto_preset.json)
+
+![](./adm/adm_touchbar_screenshot.png)
+
+Crypto Productivity touchbar
+
+Features:
+- ESC button
+- EXIT touchbar preset
+- CPU utilization
+- Ethereum Gas Tracker via ethscan (NEEDS API KEY) - just change the "API_KEY" url argument
+- Spotify/Apple Music with play/pause on touch and SKIP on long touch
+- BTC/USD price
+- Mute
+- Battery indicator
+- Keyboard input change
+- Date
