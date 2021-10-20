@@ -1000,7 +1000,7 @@ Features:
 
 [@Adm preset](Adm/adm_crypto_preset.json)
 
-![](./adm/adm_touchbar_screenshot.png)
+![](./Adm/adm_touchbar_screenshot.png)
 
 Crypto Productivity touchbar
 
