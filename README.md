@@ -99,7 +99,7 @@ Widgets:
 - Telegram, Google Translator, Music Controls, Yandex Music, Currency (RUB to USD), Yandex Weather, CPU, Battery, ivisible "Exit MTMR" button 
 
 Instructions about Yandex Music and Telegram:
-- Download [Yandex Music Unofficial](https://yandex-music.juvs.dev) and any Telegram
+- Download [Yandex Music Unofficial](https://yandex-music.juvs.dev) and Telegram client
 - Right-click the Dock icon of this Apps, then select Options and choose All Desktops in the submenu
 
 
