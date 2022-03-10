@@ -101,7 +101,7 @@ Widgets:
 Instructions about Yandex Music and Telegram:
 - Download [Yandex Music Unofficial](https://yandex-music.juvs.dev) and Telegram client
 - Right-click the Dock icon of this Apps, then select Options and choose All Desktops in the submenu
-
+- Tap them on the touchbar and enjoy!
 
 ---
 
