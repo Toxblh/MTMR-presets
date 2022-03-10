@@ -1,0 +1,29 @@
+[
+  {
+    "type": "escape",
+    "width": 128,
+    "align": "left",
+    "title": "",
+    "background": "#000000"
+  },
+  { "type": "staticButton", 
+    "align": "center" ,
+    "width": 128,
+    "title": "",
+    "action": "appleScript",
+    "actionAppleScript": {
+      "filePath": "~/Library/Application Support/MTMR/ClashX_Helper.scpt"
+    },
+    "background": "#000000"
+  },
+  {
+    "type": "staticButton",
+    "width": 128,
+    "align": "right",
+    "title": "",
+    "background": "#000000",
+    "action": "hidKey",
+    "keycode": 16
+  }
+]
+

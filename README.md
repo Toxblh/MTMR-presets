@@ -1009,3 +1009,18 @@ Features:
 - Music Controls
 - Mute Control
 - Do not disturb
+
+---
+
+[@Gavinin preset](Gavinin/items.json)
+
+![](./Gavinin/Mtmr_Gavinin.png)
+
+Features:
+
+​	The main function is ClashX switcher (compatible ClashX Pro)
+
+- Esc
+- ClashX on/off
+- Pause
+
