@@ -93,7 +93,7 @@ Now, i'm seeking for a disk real-time activity button.
 
 
 [@DanDolog Yandex Music Preset](YandexMusicPreset/items.json)
-![](YandexMusicPreset/items.png)
+![](YandexMusicPreset/touchbar.png)
 
 Widgets:
 - Telegram, Google Translator, Music Controls, Yandex Music, Currency (RUB to USD), Yandex Weather, CPU, Battary 
