@@ -96,7 +96,7 @@ Now, i'm seeking for a disk real-time activity button.
 ![](YandexMusicPreset/touchbar.png)
 
 Widgets:
-- Telegram, Google Translator, Music Controls, Yandex Music, Currency (RUB to USD), Yandex Weather, CPU, Battery, ivisible "Exit MTMR" button 
+- Telegram, Google Translator, Music Controls, Yandex Music, Currency (RUB to USD), Yandex Weather, CPU, Battery and invisible "Exit MTMR" button 
 
 Instructions about Yandex Music and Telegram:
 - Download [Yandex Music Unofficial](https://yandex-music.juvs.dev) and Telegram client
