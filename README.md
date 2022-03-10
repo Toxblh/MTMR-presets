@@ -92,6 +92,20 @@ Now, i'm seeking for a disk real-time activity button.
 ---
 
 
+[@DanDolog Yandex Music Preset](YandexMusicPreset/items.json)
+![](YandexMusicPreset/items.png)
+
+Widgets:
+- Telegram, Google Translator, Music Controls, Yandex Music, Currency (RUB to USD), Yandex Weather, CPU, Battary 
+
+Instructions about Yandex Music and Telegram:
+- Download [Yandex Music Unofficial] (https://yandex-music.juvs.dev) and any Telegram
+- Right-click the Dock icon of this Apps, then select Options and choose All Desktops in the submenu
+
+
+---
+
+
 [@megatops preset](megatops/MTMR.json)
 
 ![](./megatops/touchbar.png)
