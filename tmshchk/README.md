@@ -2,7 +2,7 @@
 
 ## Preview
 
-...
+![](./tmshchk.png)
 
 ## Features
 
