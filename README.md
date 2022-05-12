@@ -1044,3 +1044,19 @@ Features:
 - Keyboard input change
 - Date
 
+---
+
+[@tmshchk preset](tmshchk/tmshchk.json)
+
+## Preview
+
+![](tmshchk/tmshchk.png)
+
+## Minimal TouchBar
+
+- Brightness Down & Up
+- Previous & Next Track
+- Play/Stop
+- Mute
+- Volume Up & Down
+- Clock
