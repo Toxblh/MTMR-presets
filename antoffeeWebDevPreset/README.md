@@ -5,7 +5,7 @@ Preset for web developers by [@antoffee](https://github.com/antoffee)
 
 ![Display](./display.png)
 
-MTMR (https://github.com/Toxblh/MTMR) preset containing
+[MTMR](https://github.com/Toxblh/MTMR) preset containing
 - volume controls
 - ❤️ localhost select (3000, 8000, 6006)
 - Mute/unmute micro button
