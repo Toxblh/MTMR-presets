@@ -1046,6 +1046,24 @@ Features:
 
 ---
 
+[@GAT preset](GAT/items.json)
+
+Simplified version:
+![](GAT/GATpreview1.png)
+
+Features:
+- App Dock (on the left)
+- Sound control (mute, volume up, down)
+- Brightness (up, down)
+- Battery status
+- Date, time
+- System Lock
+
+Comment out 2 lines in items.json configuration to get the Extended version with Volume and Brightness sliders:
+![](GAT/GATpreview2.png)
+
+---
+
 [@tmshchk preset](tmshchk/tmshchk.json)
 
 ## Preview
