@@ -1,0 +1,11 @@
+[
+  { "type": "brightnessDown", "width": 70, "align": "left", "bordered": false },
+  { "type": "brightnessUp", "width": 70, "align": "left", "bordered": false },
+  { "type": "previous", "width": 70, "align": "right" },
+  { "type": "play", "width": 60, "align": "right" },
+  { "type": "next", "width": 60, "align": "right" },
+  { "type": "mute", "width": 60, "align": "right", "bordered": false },
+  { "type": "volumeDown", "width": 70, "align": "right", "bordered": false },
+  { "type": "volumeUp", "width": 70, "align": "right", "bordered": false },
+  { "type": "timeButton", "align": "right", "bordered": false  }
+]

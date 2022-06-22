@@ -1061,3 +1061,20 @@ Features:
 
 Comment out 2 lines in items.json configuration to get the Extended version with Volume and Brightness sliders:
 ![](GAT/GATpreview2.png)
+
+---
+
+[@tmshchk preset](tmshchk/tmshchk.json)
+
+## Preview
+
+![](tmshchk/tmshchk.png)
+
+## Minimal TouchBar
+
+- Brightness Down & Up
+- Previous & Next Track
+- Play/Stop
+- Mute
+- Volume Up & Down
+- Clock
