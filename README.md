@@ -1078,3 +1078,24 @@ Comment out 2 lines in items.json configuration to get the Extended version with
 - Mute
 - Volume Up & Down
 - Clock
+
+---
+
+[@gitmank preset](gitmankspreset.json)
+
+Preview:
+![](gitmankspreset.png)
+
+Features:
+- Finder
+- Terminal
+-  Music
+- Spotify
+- Weather
+- Mute
+- Battery percentage and hours left
+- screensaver
+- two finger slide for volume
+- three finger slide for brightness
+
+---
