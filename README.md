@@ -96,7 +96,7 @@ Now, i'm seeking for a disk real-time activity button.
 ![](YandexMusicPreset/touchbar.png)
 
 Widgets:
-- Telegram, Google Translator, Music Controls, Yandex Music, Currency (RUB to USD), Yandex Weather, CPU, Battery and invisible "Exit MTMR" button 
+- Telegram, Google Translator, Music Controls, Yandex Music, Currency (RUB to USD), Yandex Weather, CPU, Battery and invisible "Exit MTMR" button
 
 Instructions about Yandex Music and Telegram:
 - Download [Yandex Music Unofficial](https://yandex-music.juvs.dev) and Telegram client
@@ -870,9 +870,9 @@ Both WiFi and Bluetooth are **ON**
 
 ---
 
-[@deethereal](deethereal_preset/)  
-**This preset consists of 2 touchbars:**  
-[**first touchbar**](https://github.com/deethereal/MTMR-presets/blob/master/deethereal_preset/items1.json)  
+[@deethereal](deethereal_preset/)
+**This preset consists of 2 touchbars:**
+[**first touchbar**](https://github.com/deethereal/MTMR-presets/blob/master/deethereal_preset/items1.json)
 * Network Speed
 * Spotify current track
 * decrease/increase brightness
@@ -881,10 +881,10 @@ Both WiFi and Bluetooth are **ON**
 *  mute button
 *  volume control
 *  current battery status
-*  system time  
+*  system time
 ![alt text](https://raw.githubusercontent.com/deethereal/MTMR-presets/master/deethereal_preset/touch_screen.png)
 
-[**second touchbar**](https://github.com/deethereal/MTMR-presets/blob/master/deethereal_preset/items2.json)  
+[**second touchbar**](https://github.com/deethereal/MTMR-presets/blob/master/deethereal_preset/items2.json)
 * CPU load
 *  Network Speed
 *  brightness conttrol
@@ -892,7 +892,7 @@ Both WiFi and Bluetooth are **ON**
 *  "coffee break"-button (turns off your display)
 *  mute button, volume control
 *  current battery status
-*  system date|time  
+*  system date|time
 ![alt text](https://github.com/deethereal/MTMR-presets/blob/master/deethereal_preset/touchbar2.png)
 
 
@@ -1078,3 +1078,72 @@ Comment out 2 lines in items.json configuration to get the Extended version with
 - Mute
 - Volume Up & Down
 - Clock
+
+---
+
+[@AS preset](AS/items.json)
+
+## Main Bar
+
+![Main Bar](AS/images/AS-main.jpg)
+
+- Brightness & Volume Bar
+- Special characters Bar
+- Apps Bar
+- Dock Bar
+- Performance Bar
+- Music Bar
+- Screenshot
+- Delete
+- Save
+- Logoff
+
+## Brightness & Volume Bar
+
+![Brightness & Volume Bar](AS/images/AS-brightness_volume.jpg)
+
+- Brightness -
+- Brightness +
+- Volume
+- Mute
+- Mute microphone
+
+## Special characters Bar
+
+![Special characters Bar](AS/images/AS-specialcharacters.jpg)
+*This is really useful for french keyboard layout*
+
+- Numbers from 0 to 9
+- some special characters
+
+## Apps Bar
+
+- Dock
+- Finder
+- VS Code
+- Outlook
+- Arc browser
+
+## Dock Bar
+
+![Dock Bar](AS/images/AS-dock.jpg)
+
+- All docked apps, but not the same order
+
+## Performance Bar
+
+![Performance Bar](AS/images/AS-performance.jpg)
+
+- CPU
+- RAM
+- Network
+- Battery percentage and remaining time
+
+## Music Bar
+
+![Music Bar](AS/images/AS-music.jpg)
+
+- previous
+- play/pause
+- next
+- music played
