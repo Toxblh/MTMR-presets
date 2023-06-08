@@ -1,6 +1,6 @@
-# Klaus' Mininmalist Configuration
+# Klaus' minimalist Configuration
 
-## "The" bar.
+## The bar.
 
 ![The Bar](images/klausMTMRpreset.png)
 
