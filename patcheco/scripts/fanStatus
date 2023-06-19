@@ -1,0 +1,11 @@
+#!/bin/bash
+
+value=$(/usr/local/bin/smcMod -k F0Md -r | sed -n 's/.*\[ui8 \]  \([A-Za-z0-9]\).*/\1/p')
+
+if [[ "$value" == "0" ]]; then
+    echo "fan auto"
+else
+    echo "fan manual"
+fi
+
+

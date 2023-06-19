@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# Get the memory statistics
+memory_stats=$(vm_stat)
+
+# Get the memory used in bytes
+memory_used=$(echo "$memory_stats" | awk '/Pages active/ {print $3 * 16384}')
+
+# Get the cached files size in bytes
+cached_files=$(echo "$memory_stats" | awk '/Pages speculative/ {print $3 * 16384}')
+
+# Get the swap used in bytes
+swap_used=$(echo "$memory_stats" | awk '/Swapouts/ {print $3 * 16384}')
+
+# Calculate the total memory
+total_memory=$(sysctl -n hw.memsize 2>/dev/null)
+
+# Check if total_memory is empty
+if [ -z "$total_memory" ]; then
+    echo "Failed to retrieve total memory."
+    exit 1
+fi
+
+# Calculate the free memory
+free_memory=$((total_memory - memory_used))
+
+# Calculate memory usage percentage
+memory_usage_percentage=$(awk -v used="$memory_used" -v total="$total_memory" 'BEGIN{ printf "%.1f", (used/total)*100 }')
+
+# Convert bytes to gigabytes with one decimal place
+memory_used_gb=$(echo "scale=1; $memory_used / 1024^3" | bc)
+cached_files_gb=$(echo "scale=1; $cached_files / 1024^3" | bc)
+swap_used_gb=$(echo "scale=1; $swap_used / 1024^3" | bc)
+free_memory_gb=$(echo "scale=1; $free_memory / 1024^3" | bc)
+total_memory_gb=$(echo "scale=1; $total_memory / 1024^3" | bc)
+
+# Print the results
+#echo "Memory Used: $memory_used_gb GB ($memory_usage_percentage%)"
+#echo "Cached Files: $cached_files_gb GB"
+#echo "Swap Used: $swap_used_gb GB"
+#echo "Free Memory: $free_memory_gb GB"
+#echo "Total Memory: $total_memory_gb GB"
+
+
+echo "$free_memory_gb/$total_memory_gb($memory_usage_percentage%) $swap_used_gb" 
+

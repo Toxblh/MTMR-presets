@@ -1,0 +1,105 @@
+https://github.com/hholtmann/smcFanControl/tree/master/smc-command
+https://github.com/actuallymentor/battery/issues/20#issuecomment-1364540704
+
+--------COMMANDS--------
+fan mode manual -> sudo smc -k F0Md -w 01
+fan mode auto -> sudo smc -k F0Md -w 00
+set fan speed 3000rpm -> sudo smc -k F0Tg -p 3000
+
+enable battery charging when connected to power (use both commands) -> sudo smc -k CH0B -w 00 && sudo smc -k CH0C -w 00
+disable battery charging when connected to power (use both commands) -> sudo smc -k CH0B -w 02 && sudo smc -k CH0C -w 02
+set force discharge battery even when connected to power -> sudo smc -k CH0I -w 01
+restore normal behavior (use power connector for power instead of battery) -> sudo smc -k CH0I -w 00
+
+
+
+Cmnd_Alias      BATTERYOFF = /usr/local/bin/smcMod -k CH0B -w 02, /usr/local/bin/smcMod -k CH0C -w 02, /usr/local/bin/smcMod -k CH0B -r, /usr/local/bin/smcMod -k CH0C -r
+Cmnd_Alias      BATTERYON = /usr/local/bin/smcMod -k CH0B -w 00, /usr/local/bin/smcMod -k CH0C -w 00
+Cmnd_Alias      DISCHARGEOFF = /usr/local/bin/smcMod -k CH0I -w 00, /usr/local/bin/smcMod -k CH0I -r
+Cmnd_Alias      DISCHARGEON = /usr/local/bin/smcMod -k CH0I -w 01
+ALL ALL = NOPASSWD: BATTERYOFF
+ALL ALL = NOPASSWD: BATTERYON
+ALL ALL = NOPASSWD: DISCHARGEOFF
+ALL ALL = NOPASSWD: DISCHARGEON
+
+
+
+
+
+-----Investigation-----
+
+F0Mn - Fan minimum speed
+F0Mx - Fan maximum speed
+F0Sf - Fan safe speed
+F0Tg - Fan target speed
+FS!  - See if fans are in automatic or forced mode
+F0Md - AUTOMATIC or FORCED for m1 mac
+
+
+Cmnd_Alias      BATTERYOFF = /usr/local/bin/smcMod -k CH0B -w 02, /usr/local/bin/smcMod -k CH0C -w 02, /usr/local/bin/smcMod -k CH0B -r, /usr/local/bin/smcMod -k CH0C -r
+Cmnd_Alias      BATTERYON = /usr/local/bin/smcMod -k CH0B -w 00, /usr/local/bin/smcMod -k CH0C -w 00
+Cmnd_Alias      DISCHARGEOFF = /usr/local/bin/smcMod -k CH0I -w 00, /usr/local/bin/smcMod -k CH0I -r
+Cmnd_Alias      DISCHARGEON = /usr/local/bin/smcMod -k CH0I -w 01
+
+
+
+# Re:discharging, we're using keys uncovered by @howie65: https://github.com/actuallymentor/battery/issues/20#issuecomment-1364540704
+# CH0I seems to be the "disable the adapter" key
+function enable_discharging() {
+	log "🔽🪫 Enabling battery discharging"
+	sudo smc -k CH0I -w 01
+}
+
+function disable_discharging() {
+	log "🔼🪫 Disabling battery discharging"
+	sudo smc -k CH0I -w 00
+}
+
+# Re:charging, Aldente uses CH0B https://github.com/davidwernhart/AlDente/blob/0abfeafbd2232d16116c0fe5a6fbd0acb6f9826b/AlDente/Helper.swift#L227
+# but @joelucid uses CH0C https://github.com/davidwernhart/AlDente/issues/52#issuecomment-1019933570
+# so I'm using both since with only CH0B I noticed sometimes during sleep it does trigger charging
+function enable_charging() {
+	log "🔌🔋 Enabling battery charging"
+	sudo smc -k CH0B -w 00
+	sudo smc -k CH0C -w 00
+	disable_discharging
+}
+
+function disable_charging() {
+	log "🔌🪫 Disabling battery charging"
+	sudo smc -k CH0B -w 02
+	sudo smc -k CH0C -w 02
+}
+
+function get_smc_charging_status() {
+	hex_status=$( smc -k CH0B -r | awk '{print $4}' | sed s:\):: )
+	if [[ "$hex_status" == "00" ]]; then
+		echo "enabled"
+	else
+		echo "disabled"
+	fi
+}
+
+function get_smc_discharging_status() {
+	hex_status=$( smc -k CH0I -r | awk '{print $4}' | sed s:\):: )
+	if [[ "$hex_status" == "0" ]]; then
+		echo "not discharging"
+	else
+		echo "discharging"
+	fi
+}
+
+function get_battery_percentage() {
+	battery_percentage=`pmset -g batt | tail -n1 | awk '{print $3}' | sed s:\%\;::`
+	echo "$battery_percentage"
+}
+
+function get_remaining_time() {
+	time_remaining=`pmset -g batt | tail -n1 | awk '{print $5}'`
+	echo "$time_remaining"
+}
+
+function get_maintain_percentage() {
+	maintain_percentage=$( cat $maintain_percentage_tracker_file 2> /dev/null )
+	echo "$maintain_percentage"
+}
