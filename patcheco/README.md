@@ -2,7 +2,7 @@
 
 ## Main Bar
 
-![Main Bar](images/main_bar.png)
+![Main Bar](patcheco/images/main_bar.png)
 
 - M1 SOC temperature script - shows the 3 temperature sensors of the SOC (getSOCTemp)
 - Ram script - shows the used ram / total ram  (used%) swap (freeRam)
@@ -23,7 +23,7 @@
 
 ## SMC control group
 
-![SMC control group](images/smc_bar.png)
+![SMC control group](patcheco/images/smc_bar.png)
 
 - Close
 - Show fan control status script (fanStatus)
