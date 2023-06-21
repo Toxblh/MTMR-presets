@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/Users/balele/Projects/MTMR_scripts/temp_sensor2 | awk -F ', ' '{print $(NF-26) "/" $(NF-36) "/" $(NF-45)}'
