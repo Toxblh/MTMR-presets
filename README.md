@@ -4,11 +4,6 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 ---
 
-[@JieqiangHe](JieqiangHe/JieqiangHe.json)
-![](https://hejieqiang-1257582781.cos.ap-nanjing.myqcloud.com/202303130146260.png)
-
----
-
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 
@@ -1151,3 +1146,9 @@ Comment out 2 lines in items.json configuration to get the Extended version with
 - play/pause
 - next
 - music played
+
+---
+
+[@JieqiangHe](JieqiangHe/JieqiangHe.json)
+![](https://hejieqiang-1257582781.cos.ap-nanjing.myqcloud.com/202303130146260.png)
+
