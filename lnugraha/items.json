@@ -16,10 +16,7 @@
     "refreshInterval": 1,
     "actions": [
     {"trigger": "singleTap", "action": "appleScript",
-     "actionAppleScript": { "inline": "do shell script \"/usr/sbin/networksetup -setairportpower en0 on\"" }
-    },
-    {"trigger": "doubleTap", "action": "appleScript",
-     "actionAppleScript": { "inline": "do shell script \"/usr/sbin/networksetup -setairportpower en0 off\"" }
+     "actionAppleScript": { "inline": "inline": "set state to do shell script \"/usr/sbin/networksetup -getairportpower en0\"\nif state=\"Wi-Fi Power (en0): On\" then\n\tset val to \"off\"\nelse\n\tset val to \"on\"\nend if\ndo shell script (\"/usr/sbin/networksetup -setairportpower en0 \" & val)" }
     },
     {"trigger": "tripleTap", "action": "appleScript",
      "actionAppleScript": { "inline": "tell application \"System Preferences\" to activate reveal pane id \"com.apple.preference.network\"" }

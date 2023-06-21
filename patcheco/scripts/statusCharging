@@ -1,0 +1,9 @@
+#!/bin/bash
+
+hex_status=$(/usr/local/bin/smcMod -k CH0B -r | awk '{print $4}' | sed 's/://; s/)$//')
+
+if [[ "$hex_status" == "00" ]]; then
+    echo "charging enabled"
+else
+    echo "charging disabled"
+fi

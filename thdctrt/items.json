@@ -1,0 +1,197 @@
+[
+  {
+    "type": "group",
+    "align": "left",
+    "bordered": false,
+    "title": "🚀",
+    "background": "#000000",
+    "width": 40,
+    "items": [
+      {
+        "type": "close",
+        "align": "left",
+        "width": 100
+      },
+      {
+        "type": "dock",
+        "flip": false,
+        "align": "left",
+        "bordered": false,
+        "autoResize": false,
+        "refreshInterval": 5
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "align": "left",
+    "bordered": false,
+    "title": "🛋️",
+    "width": 40,
+    "items": [
+      {
+        "type": "close",
+        "width": 100,
+        "align": "left"
+      },
+      {
+        "type": "appleScriptTitledButton",
+        "source": {
+          "inline": "return {\"🎄 Jingle Bells\"}" //SET YOUR NAME
+        },
+        "refreshInterval": 1,
+        "action": "appleScript",
+        "actionAppleScript": {
+          "inline": "tell application \"Shortcuts Events\" to run the shortcut named \"$NAME$\"" //CHANGE $NAME$ TO YOUR SHORTCUT NAME
+         },
+        "align": "left"
+      },
+      {
+        "type": "appleScriptTitledButton",
+        "source": {
+          "inline": "return {\"🍳 Kitchen\"}" //SET YOUR NAME
+        },
+        "refreshInterval": 1,
+        "action": "appleScript",
+        "actionAppleScript": {
+          "inline": "tell application \"Shortcuts Events\" to run the shortcut named \"$NAME$\"" //CHANGE $NAME$ TO YOUR SHORTCUT NAME
+        },
+        "align": "left"
+      },
+      {
+        "type": "appleScriptTitledButton",
+        "source": {
+          "inline": "return {\"🛋️ Bra\"}" //SET YOUR NAME
+        },
+        "refreshInterval": 1,
+        "action": "appleScript",
+        "actionAppleScript": {
+          "inline": "tell application \"Shortcuts Events\" to run the shortcut named \"$NAME$\"" //CHANGE $NAME$ TO YOUR SHORTCUT NAME
+        },
+        "align": "left"
+      },
+      {
+        "type": "appleScriptTitledButton",
+        "source": {
+          "inline": "return {\"🍿 Cinema Mode\"}" //SET YOUR NAME
+        },
+        "refreshInterval": 1,
+        "action": "appleScript",
+        "actionAppleScript": {
+          "inline": "tell application \"Shortcuts Events\" to run the shortcut named \"$NAME$\"" //CHANGE $NAME$ TO YOUR SHORTCUT NAME
+        },
+        "title": "🍿 Cinema Mode",
+        "align": "left"
+      }
+    ]
+  },
+  {
+    // ANC control
+    "type": "staticButton",
+    "title": " 🎧 ",
+    "width": 40,
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "tell application \"System Events\" to key code 33 using {command down, shift down, option down, control down}"
+    },
+    "bordered": true,
+    "align": "left"
+  },
+  //SPOTIFY Start
+  {
+    "type": "appleScriptTitledButton",
+    "align": "left",
+    "source": {
+      "filePath": "/Users/Shared/MTMR/spotify.scpt"
+    },
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "tell application \"Spotify\"\rplaypause\rend tell"
+    },
+    "refreshInterval": 5,
+    "image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTB3WXx3UXh3VXx7XYBkXFRpVLRyURmIaeAQAAAAEdFJOUwDDO3fSqUUkAAABbklEQVRIx61VbW6DMAztoAeYNA7ApB6gkzhAWS24wIAL0HABaK6/pHFNEhy8TXu/kPzkPD/8cTj8K7KPAqB+K5NhQPCUrABCXe7HOUYYZxgVRLiG8RfY4DUgFFtC7cffAfZTFBwBdhWEKfgEq4ocEjgj4ZQifO6/QG9kkETp1dDeVWfRKx3XYSW0LoqY5kCElXDrQkyeCCuh6WL0M4nIWQIyzqixdfKU1koFDKvyCA8NJMzU4xiD+b4kfHRpsIyKc6hBwjVptFHVY51EMAINNDFGJITKDNQcdpX74Hz0CQ3rY5qwMp4EIxrlafzrsYZ2Veb0DkRgfNCUok4Y1fqEijfyi2b8RE9beWqa48Y/uvCNMcH9btfUi+/CGLR1vhL6Zz9N/vBlaCU+7lwY/cmJ67Ryen/2tj23PLqJBodZH8vgj544vOL4pxfI5acrSFxi8hrkU9TSKr78ZpnL50A8KPJJEo+afBblwyqf5j/iGys5j6ScrST2AAAAAElFTkSuQmCC"
+    },
+    "longAction": "openUrl",
+    "longUrl": "spotify://",
+    "tripleAction": "appleScript"
+  },
+  {
+    "type": "next",
+    "width": 44,
+    "align": "left",
+    "bordered": false
+  },
+  //UNCOMMENT TO HAVE PREV BUTTON
+  // { "type": "previous", "width": 44, "align": "left" },
+  //SPOTIFY End
+  {
+    "type": "inputsource",
+    "align": "right",
+    "bordered": false
+  },
+  //UNCOMMENT TO HAVE CPU TEMP
+  // {
+  //   "type": "appleScriptTitledButton",
+  //   "source": {
+  //     "inline": "set temp to do shell script \"/usr/local/bin/iStats cpu --no-graphs --no-labels\"\rreturn temp"
+  //   },
+  //   "refreshInterval": 50,
+  //   "align": "right",
+  //   "width": 56
+  // },
+  {
+    "type": "battery",
+    "align": "right",
+    "bordered": false
+  },
+  {
+    "type": "timeButton",
+    "formatTemplate": " MMM dd E HH:mm",
+    "align": "right",
+    "bordered": false,
+    "action": "openUrl",
+    "url": "ical://"
+  },
+  {
+    "type": "timeButton",
+    "formatTemplate": "HH:mm",
+    "align": "right",
+    "timeZone": "UTC+3",
+    "bordered": false,
+    "width": 40,
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "tell application \"Shortcuts Events\" to run the shortcut named \"Start Timer\""
+    }
+  },
+  {
+    "type": "illuminationDown",
+    "width": 40,
+    "bordered": false,
+    "align": "right"
+  },
+  {
+    "type": "illuminationUp",
+    "width": 40,
+    "bordered": false,
+    "align": "right"
+  },
+  {
+    "type": "mute",
+    "width": 40,
+    "align": "right",
+    "bordered": false
+  },
+  {
+    "type": "staticButton",
+    "title": " 👀 ",
+    "action": "keyPress",
+    "keycode": 103,
+    "width": 40,
+    "align": "right",
+    "bordered": false
+  }
+  //UNCOMMENT TO HAVE DARK MODE BUTTON
+  // , { "type": "darkMode", "align": "right"}
+]

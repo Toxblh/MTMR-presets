@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Get the total and available disk space in bytes
+total_space=$(df -k . | awk 'NR==2{print $2}')
+available_space=$(df -k . | awk 'NR==2{print $4}')
+occupied_space=$(df -k . | awk 'NR==2{print $3}')
+
+# Calculate the percentage of free space
+percentage_occupied=$(awk -v total="$total_space" -v occupied="$occupied_space" 'BEGIN { printf("%.0f", (occupied/total) * 100) }')
+
+# Calculate the occupied space in GB
+occupied_space_gb=$(awk -v occupied="$occupied_space" 'BEGIN { printf("%.2f", occupied / 1024 / 1024) }')
+
+# Output the results
+#echo "HDD Free Space: $percentage_free%"
+#echo "HDD Occupied Space: $occupied_space_gb GB"
+echo "$occupied_space_gb($percentage_occupied%)"

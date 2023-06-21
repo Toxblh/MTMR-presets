@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo /usr/local/bin/smcMod -k F0Md -w 00

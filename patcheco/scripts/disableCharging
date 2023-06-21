@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo /usr/local/bin/smcMod -k CH0B -w 02 && sudo /usr/local/bin/smcMod -k CH0C -w 02
