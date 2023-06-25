@@ -1184,3 +1184,25 @@ HomeKit Page
 - Of course, add `items.json` as MTMR preset
 - Set up the NoiseBuddy shortcut on `⌃ ⌥ ⇧ ⌘ + {` as [shown here](thdctrt/noisebuddy-settings.png). The main idea is to use a hotkey you won't definitely ever need. If you want to change it, don't forget to tweak it in preset as well.
 - To use the Timer function, you need to add Start Timer Shortcut to your Shortcuts by launching it.
+
+
+
+
+### Apple silicon taillored preset
+
+---
+
+[@patcheco_preset](patcheco/items.json)
+
+![main_bar](patcheco/images/main_bar.png)
+![smc_bar](patcheco/images/smc_bar.png)
+
+Main Features:
+
+- M1 SOC temperature
+- Ram stats
+- Custom icons
+- Manual fan control
+- Manual battery charge control 
+
+---
