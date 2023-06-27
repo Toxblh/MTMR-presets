@@ -4,7 +4,6 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 ---
 
-
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 
@@ -1148,7 +1147,6 @@ Comment out 2 lines in items.json configuration to get the Extended version with
 - next
 - music played
 
-
 ---
 
 [@thdctrt preset](thdctrt/items.json)
@@ -1185,7 +1183,10 @@ HomeKit Page
 - Set up the NoiseBuddy shortcut on `⌃ ⌥ ⇧ ⌘ + {` as [shown here](thdctrt/noisebuddy-settings.png). The main idea is to use a hotkey you won't definitely ever need. If you want to change it, don't forget to tweak it in preset as well.
 - To use the Timer function, you need to add Start Timer Shortcut to your Shortcuts by launching it.
 
+---
 
+[@JieqiangHe](JieqiangHe/JieqiangHe.json)
+![](https://hejieqiang-1257582781.cos.ap-nanjing.myqcloud.com/202303130146260.png)
 
 
 ### Apple silicon taillored preset
@@ -1204,5 +1205,3 @@ Main Features:
 - Custom icons
 - Manual fan control
 - Manual battery charge control 
-
----
