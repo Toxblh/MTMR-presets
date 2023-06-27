@@ -1188,3 +1188,20 @@ HomeKit Page
 [@JieqiangHe](JieqiangHe/JieqiangHe.json)
 ![](https://hejieqiang-1257582781.cos.ap-nanjing.myqcloud.com/202303130146260.png)
 
+
+### Apple silicon taillored preset
+
+---
+
+[@patcheco_preset](patcheco/items.json)
+
+![main_bar](patcheco/images/main_bar.png)
+![smc_bar](patcheco/images/smc_bar.png)
+
+Main Features:
+
+- M1 SOC temperature
+- Ram stats
+- Custom icons
+- Manual fan control
+- Manual battery charge control 
