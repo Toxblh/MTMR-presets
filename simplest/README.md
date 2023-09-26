@@ -1,6 +1,6 @@
-[simplest]|(simplest/items.json)
+[simplest](simplest/items.json)
 
-![simplest-preview](simplest/images/simplest-preview.png)
+![simplest-preview](images/simplest-preview.png)
 
 # `Default`
 - `Quit MTMR`.
@@ -27,6 +27,6 @@ By default you can enable basic gestures from application menu (status bar -> MT
 - Two finger slide: change you Volume
 - Three finger slide: change you Brightness
 
-![Default](simplest/images/Default.png)
-![Fn](simplest/images/Fn.png)
+![Default](images/Default.png)
+![Fn](images/Fn.png)
 
