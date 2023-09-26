@@ -1208,7 +1208,7 @@ Main Features:
 
 
 ---
-[simplest]|(simplest/items.json)
+[simplest](simplest/items.json)
 
 ![simplest-preview](simplest/images/simplest-preview.png)
 
