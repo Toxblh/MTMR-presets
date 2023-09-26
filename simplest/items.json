@@ -1,5 +1,5 @@
 [
-/* Exit from MTMR */
+/* Quit MTMR */
 {
     "type": "exitTouchbar",
     "title": "",
