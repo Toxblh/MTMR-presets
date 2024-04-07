@@ -61,6 +61,7 @@ Customs:
 
 ---
 
+<a name="spaniakos"></a>
 
 [spaniakos](spaniakos/spaniakosPreset.json)
 - Thanks to the above presets spaniakos preset is an all in one preset solution with different bars embeded into one master.
@@ -512,6 +513,7 @@ Right
 
 ---
 
+<a name="BitYoungjae"></a>
 
 [@BitYoungjae preset](./BitYoungjae/items.json)
 
@@ -1247,8 +1249,8 @@ By default you can enable basic gestures from application menu (status bar -> MT
 [packy](packy/items.json)
 
 This started as the default toolbar.\
-The Function Key and Controls groups were lifted from @spaniakos.\
-The expanding dock group was lifted from @BitYoungjae.
+The Function Key and Controls groups were lifted from [@spaniakos](#spaniakos).\
+The expanding dock group was lifted from [@BitYoungjae](#BitYoungjae).
 
 ![main touchbar](packy/00-main.png "Main")
 - Partial Dock with button to expand to a full dock

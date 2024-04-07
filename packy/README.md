@@ -1,8 +1,8 @@
 [packy](items.json)
 
 This started as the default toolbar.\
-The Function Key and Controls groups were lifted from @spaniakos.\
-The expanding dock group was lifted from @BitYoungjae.
+The Function Key and Controls groups were lifted from [@spaniakos](../README.md#spaniakos).\
+The expanding dock group was lifted from [@BitYoungjae](../README.md#BitYoungjae).
 
 ![main touchbar](00-main.png "Main")
 - Partial Dock with button to expand to a full dock
