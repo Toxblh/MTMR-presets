@@ -1,3 +1,5 @@
+[packy](items.json)
+
 This started as the default toolbar.\
 The Function Key and Controls groups were lifted from @spaniakos.\
 The expanding dock group was lifted from @BitYoungjae.
@@ -28,3 +30,5 @@ The expanding dock group was lifted from @BitYoungjae.
 - Mute Button, Volume Down Button, Volume Slider, Volume Up Button
 - Media: Previous Track Button, Play/Pause Button, Next Track Button
 - Static Button to open link to MTMR GitHub project page
+
+**BONUS:** `install.sh` script to copy files into `~/Library/Application\ Support/MTMR`
