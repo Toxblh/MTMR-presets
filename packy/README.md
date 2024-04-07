@@ -15,7 +15,7 @@ The expanding dock group was lifted from @BitYoungjae.
 
 ![full dock](01-full-dock.png "Dock")
 - Close group button
-- Dock Native Plugin at 950 pixel width (wideer doesn't display)
+- Dock Native Plugin at 950 pixel width (wider doesn't display)
 
 ![function keys](02-function-keys.png "Function Keys")
 - Close group button
