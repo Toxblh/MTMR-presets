@@ -74,6 +74,7 @@
 
         { "type": "staticButton", "width": 40, "align": "right",
           "action": "openUrl", "url": "https://github.com/Toxblh/MTMR/tree/master?tab=readme-ov-file",
+          "longAction": "openUrl", "longUrl": "https://github.com/packy/MTMR-presets/tree/master/packy",
           "title": "",
           "bordered": false,
           "image": {

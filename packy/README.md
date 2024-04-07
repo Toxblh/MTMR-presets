@@ -29,6 +29,6 @@ The expanding dock group was lifted from [@BitYoungjae](../README.md#BitYoungjae
 - Key Illumination Down Button, Key Illumination Up Button
 - Mute Button, Volume Down Button, Volume Slider, Volume Up Button
 - Media: Previous Track Button, Play/Pause Button, Next Track Button
-- Static Button to open link to MTMR GitHub project page
+- Static Button to open link to MTMR GitHub project page, long press to open my presets page
 
 **BONUS:** `install.sh` script to copy files into `~/Library/Application\ Support/MTMR`
