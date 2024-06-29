@@ -1302,12 +1302,12 @@ The expanding dock group was lifted from [@BitYoungjae](#BitYoungjae).
 ![fn touchbar](t3st-account/fn.png "Fn")
 - F1 - F12
 - PgUp , PgDn
-- F13  F13 which I mapped to iterm2 Quake mode
+- F13 which I mapped to iterm2 Quake mode
 
 ![dock touchbar](t3st-account/dock.png "Dock")
 - Dock
 - Kill
 	- Short press opens Force quit dialogue
 	- Long press kills the app in focus
-- F13  F13 which I mapped to iterm2 Quake mode
+- F13 which I mapped to iterm2 Quake mode
 
