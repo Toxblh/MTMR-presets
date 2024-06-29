@@ -1280,3 +1280,34 @@ The expanding dock group was lifted from [@BitYoungjae](#BitYoungjae).
 - Static Button to open link to MTMR GitHub project page
 
 **BONUS:** `install.sh` script to copy files into `~/Library/Application\ Support/MTMR`
+
+---
+
+[t3st-account](t3st-account/t3st-account.json)
+
+![main touchbar](t3st-account/main.png "Main")
+- fn group
+- dock group
+- keyboard brightness
+- media controlls works with all players that support now playing in CC
+	- relies on nowplaying-cli [https://github.com/kirtan-shah/nowplaying-cli](https://github.com/kirtan-shah/nowplaying-cli)
+	- press to skip
+	- longpress for  previous song
+- play/pause
+- battery
+- clock
+	- short press fires F13 which I mapped to iterm2 Quake mode
+	- lonng press puts mac to sleep
+
+![fn touchbar](t3st-account/fn.png "Fn")
+- F1 - F12
+- PgUp , PgDn
+- F13  F13 which I mapped to iterm2 Quake mode
+
+![dock touchbar](t3st-account/dock.png "Dock")
+- Dock
+- Kill
+	- Short press opens Force quit dialogue
+	- Long press kills the app in focus
+- F13  F13 which I mapped to iterm2 Quake mode
+

@@ -1,0 +1,245 @@
+[
+  {
+    "type": "group",
+    "align": "left",
+    "title": "Fn",
+    "width": 40,
+    "items": [
+      {
+        "type": "close",
+        "bordered": false,
+        "width": 35,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F1",
+        "action": "keyPress",
+        "keycode": 122,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F2",
+        "action": "keyPress",
+        "keycode": 120,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F3",
+        "action": "keyPress",
+        "keycode": 99,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F4",
+        "action": "keyPress",
+        "keycode": 118,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F5",
+        "action": "keyPress",
+        "keycode": 96,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F6",
+        "action": "keyPress",
+        "keycode": 97,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F7",
+        "action": "keyPress",
+        "keycode": 98,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F8",
+        "action": "keyPress",
+        "keycode": 100,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F9",
+        "action": "keyPress",
+        "keycode": 101,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F10",
+        "action": "keyPress",
+        "keycode": 109,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F11",
+        "action": "keyPress",
+        "keycode": 103,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "F12",
+        "action": "keyPress",
+        "keycode": 111,
+        "width": 55,
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "PgUp",
+        "action": "keyPress",
+        "keycode": 116,
+        "width": 55,
+        "align": "right"
+      },
+      {
+        "type": "staticButton",
+        "title": "PgDn",
+        "action": "keyPress",
+        "keycode": 121,
+        "width": 55,
+        "align": "right"
+      },
+      {
+        "type": "staticButton",
+        "title": "[/>]",
+        "action": "keyPress",
+        "keycode": 105,
+        "width": 55,
+        "align": "right"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "align": "left",
+    "title": "Dock",
+    "width": 55,
+    "items": [
+      {
+        "type": "close",
+        "bordered": false,
+        "width": 35,
+        "align": "left"
+      },
+      {
+        "type": "dock",
+        "align": "left"
+      },
+      {
+        "type": "staticButton",
+        "title": "☠️ Kill",
+        //"width": 52,
+        "action": "appleScript",
+        "actionAppleScript": {
+          "inline": "tell application \"System Events\" to key code 53 using {command down, option down}"
+        },
+        "longAction": "appleScript",
+        "longActionAppleScript": {
+          "inline": "tell application \"System Events\" to key code 53 using {command down, option down, shift down}"
+        },
+        "align": "right"
+      },
+      {
+        "type": "staticButton",
+        "title": "[\\>]",
+        "action": "keyPress",
+        "keycode": 105,
+        "width": 55,
+        "align": "right"
+      }
+    ]
+  },
+  {
+    "type": "illuminationDown",
+    //"bordered": false,
+    "align": "left",
+    "width": 40
+  },
+  {
+    "type": "illuminationUp",
+    //"bordered": false,
+    "align": "left",
+    "width": 40
+  },
+  {
+    "type": "appleScriptTitledButton",
+    "source": {
+      "inline": "set oldText to do shell script \"/opt/homebrew/bin/nowplaying-cli get title artist\"\nset AppleScript's text item delimiters to {return & linefeed, return, linefeed, character id 8233, character id 8232}\nset newText to text items of oldText\nset AppleScript's text item delimiters to {\" || \"}\nset newText to newText as text\nreturn \"🔊 \" & newText"
+    },
+
+    "actions": [
+      {
+        "trigger": "singleTap",
+        "action": "appleScript",
+        "actionAppleScript": {
+          "inline": "do shell script \"/opt/homebrew/bin/nowplaying-cli next\""
+        }
+      },
+      {
+        "trigger": "longTap",
+        "action": "appleScript",
+        "actionAppleScript": {
+          "inline": "do shell script \"/opt/homebrew/bin/nowplaying-cli previous\""
+        }
+      }
+    ],
+
+    "width": 250,
+    "align": "right",
+    "refreshInterval": 1
+  },
+  {
+    "type": "play",
+    "align": "right",
+    "bordered": false,
+    "width": 38
+  },
+  {
+    "type": "mute",
+    "bordered": false,
+    "align": "right",
+    "width": 35
+  },
+  {
+    "type": "battery",
+    "align": "right",
+    "bordered": false
+  },
+  {
+    "type": "timeButton",
+    "formatTemplate": "HH:mm",
+    "align": "right",
+    "bordered": false,
+    "locale": "de_DE",
+    "timeZone": "UTC+2",
+    "action": "keyPress",
+    "keycode": 105,
+    "longAction": "shellScript",
+    "longExecutablePath": "/usr/bin/pmset",
+    "longShellArguments": ["sleepnow"]
+  }
+]
