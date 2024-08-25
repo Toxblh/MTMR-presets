@@ -31,5 +31,6 @@ The base for this preset is from [Packy](https://github.com/Toxblh/MTMR-presets/
 * Close button
 * Opened apps
 
+##Future section:
 ![](Images/Future.png)
 * Added Tempreture
