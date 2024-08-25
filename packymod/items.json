@@ -1,0 +1,170 @@
+[
+  { "type": "escape",
+  "title": "Esc",
+  "bordered":true,
+  "align":"left"
+  },
+  // Fn
+  {
+    "type": "group",
+    "align": "left",
+    "title": "Fn",
+    "width": 60,
+    "items": [
+      { "type": "close", "bordered": false, "width": 60, "align": "left" },
+      { "type": "staticButton", "title": "F1",  "action": "keyPress", "keycode": 122, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F2",  "action": "keyPress", "keycode": 120, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F3",  "action": "keyPress", "keycode":  99, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F4",  "action": "keyPress", "keycode": 118, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F5",  "action": "keyPress", "keycode":  96, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F6",  "action": "keyPress", "keycode":  97, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F7",  "action": "keyPress",  "keycode": 98, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F8",  "action": "keyPress", "keycode": 100, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F9",  "action": "keyPress", "keycode": 101, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F10", "action": "keyPress", "keycode": 109, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F11", "action": "keyPress", "keycode": 103, "width": 65, "align": "left" },
+      { "type": "staticButton", "title": "F12", "action": "keyPress", "keycode": 111, "width": 65, "align": "left" },
+
+      { "type": "staticButton", "title": "PgUp", "action": "keyPress", "keycode": 116, "width": 65, "align": "right" },
+      { "type": "staticButton", "title": "PgDn", "action": "keyPress", "keycode": 121, "width": 65, "align": "right" }
+    ]
+  },
+{ "type": "dock", "width": 250, "align": "left", "autoResize": true },
+  {
+    "type": "group",
+    "align": "left",
+    "width": 60,
+    "title": "⇥",
+    "bordered": false,
+    "items": [
+      { "type": "close", "bordered": false, "align": "left" },
+      { "type": "dock", "align": "left", "width": 950 }
+    ]
+  },
+
+  // Music
+  { "type": "music", "align": "center", "disableMarquee": true },
+
+  // Controls
+  {
+    "type": "group",
+    "align": "center",
+    "bordered": true,
+    "title":"⚙️",
+    "width":60,
+    "items": [
+        { "type": "close", "bordered": false, "align": "left" },
+
+        { "type": "brightnessDown", "bordered": false, "align": "left", "width": 25 },
+        { "type": "brightness", "width": 200, "align": "left",
+          "image": {
+              "filePath":
+              "~/Library/Application Support/MTMR/Assets/Assets/sun-photoaidcom-greyscale.png"
+          }
+        },
+        { "type": "brightnessUp", "bordered": false, "align": "left", "width": 35 },
+
+        //{ "type": "illuminationDown", "bordered": false, "align": "left" },
+        //{ "type": "illuminationUp", "bordered": false, "align": "left" },
+        // Padding
+        { "type": "", "title":"", "bordered": false, "width":60, "align": "left"},
+
+        { "type": "volumeDown", "bordered": false, "align": "left", "width": 35 },
+        { "type": "volume", "width": 200, "align": "left"},
+        { "type": "volumeUp", "bordered": false, "align": "left", "width": 35 },
+        { "type": "mute", "bordered": false, "align": "left"},
+
+        // Padding
+        { "type": "", "title":"", "bordered": false, "width":60, "align": "left"},
+
+        { "type": "previous", "bordered": false, "width": 50, "align": "center" },
+        { "type": "play", "bordered": false, "width": 50, "align": "center" },
+        { "type": "next", "bordered": false, "width": 50, "align": "center" },
+        //{"type": "sleep", "bordered":false, "title": "sleep"},
+        { "type": "staticButton", "width": 40, "align": "right",
+          "action": "openUrl", "url": "https://github.com/Toxblh/MTMR/tree/master?tab=readme-ov-file",
+          "longAction": "openUrl", "longUrl": "https://github.com/packy/MTMR-presets/tree/master/packy",
+          "title": "",
+          "bordered": false,
+          "image": {
+            "filePath": "~/Library/Application Support/MTMR/Assets/github-mark-white.png"
+          }
+        }
+    ]
+  },
+
+  {
+    "type": "exitTouchbar",
+    "image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABgUExURUdwTHZ2dqOio+Hh4dbV1ePj45CQkPn5+ebm5sbGxtva2qSkpNDQ0MjHyN/e3mRjZEZGRkxLSgkKCTo1PygpKA88Q/yqHuedKZ1wPWVPS/JVrlvMFE6dMcWINMNPjpdKcnIFGisAAAAQdFJOUwD+HMVz3v7++v6W/lhEs/4jVOGZAAADZUlEQVRYw61XiZaiMBAcFORw0IQOIof4/3+51QlKwiQc7207KI5UpfpI0vn5CdipjIvbOYGdb0Vcnn4O2Sk+Z6lj2Tnez/E7oTO2HNeH43cXPE7003l+ie6SYPIeXfJcsyTx9uiJRl/vqlKKhBBSCFKqovtVcyTrKk43DY8AkGxCm76lSkWa4rYSizLT8Ep9sbPhX6qKch6gDHrPv154cOEzLePCIgKRKHh4qQLwiUPJPM3Swo/P0mslVuCaQlRXaCj8418quYFnCrjh0RAbvNhhhmERh3I/XjPACycXJ8T2uhfPDIhDYtcD6iffj2cGFMTNql84IMURAiGhea7qBAFQB/BgUAhDYmXgkANfJ+JZQESaQNbPpnlZz72a5lljHlkvMgQUZR8Jv7MAEDwej2ftfqPKNrIkmCicIUDNkObx+hK88O1Z4xYojI4PmqMACeepBvJPBA1B004PtQ9NYH4EgXTnFabVyYTwW0Oa4IPRAhyCv9UUGw/uZBG8wDE9A/QKAd21D7YHRkFrQPa9j0BMPpR2EWgQlL80AT5pjYDzUHIILq4C4pGhEKO3YlXBhYNQfKvoQyDNsBzCet2FiBeWG8dQODGoTRgZu0rAUbxxEub0GgLSsPkuQADjNGAi0IJA6DDyJdYJiKcDE8gFAYcRFdDSXoKlAoEw4gXiVQIZJDBTgpE7FHiCKDSwkWKLQHIQl2lsADRVCCCy0GylsZhXg2maLtfP8LqoC8kpZXF4YY3dyXR8XS3d6XxQgVmS7AUlvJF8oyGXC4qzpIWs1hnizMOWS9oOH+Sb8e+W5DD0A7keOMu6H16P3RvTohuHvu+HXpK7rNsbixdP765714LfMDwNRoK1sVhbm9eo67oWKjrC6IKMD/bWtr65sgPdqMaPgL7/u7lCQrAasbZ2CAG/qaGHBhMCd3tfazBkjaG7FhcEcAwFeRqMcIuD5HXt2I3jmyPQDxheelqccJMFAaNCEPGBCMCHuYayk9vmZamnzdMCkMBWCyAxZQBtXpaWy0Yz8zSKSMGICkASRsX5l32o0Qy2um3LF+FP/ySDra5m8DTbNF1Os73Sru9q91M/fvPAIbYOHPrIAxFbR56kXDl1uYcuC7zv0OU59jEJH/vUvmPffzh4eo++2aGj7384fB86/v8D9YTH9SlTJskAAAAASUVORK5CYII="
+    },
+    "title": "",
+    "align": "center",
+    "bordered": false
+  },
+
+      // Padding
+      { "type": "", "title":"", "bordered": false, "width":30, "align": "center"},
+
+      {
+        "type": "shellScriptTitledButton",
+        "refreshInterval": 5,
+        "source": {
+          "inline": "top -l 2 -n 0 -F | egrep -o ' \\d*\\.\\d+% idle' | tail -1 | awk -F% '{p = 100 - $1; if (p > 30) c = \"\\033[33m\"; if (p > 70) c = \"\\033[30;43m\"; printf \"CPU:%s%4.1f%%\\n\", c, p}'"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+          "inline": "activate application \"Activity Monitor\"\rtell application \"System Events\"\r\ttell process \"Activity Monitor\"\r\t\ttell radio button \"CPU\" of radio group 1 of group 2 of toolbar 1 of window 1 to perform action \"AXPress\"\r\tend tell\rend tell"
+        },
+        "align": "center",
+        "bordered": false
+      },
+      {
+        "type": "appleScriptTitledButton",
+        "source": {
+          "inline": "set mem to do shell script \"ps -A -o %mem | awk '{s+=$1}END{print s}'\"\rreturn \"RAM: \" & mem & \"%\""
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+          "inline": "activate application \"Activity Monitor\"\rtell application \"System Events\"\r\ttell process \"Activity Monitor\"\r\t\ttell radio button \"CPU\" of radio group 1 of group 2 of toolbar 1 of window 1 to perform action \"AXPress\"\r\tend tell\rend tell"
+        },
+        "refreshInterval": 1,
+        "align": "center",
+     },
+     {
+       "type": "appleScriptTitledButton",
+       "source": {
+           "inline": "set batteryPercentage to do shell script \"pmset -g batt | grep -o '[0-9]*%'\"\rreturn \"Battery: \" & batteryPercentage"
+       },
+       "action": "appleScript",
+       "actionAppleScript": {
+           "inline": "activate application \"System Information\"\rtell application \"System Events\"\r\ttell process \"System Information\"\r\t\ttell radio button \"Battery\" of radio group 1 of group 2 of toolbar 1 of window 1 to perform action \"AXPress\"\r\tend tell\rend tell"
+       },
+       "refreshInterval": 1,  // Refresh every minute or adjust as needed
+       "align": "center"
+   },
+  {
+  "type": "network",
+  "flip": true,
+  "bordered":false,
+  "align":"right",
+  "units": "mb/s" // or B/s, KB/s, MB/s, GB/s
+  },
+  /*{
+    "type": "timeButton",
+    "formatTemplate": "HH:mm",
+    "align": "right",
+    "bordered": false,
+    "longAction": "shellScript",
+    "longExecutablePath": "/usr/bin/pmset",
+    "longShellArguments": ["sleepnow"]
+  },*/
+  {
+    "type": "appleScriptTitledButton",
+    "refreshInterval": 1, //optional
+    "align":"right",
+    "source": {
+      "filePath": "~/Library/Application Support/MTMR/Assets/AMPM.scpt",
+    },
+  }
+]
