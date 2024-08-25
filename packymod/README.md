@@ -1,6 +1,5 @@
 # Pack modified
-The base for this preset is from [Packy](https://github.com/Toxblh/MTMR-presets/tree/master/packy) by **Packy Anderson**.
-Overall there isn’t that much difference in terms of usability.
+The base for this preset is from [Packy](https://github.com/Toxblh/MTMR-presets/tree/master/packy) by **Packy Anderson**, but that does not mean there isnt any differences.
 ![](Images/Main.png)
 * Esc key ( escape key )
 * Function Key Group
