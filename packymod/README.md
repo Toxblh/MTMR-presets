@@ -33,4 +33,4 @@ The base for this preset is from [Packy](https://github.com/Toxblh/MTMR-presets/
 
 ## Future section:
 ![](Images/Future.png)
-* Added Tempreture
+* Added Tempreture ( May be inaccurate using powermetrics right now )
