@@ -1,0 +1,67 @@
+[
+{
+  "type": "shellScriptTitledButton",
+  "align": "left",
+  "refreshInterval": 60,
+  "source": {
+    "inline": "HOUR=$(date +%H); if [ $HOUR -ge 6 ] && [ $HOUR -lt 8 ]; then echo \"🌅 $(date '+%a %I:%M %p')\"; elif [ $HOUR -ge 8 ] && [ $HOUR -lt 18 ]; then echo \"☀️ $(date '+%a %I:%M %p')\"; elif [ $HOUR -ge 18 ] && [ $HOUR -lt 20 ]; then echo \"🌇 $(date '+%a %I:%M %p')\"; else echo \"🌙 $(date '+%a %I:%M %p')\"; fi"
+  },
+  "bordered": false
+},
+
+{
+    "type": "weather",
+    "align": "left",
+    "api_key": "ca93a0bb8cdb428552660d83249e4bc9",
+    "units":"imperial",
+    "icon_type":"images",
+    "bordered": false
+},
+
+{
+  "type": "shellScriptTitledButton",
+  "refreshInterval": 2,
+  "source": {
+    "inline": "BAT=$(pmset -g batt | grep -o '[0-9]*%' | cut -d% -f1); MODE=$(pmset -g | grep lowpowermode | awk '{print $2}'); TIME=$(pmset -g batt | grep -o '[0-9]\\{1,2\\}:[0-9]\\{2\\}' || echo '(??)'); CHARGING=$(pmset -g batt | grep \"charging\" > /dev/null && echo '⚡️' || echo ''); if [ \"$MODE\" = '1' ]; then if [ \"$TIME\" = '(??)' ]; then echo \"⚡️ ${BAT}% \"; else echo \"⚡️ ${BAT}% ($TIME)\"; fi; else if [ \"$TIME\" = '(??)' ]; then echo \"🔋 ${BAT}%\"; else echo \"🔋 ${BAT}% ($TIME)\"; fi; fi"
+  },
+  "actions": [
+    {
+      "trigger": "singleTap",
+      "action": "appleScript",
+      "actionAppleScript": {
+        "inline": "tell application \"System Events\" to do shell script \"if [ $(pmset -g | grep lowpowermode | awk '{print $2}') = '1' ]; then pmset -a lowpowermode 0 && osascript -e 'display notification \\\"Low Power Mode has been disabled\\\" with title \\\"Power Mode Changed\\\"'; else pmset -a lowpowermode 1 && osascript -e 'display notification \\\"Low Power Mode has been enabled\\\" with title \\\"Power Mode Changed\\\"'; fi\" with administrator privileges"
+      }
+    }
+  ],
+  "bordered": false,
+  "align": "left"
+},
+
+{
+  "type": "music",
+  "align": "left",
+  "bordered": false,
+  "refreshInterval": 2, 
+  "disableMarquee": true
+},
+
+{
+  "type": "shellScriptTitledButton",
+  "refreshInterval": 1,
+  "align": "right",
+  "source": {
+    "inline": "VOL=$(osascript -e 'output volume of (get volume settings)'); echo \"🔊 ${VOL}%\""
+  },
+  "bordered": false
+},
+
+{
+  "type": "shellScriptTitledButton",
+  "refreshInterval": 1,
+  "align": "right",
+  "source": {
+    "inline": "BRIGHT=$(brightness -l | grep -i 'brightness' | awk '{print int($NF * 100)}'); if [ $BRIGHT -ge 70 ]; then echo \"🔆 ${BRIGHT}%\"; elif [ $BRIGHT -ge 30 ]; then echo \"🌤 ${BRIGHT}%\"; else echo \"💡 ${BRIGHT}%\"; fi"
+  },
+  "bordered": false
+}
+]
