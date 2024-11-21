@@ -5,18 +5,6 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 ---
 
-[@Waterbongo preset](Waterbongo/Waterbongo.json)
-![](Waterbongo/Waterbongo.png)
-Main : 
-
-- Extremely custom, with a focus on music control and system information
-- Weather, battery, time, and date
-- Music control for Spotify and iTunes
-- Mostly custom scripts, with active changing emojis
-
-
----
-
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 
@@ -1323,4 +1311,17 @@ The expanding dock group was lifted from [@BitYoungjae](#BitYoungjae).
 	- Short press opens Force quit dialogue
 	- Long press kills the app in focus
 - F13 which I mapped to iterm2 Quake mode
+
+
+---
+
+[@Waterbongo preset](Waterbongo/Waterbongo.json)
+![](Waterbongo/Waterbongo.png)
+Main : 
+
+- Extremely custom, with a focus on music control and system information
+- Weather, battery, time, and date
+- Music control for Spotify and iTunes
+- Mostly custom scripts, with active changing emojis
+
 
