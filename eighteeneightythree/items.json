@@ -1,0 +1,194 @@
+[
+    //LEFT ICONS
+    //SAFARI
+    //Back
+    {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "matchAppId": "Safari",
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArklEQVR4nO3YQQrCQBBE0T6hRlFmoXcXFIyQI0T4MqtsMmurm3onSPEnkEmEWV3ACZiBBbhERkADVjZLFBjRfaLAiBU4RxbAdWfEF7hFFh6hwiVUuIQKl1DhEirwZ4cIXEIERUpMg0tRi0yAV/oR1YZMJY5W1/8/DV72e2SDx4jCZUThMqJwGVEuo8plVLmMqmpl2uBydowiY56R0c6Yd2TVjxPw6DWAw7+fxyw2P3RyW8aloQCoAAAAAElFTkSuQmCC"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 123 using {command down}"
+        }
+    },
+    //Forward
+    {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "matchAppId": "Safari",
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsUlEQVR4nO3ZwQqCYBRE4esTJlK4qGd3oRRIvUHBESvIhe3nXuZbRSuH8wtaEWY6gBPwAK5AGxkBDXDn5wn0kREwb4bkHQN034svMea4M+YFXCIbPEYULiMKlxGFy4hyGVUuo8plVFUr0/95OWujyJgpigwZI5MSR4vP72J7N/s5svAIFS6hwiVUuIQKl1CBHztE4BIiKFLiUOLPUGBKP2IF3NKP2BytERjWz+8vzWpaAFg7XsQMSUrmAAAAAElFTkSuQmCC"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 124 using {command down}"
+        }
+    },
+    //OBSIDIAN
+    //Toggle left sidebar
+    {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "matchAppId": "obsidian",
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMklEQVR4nO2ZQW7CMBAAfeIHRfAVSL/X0Gf1QkXVU3voBwjfmMptJKDy0m66mCzsXKLIlnfHazuJklIQBLcFMAEegR3jpwNWOeeSSG7wRlsSyZYmVFg9TR+qKzXiRSQjxgqRAqkCSLEK+SwO1uLXvTDgcuwiDXB/cL8UBmw0IsAUWANPtUQG84vEe99t41IEuAPe+i4fwMzdHuG4Evk6/Y/ERfbIOSS0IoP5Me6rtcTNiiws9sgYllZj9Ry59GYfzB+P37lLkUJlXpLndy2+ZfIB8Oz6XcsKFCKDMcv2BCGiIVUAKZYq0xCxg6iIAsOJFxFjaRINEUOIiiiwnHkJMZYm0RAxhKiIAsuZlxBjaRINkUoV6bxUhP2X67bU2OKPB+n3dGtZmTOyzRLF39NBEFw3nxoVorPT7ioZAAAAAElFTkSuQmCC"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 37 using {command down, option down, control down, shift down}"
+        }
+    },
+    //File explorer
+    {
+        "type": "staticButton",
+        "title": "",
+        "width": 70,
+        "align": "left",
+        "matchAppId": "obsidian",
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5UlEQVR4nO3aPQrCQBTE8VcpeBgrG+MZLDyUX5WVF7PyAEavIDZ/WdjCImoCIc7K/Nq8hR0mqV4izKwVYATsgSvtpLlVqAF2dPcAZqEEqPPlqpbzhzx/BiahgqzD/Bg45WPHKDVIAkyBO8OrgW36rqOPIPnc8uW1HNqmtyC/ACzydeuig3y8798FAW7ou7UJUpT4EGQe4oDqa5AoBA4iBjciBjciBjciBjciBjciBjciBjciBjciBjciBjciBjciBjdSUCN1fraIchY9l6aHaSdXmvW7Hwa2P9wHdnFJIRqXoWYWTZ7235YSmeFXngAAAABJRU5ErkJggg=="
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 2 using {command down, option down, control down, shift down}"
+        }
+    },
+    //Search vault
+    {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "width": 70,
+        "matchAppId": "obsidian",
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE0klEQVR4nNWa228VVRTGhxYhakssxEbReAmmlcsLiSg8KK19wBgT0VDxDwBroQg+GEPgwUtMmoommvigDxgFJCohGlSUaLz75IuosQYFDQSvabQ16QGUn1n127gzHnr2zJ45PX7J5Jwzs9fa65vZe93mJEkkgE7gTmAr8CzwIfA18D0wApzSMaJzdu0Djd0q2c5YOzIDmA30AS8CP1AcTJfpvMvmKJPACuBloFLFgL3AILAG6AY6gMuANmC6jjad69SYtZLZW+WGVDTXiiIJLNNScPgTeF1GdxQ4jxE0nW9oDgebe2mM4nOBZ4DTUvgTcD9wcVHGTzL3XM1lcyIbnjabsiqaBXwkJePAg0BraZaf3Y5W4CHZgBzJrFDhacBrEjwOXFe6xbVtWipbDPvMxhAhc4eG34F5SYMAmAeMyrY7QgTe1eC7kwYD0C/b3gkZbE/CcEHSYOAfF274LWQw/wMihAx26E8aDMC6PERGG3izEyLg42fg+rpYGu5+JxAi5HBAn+MKSlMVEB/2AuKBPESagceqpChzpyhF2SabshFJPdZ00vimUvn5BRo/XzrfmixpzE0klca/VCWN/xF4BRhSLdEjoy6XuzxHh32/Qtd6ZPSQZN2ddxjXXP9J46OJeNfbVEvsTm/ASJiu3Url2/Lal33gv+OtiFoNbAG2ayl8BXyn8vakjhGds2vva+wWyQbXNWQlUmq5mRPAJXmIrE8aDMDGPETGiixlYwFcbcliHiKoKbCsLpZObtM18o5nECLksF+fFZW6LXWxOgWri+Qs8CrXTESmK7L/pd92R+4DLkrqCGCmCqoHgKbc7he4FvjEI3hKdbP5+6sijZxhZSvwAjAM/KHDvu/StRmT2RdMxDvfrSh8IrWPjgF7vAZdF7BAUXwiskv+PLujnr7bgW+pjW+A2zy5p6KIpFqma5VC/EI49qtD06TUxOEz4B6RP1/HQrnag964Qcmajj3RRFJjp6lD2Kt0eyfwnpbGr4rmp5V+tEtmyHMiff5TSkOG93v53aDO1+5tlRnZtZwcieUZ5Lo8MitDhRwGYow+y8Z2e6Ivol4/5PZdLYFSIrs8kNsTTTnkm4HPpWNViIAP28w35DU+pddSdMOGCB2bpGNnyGDfy7j1/EhsZNebKsOCCB0LpWM4ZLAf2bd5Zad5ns15Xyt4rZzWyGaEYTRk8AS830uAj6tE9v6MBVGRRMYyE/HOL9drsnRkP6pk7lFF9huBxcCVftu1oKW1SDoO5SaSiuxr9OIyJLLfKjnLnQwbI4jcKx07siyBmgFRkbdDkd2aeM/rtcSwahmL7E+k3O/BCPf7hXT0hghYilF4qauAaAlgrgY5MCDZw+aIQgRWl1XqWhbrufSuDHLd3t68JcmQCL5aVqmrLNaRsbSjucZyGvBIWCPvwiyTtXhLrNBSV/vKkUFpxyYFuxYdi7Sx3Z5wJNz49qxr+smySl3LYpUA1sJhW072JLxcKxsZTbhYncEySl3rCa9SHWMdyDGVukZwh7zhmY1txkeRkZIe1daVrKWu9p19n6NrtnlvTtfjISiETCog7iqgiW3r/nEVXHPqTqZKB7BXCeV2/c3iS+CI18Su6DWeLZlPgbeB57TnbgIuzTFvu0dmXTSRqYTITATXvwHzEtkWJGytlgAAAABJRU5ErkJggg=="
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 3 using {command down, option down, control down, shift down}"
+        }
+    },
+    //Navigate: Back
+    {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "width": 70,
+        "matchAppId": "obsidian",
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArklEQVR4nO3YQQrCQBBE0T6hRlFmoXcXFIyQI0T4MqtsMmurm3onSPEnkEmEWV3ACZiBBbhERkADVjZLFBjRfaLAiBU4RxbAdWfEF7hFFh6hwiVUuIQKl1DhEirwZ4cIXEIERUpMg0tRi0yAV/oR1YZMJY5W1/8/DV72e2SDx4jCZUThMqJwGVEuo8plVLmMqmpl2uBydowiY56R0c6Yd2TVjxPw6DWAw7+fxyw2P3RyW8aloQCoAAAAAElFTkSuQmCC"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 123 using {command down, option down}"
+        }
+    },
+    //Navigate: Forward
+    {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "width": 70,
+        "matchAppId": "obsidian",
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsUlEQVR4nO3ZwQqCYBRE4esTJlK4qGd3oRRIvUHBESvIhe3nXuZbRSuH8wtaEWY6gBPwAK5AGxkBDXDn5wn0kREwb4bkHQN034svMea4M+YFXCIbPEYULiMKlxGFy4hyGVUuo8plVFUr0/95OWujyJgpigwZI5MSR4vP72J7N/s5svAIFS6hwiVUuIQKl1CBHztE4BIiKFLiUOLPUGBKP2IF3NKP2BytERjWz+8vzWpaAFg7XsQMSUrmAAAAAElFTkSuQmCC"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 124 using {command down, option down}"
+        }
+    },
+    //Toggile edit view
+    {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "width": 70,
+        "matchAppId": "obsidian",
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNElEQVR4nO2ZQUoDQRBF+xiZeAePIcJ4nGRciYvkRLpTxoV4II0uIggvtJRSikI3090k5L9VzwxUTVFvZvNDEEIcF8AFMAJvTOcZuAPOXP1z4N6eTeXV3rX/PcSaelwB1xXrr/wmIltgAXQFttsBS6tJg/p9vPlgF4upDf5oOLhBatYfg/kWmVVoNHOD1Ky/iReflG7imrWpjwZJQxtJRGrlIrUSkVq5SK1EpFYuUisRqZWL1EpEauUitRKRWrlIrUSkVi5SKxGplYvUOma1NnbuqjaqU/vEyr8Ei7AiywMc5NLnI71LlGJwMt/3QYC5DfH+nVjZgxVlibreAKfuXjzfumCpbIb4hW1mLNzo459znVS3NLb6wa2+mrpNcB9jZAiHCj/D0Cq/92YAj8BTu44i7AU72v/CVD9vcEcAAAAASUVORK5CYII="
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 14 using {command down}"
+        }
+    },
+    //Link
+    {
+        "type": "staticButton",
+        "title": "",
+        "align": "left",
+        "width": 70,
+        "matchAppId": "obsidian",
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADjUlEQVR4nO2Zy04UQRSGG4lsuLjjBcRogCi4YWGImAF3GjXGVyAQFVyDW0Lcmwy4MV4XyjMgkGiIbkQieHsAMV5QQ2DjZw5zylTGru6e6ZqeJuFPOpCpqlPnT5/z1znVQbCPfewj9wCGgDvAOvBbH/l/FhgM8g7gCLBIPJ4BHUEeAQwA39TRz8AEcAJo1qcHmAQ2dM5XoD/IE4ACsKUOPgFaI+a2AXMWmY48kigCDQnWNABPTZhl46lnEmVvxoTZ4J4kYaA5I5gN6gHgTFoSAhUAwXqQNYBjwPe0JAQiCmrnZ5AlNEmXLHVqSGmvtV5EhqxzotWDvR61t+bHw+Qb39ONJzzZu6n2ZnzYq2Tjd7rxcQ+2DlnyW/DjYfLNt3XjFg+5Nqe25v15mNyBTd28uez3duA5sJCQRNEqUQ7X1GmHE6vqQE8ZiTf6+3IFJLak0MzE8RBHxIkdoC+EhPxtr4BEIVPny5w5BZzb0yRs5JoE/7enm5oTM/ImqiTRZqlTbUkkaE934sJJcgbotbrBk3rYfbHUaaDe7WlkYgtJJevCfE0ltsL21BlOKgBFDcNNDcs1DclCzQiEkIgsxSvJiUyBBxIaTv8EYK+S6NOcKGbqfLXtKfDSkRO95veo9Tq3CbgCPAq5dXyoY01xdmyDRy11Snpl8wJ4VZ4TUvmqnR8x6y8Bn4jHR+BiUiILWbWnwAHgluXoa+A60GnJehcwBqxY86ZlbdTGZ7NsTy0S0rsMRzmnpEesPmc6auO7WbWnGk6GxOmQ8WUJWcfBbMhccG0sh1PN21NNbJMTw471u3CMjZZG+QAcDJuwk0V7qgpkciI0nFA4xhotub8cNuFXWiJK4nbUDTrwWMevRdjZRcT4eGkGD8IGRbOrDq2k7al1w9KZgkiX8wpVP3cJJj2QcBaBIsc6b1cZrRvJJFiKlXa5sq9Gfivt7FISWYwlohPkmx36cSXph5iK2lNPodUdeTsvyalJasi0+W5PtXYSjKUgckOn3I/aqN8is6EfWby1p5b8rqSQ31Wn/Ia8GRNm+GxP9UCUAlAwUgWRqzr8PvRAdCwaVDVbs0rr1O2pVLHqzHbY26QkAIuOFkMO7j/A+SAP0CrWkBmVkImY26hvwlQfU0FeoBWtIYOWHeN62LXo062JbXJC3sRUZBlfL0gVS6kAjIPkRD7CyQVJWlEgqZ00B6Xuk+etSKyOhSb2XywwbxHloE9aAAAAAElFTkSuQmCC"
+        },
+        "action": "appleScript",
+        "actionAppleScript": {
+            "inline": "tell application \"System Events\" to key code 40 using {command down, option down, control down, shift down}"
+        }
+    },
+    //CENTER ICONS
+    //SPOTIFY
+    {
+        "type": "appleScriptTitledButton",
+        "align": "center",
+        "name": "Spotify",
+        //"width": 400,
+        "image": {
+            "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTB3WXx3UXh3VXx7XYBkXFRpVLRyURmIaeAQAAAAEdFJOUwDDO3fSqUUkAAABbklEQVRIx61VbW6DMAztoAeYNA7ApB6gkzhAWS24wIAL0HABaK6/pHFNEhy8TXu/kPzkPD/8cTj8K7KPAqB+K5NhQPCUrABCXe7HOUYYZxgVRLiG8RfY4DUgFFtC7cffAfZTFBwBdhWEKfgEq4ocEjgj4ZQifO6/QG9kkETp1dDeVWfRKx3XYSW0LoqY5kCElXDrQkyeCCuh6WL0M4nIWQIyzqixdfKU1koFDKvyCA8NJMzU4xiD+b4kfHRpsIyKc6hBwjVptFHVY51EMAINNDFGJITKDNQcdpX74Hz0CQ3rY5qwMp4EIxrlafzrsYZ2Veb0DkRgfNCUok4Y1fqEijfyi2b8RE9beWqa48Y/uvCNMcH9btfUi+/CGLR1vhL6Zz9N/vBlaCU+7lwY/cmJ67Ryen/2tj23PLqJBodZH8vgj544vOL4pxfI5acrSFxi8hrkU9TSKr78ZpnL50A8KPJJEo+afBblwyqf5j/iGys5j6ScrST2AAAAAElFTkSuQmCC"
+        },
+        "source": {
+            "inline": "if application \"Spotify\" is running then\rtell application \"Spotify\"\rreturn (get artist of current track) & \" – \" & (get name of current track)\rend tell\relse\rreturn \"  \"\rend if\rreturn \"\"\r"
+        },
+        "refreshInterval": 2,
+        "actions": [
+            {
+                "trigger": "singleTap",
+                "action": "appleScript",
+                "actionAppleScript": {
+                    "inline": "if application \"Spotify\" is running then\rtell application \"Spotify\"\rplaypause\rend tell\rend if\r"
+                }
+            },
+            {
+                "trigger": "doubleTap",
+                "action": "appleScript",
+                "actionAppleScript": {
+                    "inline": "if application \"Spotify\" is running then\rtell application \"Spotify\"\rnext track\rend tell\rend if\r"
+                }
+            },
+            {
+                "trigger": "tripleTap",
+                "action": "appleScript",
+                "actionAppleScript": {
+                    "inline": "if application \"Spotify\" is running then\rtell application \"Spotify\"\rprevious track\rend tell\rend if\r"
+                }
+            },
+            {
+                "trigger": "longTap",
+                "action": "appleScript",
+                "actionAppleScript": {
+                    "inline": "tell application \"Spotify\"\ractivate\rend tell"
+                }
+            }
+        ]
+    },
+    //RIGHT ICONS
+    {
+        "type": "battery",
+        "align": "right",
+        "bordered": false
+    },
+    {
+        "type": "timeButton",
+        "formatTemplate": "HH:mm",
+        "align": "right",
+        "bordered": false
+    }
+]

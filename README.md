@@ -1324,4 +1324,26 @@ Main :
 - Music control for Spotify and iTunes
 - Mostly custom scripts, with active changing emojis
 
+---
+
+[@eighteeneightythree preset](eighteeneightythree/items.json)
+
+This preset requires "matchAppId" and will not work with the current v.0.27.0 release package. I built the app from the latstest source code available in the repo to get the dynamic app buttons to show. It also uses the new actions array which im not sure is compatible with v0.27.0 either... 
+
+## Previews
+![](eighteeneightythree/default-view-spotify-not-running.png)
+![](eighteeneightythree/default-view.png)
+![](eighteeneightythree/safari-controls.png)
+![](eighteeneightythree/obsidian-controls.png)
+
+## Features
+- **The native battery and time widgets are right aligned in all touchbar configurations.**
+- Spotify icon (play/pause, double tap to skip, hold to open Spotify)
+- Safari controls (navigate back and forward)
+- Obsidian controls (all match app icons except search)
+
+## Planned
+- Toggle tailscale VPN
+- Toggle network locations
+- Quit/reload MTMR button
 
