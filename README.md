@@ -1328,7 +1328,7 @@ Main :
 
 [@eighteeneightythree preset](eighteeneightythree/items.json)
 
-This preset requires "matchAppId" and will not work with the current v.0.27.0 release package. I built the app from the latstest source code available in the repo to get the dynamic app buttons to show. It also uses the new actions array which im not sure is compatible with v0.27.0 either... 
+This preset requires "matchAppId" and will not work with the current v.0.27.0 release package. I built the app from the latest source code available in the repo to get the dynamic app buttons to show. It also uses the new actions array which im not sure is compatible with v0.27.0 either... 
 
 ## Previews
 ![](eighteeneightythree/default-view-spotify-not-running.png)
