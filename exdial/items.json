@@ -1,0 +1,77 @@
+[
+  {
+    "type": "staticButton",
+    "title": "",
+    "width": 48,
+    "align": "left",
+    "bordered": true,
+    "action": "shellScript",
+    "executablePath": "/usr/bin/open",
+    "shellArguments": ["-a", "WezTerm"],
+    "image": {
+      "base64": "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"
+    }
+  },
+  {
+    "type": "brightness",
+    "align": "left",
+    "width": 120,
+    "image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAADAAAACACAQAAADnwSJ5AAABFElEQVR42u3aMUoDURSF4TvgChS3oGApiqYQXYlLsBERV2DlGqzTGrGSvPNGsbJKqWi6aQSrIY2Sa6UYkiZkborkv6d/H7z6t/lecbeej9XWiwYayqfclz7yY75M+17YpLtf04n68plX60YtGz0vyi115I2t0lla+f/8dn6WN7rP8uqPeNhQR974qnz6+/cX8pD11DIrunvqBwG1ru1pNZ/Lw9az7ma+DQQq067e44BUmw40iAP0beWhhvK4WTqSAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwnEF6pxXd2aUdvkaVgeOsYXmuG96bhxWxw8xtfLcd31/Hl+Hj7ntt6nbl9X6D7AVw4+uUgjDwTAAAAAElFTkSuQmCC"
+    }
+  },
+  { "type": "illuminationDown", "bordered": true, "align": "left", "width": 60 },
+  { "type": "illuminationUp", "width": 60, "bordered": true, "align": "left" },
+  {
+    "type": "weather",
+    "align": "right",
+    "bordered": false,
+    "refreshInterval": 300,
+    "icon_type": "images",
+    "api_key": "ca93a0bb8cdb428552660d83249e4bc9",
+    "tempUnit": "C"
+  },
+  {
+    "type": "volume",
+    "width": 120,
+    "align": "right",
+    "image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAADAAAACACAQAAADnwSJ5AAABFElEQVR42u3aMUoDURSF4TvgChS3oGApiqYQXYlLsBERV2DlGqzTGrGSvPNGsbJKqWi6aQSrIY2Sa6UYkiZkborkv6d/H7z6t/lecbeej9XWiwYayqfclz7yY75M+17YpLtf04n68plX60YtGz0vyi115I2t0lla+f/8dn6WN7rP8uqPeNhQR974qnz6+/cX8pD11DIrunvqBwG1ru1pNZ/Lw9az7ma+DQQq067e44BUmw40iAP0beWhhvK4WTqSAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwnEF6pxXd2aUdvkaVgeOsYXmuG96bhxWxw8xtfLcd31/Hl+Hj7ntt6nbl9X6D7AVw4+uUgjDwTAAAAAElFTkSuQmCC"
+    }
+  },
+  { "type": "mute", "align": "right", "width": 60, "bordered": true },
+  {
+    "type": "shellScriptTitledButton",
+    "align": "right",
+    "bordered": false,
+    "source": {
+      "inline": "currentLang=$(defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleSelectedInputSources | grep 'KeyboardLayout Name' | awk -F '= ' '{print $2}' | tr -d ';'); if [[ \"$currentLang\" == \"RussianWin\" ]]; then echo \"RU\"; else echo \"EN\"; fi"
+    },
+    "refreshInterval": 0.5
+  },
+  {
+    "type": "shellScriptTitledButton",
+    "align": "right",
+    "bordered": false,
+    "source": {
+      "inline": "~/.homebrew/bin/osx-cpu-temp"
+    },
+    "refreshInterval": 2,
+    "image": {
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA/1BMVEUAAADaACbYACfYACfjABzXACjYACfXACjYACfYACfYACfYACfdACLYACfXACjYACfVACv/AADXACjYACfYACfXACjYACfXACjaACXYACfYACfVACvYACfYACfZACbZACbYACfYACfZACb/AADYACfYACfVACrXACjVACu/AEDYACfYACfYACfXACjXACjYACfXACjYACfYACfYACfXACjYACfXACjYACfYACfZACbYACfYACfMADPYACfYACfYACfYACfYACfZACbXACjYACfYACfRAC7XACjYACfZACbWACnXACjXACjYACfTACzZACb/AADYACfYACfYACcAAAA+zneGAAAAU3RSTlMAItK+CVPjh3xUxPwPiGDQGAMtSKmN3Vk+wPQG/e26oIJBnwJCdiuAHgTmw+6BX+IgfaqLUvKOW8VKnagK+vBwYrhlc/urCznvhSyUbOEXPAFjGh/ektAAAAABYktHRACIBR1IAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4ggWETQWgEDcSgAAAqVJREFUWMPtl4ly2jAQhsUNNlcw5r4SICEHLSQhCQRyX73T/u//LpUlLIyxbMAznWmn/0ywo5U+27tr7ZoQuwLBUJidRKIxPhKLRtgxHAoGiLfiQIKdKFCTxjGpQmEDCSC+BiAFpNlJBsgaxyyQYQNpIPUf8AcAOzktD+iaoQJQNI5FoMAGdCCv5XZclpfKFXiqUi5Jllf1mvdyQzW96gigd4h6o+mhRp1O0x3vvwa1VSWeqrZU1Jyeogy01ggSVQsoO/i/gjq9/u6u+2LDXq2jshqLHNCgdsCVwO0NILdi0oDmuoAmoImhQDzFRPNnb36L7U43NVfc2EH2D9h5t9OePyIF5IU9uIhvkyN7iiXmQUIOj8x/lB6f0bTaQ3ZA+9iaNCH2Lpg6btsBIRJOpJl0E9ABTvof5kqEGeCjMaN/AnRMgM5XJcI2J1J1gf6S48Tb2Ae6JkAjdgmAeJ1XAOJ1Xg8wGJ6elXwAzkeGjy62BgxG3MuXnoCIkmEq8EQyAUPgajyhPxJAga9SIiRqzwMOuAbGZDrDjQRgKkpiqiPgFphM74B7d4BKy2cyy1RcBvSodUb/HiSAIl+VlEfh8cm4wvPL9nnw+gbc+kkkUVioO95etwe8PBuP8vQoBzg7UQAe5t7syZwoCaMA3AN30wlzh3MYJYkkADeYTckYuJYlkiSVBeCKZtSY/gxlqezlxEt+pdFg6zBesPXn1ih8Aj5vkAels9PhYCkPsl++kg0AQu4dyuqmugIQm+qS5Nv6N+D7wm7d1skPc4xu666Fhd6BxU6r+jub8tNaWNxK29EhsdpR/sVn7FlLm0txPdgni+JrFNd3p+K67MQtyrsp3w2G7xbHd5Plv83z3Wj6b3V9N9ssFv7afaa//ZPn3wD4/vje8PP/N7TebS0hgZhEAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA4LTIyVDE3OjUyOjIyKzAyOjAwc2qUYAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wOC0yMlQxNzo1MjoyMiswMjowMAI3LNwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC"
+    }
+  },
+  { "type": "battery", "align": "right", "bordered": false, "refreshInterval": 60 },
+  {
+    "type": "timeButton",
+    "align": "right",
+    "bordered": true,
+    "formatTemplate": "HH:mm:ss",
+    "action": "shellScript",
+    "executablePath": "/usr/bin/open",
+    "shellArguments": ["-a", "Calendar"],
+    "longAction": "shellScript",
+    "longExecutablePath": "/usr/bin/pmset",
+    "longShellArguments": ["sleepnow"]
+  }
+]
