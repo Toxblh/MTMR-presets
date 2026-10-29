@@ -5,6 +5,42 @@ Here we collect cool touch bar presets for [MTMR](https://github.com/toxblh/mtmr
 
 ---
 
+
+[@vulgofoobar presets](vulgofoobar/)
+
+### Default
+
+![](vulgofoobar/default.png)
+
+* Weather (open "Weather" app once press)
+* CPU stats
+* RAM stats (open the "Activity Monitor" app's memory tab once press.)
+* Brightness down
+* Brightness up
+* Volume down
+* Volume up
+* Play
+* Play next
+* Date and time
+* Battery status and remaining time
+
+### Minimal foobar
+
+![](vulgofoobar/foobar.png)
+
+* Stylized text
+* Brightness down
+* Brightness up
+* Volume down
+* Volume up
+* Play
+* Play next
+
+
+
+---
+
+
 [@ReDetection preset](ReDetection/ReDetection.json)
 
 
