@@ -1,0 +1,86 @@
+
+[
+  {
+    "type": "staticButton",
+    "title": "⤷",
+    "bordered": false,
+    "align": "left",
+    "width": 20
+  },
+  {
+    "type": "staticButton",
+    "title": "ⓕ",
+    "bordered": false,
+    "align": "left",
+    "width": 20
+  },
+  {
+    "type": "staticButton",
+    "title": "(O_O)",
+    "bordered": false,
+    "align": "left",
+    "width": 40
+  },
+  {
+    "type": "staticButton",
+    "title": "β",
+    "bordered": false,
+    "align": "left",
+    "width": 10
+  },
+  {
+    "type": "staticButton",
+    "title": "⩜",
+    "bordered": false,
+    "align": "left",
+    "width": 10
+  },
+  {
+    "type": "staticButton",
+    "title": "𐍂",
+    "bordered": false,
+    "align": "left",
+    "width": 10
+  },
+  {
+    "type": "staticButton",
+    "title": ".ᐟ ˎˊ˗",
+    "bordered": false,
+    "align": "left",
+    "width": 40
+  },
+  {
+    "type": "brightnessDown",
+    "width": 80,
+    "bordered": false,
+    "align": "right"
+  },
+  {
+    "type": "brightnessUp",
+    "width": 100,
+    "bordered": false,
+    "align": "right"
+  },
+  {
+    "type": "volumeDown",
+    "bordered": false,
+    "align": "right",
+    "width": 50
+  },
+  {
+    "type": "volumeUp",
+    "bordered": false,
+    "align": "right",
+    "width": 100
+  },
+  {
+    "type": "play",
+    "align": "right",
+    "width": 90
+  },
+  {
+    "type": "next",
+    "align": "right",
+    "width": 65
+  }
+]

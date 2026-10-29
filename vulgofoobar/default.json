@@ -1,0 +1,95 @@
+
+[
+  {
+    "type": "weather",
+    "align": "left",
+    "icon_type": "images",
+    "api_key": "fcd933fb6c17f4bc58bceb31479c5f11",
+    "bordered": false,
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "tell application \"Weather\"\r\tactivate\rend tell"
+    }
+  },
+  {
+    "title": "cpuStats",
+    "type": "shellScriptTitledButton",
+    "width": 80,
+    "refreshInterval": 2,
+    "source": {
+      "inline": "top -l 1 | awk '/CPU usage/ {print $3 + $5 \"%\"}'"
+    },
+    "align": "left",
+    "image": {
+      "filePath": "~/Pictures/mtmr/cpu.png"
+    },
+    "bordered": false
+  },
+  {
+    "title": "ramStats",
+    "type": "appleScriptTitledButton",
+    "source": {
+      "inline": "set mem to do shell script \"ps -A -o %mem | awk '{s+=$1}END{print s}'\"\rreturn mem & \"%\""
+    },
+    "action": "appleScript",
+    "actionAppleScript": {
+      "inline": "activate application \"Activity Monitor\"\rtell application \"System Events\"\r\ttell process \"Activity Monitor\"\r\t\ttell radio button \"CPU\" of radio group 1 of group 2 of toolbar 1 of window 1 to perform action \"AXPress\"\r\tend tell\rend tell"
+    },
+    "refreshInterval": 2,
+    "align": "left",
+    "image": {
+      "filePath": "~/Pictures/mtmr/ram.png"
+    }
+  },
+  {"type": "staticButton", "title": "⎜", "bordered": false, "align": "right", "width": 32 },
+  {
+    "type": "brightnessDown",
+    "width": 60,
+    "bordered": false,
+    "align": "right"
+  },
+  {
+    "type": "brightnessUp",
+    "width": 60,
+    "bordered": false,
+    "align": "right"
+  },
+  {
+    "type": "volumeDown",
+    "bordered": false,
+    "align": "right",
+    "width": 60
+  },
+  {
+    "type": "volumeUp",
+    "bordered": false,
+    "align": "right",
+    "width": 60
+  },
+  {
+    "type": "play",
+    "align": "right",
+    "width": 60
+  },
+  {
+    "type": "next",
+    "align": "right",
+    "width": 50
+  },
+  {
+    "type": "timeButton",
+    "width": 150,
+    "formatTemplate": "E d MMM, HH:mm",
+    "align": "right",
+    "bordered": false,
+    "longAction": "shellScript",
+    "longExecutablePath": "/usr/bin/pmset",
+    "longShellArguments": ["sleepnow"]
+  },
+  {
+    "type": "battery",
+    "width": 50,
+    "align": "right",
+    "bordered": false
+  }
+]
